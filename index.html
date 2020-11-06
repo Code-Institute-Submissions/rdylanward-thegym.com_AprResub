@@ -5,11 +5,129 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>The Gym</title>
     </head>
+
     <body>
+        <!--  NAVBAR  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#"><i class="fas fa-dumbbell fa-3x"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+
+                    <div class="form-group">
+                        <label class="d-none d-md-inline mr-2 newsletter-email-heading" for="newsletter-email">Sign up for our newsletter!</label>
+                        <input class="form-control d-none d-md-inline mr-2" id="newsletter-email" type="email" placeholder="Enter email...">
+                        <button class="btn btn-outline-success d-none d-md-inline mr-2" type="submit">Join!</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <!--  FOOTER
+        <footer>
+            <div class="row">
+                <div class="col-12 col-md-4 footer-left">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Home</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">About Us</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Classes</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Gallery</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Blog</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Membership</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer-middle">
+                    <div class="row">
+                        <div class="col social-links">
+                            <ul class="social-links-menu">
+                                <li class="d-inline social-links-items">
+                                    <i class="fa fa-facebook-square social-links-icon" aria-hidden="true"></i>
+                                </li>
+                                <li class="d-inline social-links-items">
+                                    <i class="fa fa-twitter-square social-links-icon" aria-hidden="true"></i>
+                                </li>
+                                <li class="d-inline social-links-items">
+                                    <i class="fa fa-instagram social-links-icon" aria-hidden="true"></i>
+                                </li>
+                                <li class="d-inline social-links-items">
+                                    <i class="fa fa-youtube-square social-links-icon" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col footer-newsletter">
+                            Sign-up for newsletter
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col footer-membership">
+                            <p class="footer-membership-header">Become a member now!</p>
+                            <button class="footer-membership-button">Join Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 footer-right">
+                    <ul class="footer-contact">
+                        <li class="footer-contact-items">The Gym Ltd.</li>
+                        <li class="footer-contact-items">Main Street</li>
+                        <li class="footer-contact-items">Scotstown</li>
+                        <li class="footer-contact-items">Co. Monaghan</li>
+                        <li class="footer-contact-items">H18 TP21</li>
+                        <li class="footer-contact-items">Ireland</li>
+                        <li class="footer-contact-items">(0)47 55512</li>
+                        <li class="footer-contact-items">info@thegym.com</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>  -->
 
         <!--  JSCRIPT  -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
