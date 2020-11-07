@@ -14,6 +14,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 62.5%;
 }
 
 
@@ -22,3 +29,27 @@
 /**********************************-***********************************/
 
 
+
+
+/**********************************************************************/
+/***                             Header                             ***/
+/**********************************-***********************************/
+
+.header-wrapper {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+header {
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fitness-center.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fitness-center.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
