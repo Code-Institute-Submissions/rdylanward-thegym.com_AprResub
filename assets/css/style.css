@@ -11,16 +11,30 @@
 /**********************************-***********************************/
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
+html {
+    font-size: 62.5%;
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 62.5%;
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "details"
+        "hero"
+        "member"
+        "testimonial"
+        "footer";
+    grid-template-rows: repeat(7, min-content);
+    background-color: #fff;
 }
 
 
@@ -28,7 +42,90 @@ body {
 /***                      Reusable Components                       ***/
 /**********************************-***********************************/
 
+.disabled {
+    display: none;
+}
 
+.link-item-white {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/**********************************************************************/
+/***                             Navbar                             ***/
+/**********************************-***********************************/
+
+.navbar-container {
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 5% max-content max-content 1fr 5%;
+    grid-template-areas:
+        ". brand title menu .";
+    grid-template-rows: 6.5rem;
+    background: transparent;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand {
+    grid-area: brand;
+    justify-self: center;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-title {
+    grid-area: title;
+    justify-self: start;
+    align-self: center;
+}
+
+.navbar-title span {
+    font-size: 350%;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.5rem;
+    justify-items: end;
+    align-items: center;
+}
+
+.navbar-menu-list {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-menu-item {
+    list-style: none;
+    margin-left: 1.7rem;
+}
+
+.navbar-menu-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    font-size: 330%;
+    /* display: none; */
+    padding: 0px;
+    margin: 0px 1.2rem 0px 0px;
+}
+
+.hide-menu {
+    display: none;
+}
 
 
 /**********************************************************************/
@@ -52,4 +149,19 @@ header {
     top: 0px;
     left: 0px;
     position: absolute;
+}
+
+
+/**********************************************************************/
+/***                         Media Queries                          ***/
+/**********************************-***********************************/
+
+@media screen and (min-width: 800px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .hide-menu {
+        display: grid;
+    }
 }
