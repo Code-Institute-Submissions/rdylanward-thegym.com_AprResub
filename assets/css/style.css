@@ -27,14 +27,14 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        "navbar"
+        /* "navbar" */
         "header"
         "details"
         "hero"
         "member"
         "testimonial"
         "footer";
-    grid-template-rows: repeat(7, min-content);
+    grid-template-rows: repeat(6, min-content);
     background-color: #f5f6f4;
 }
 
@@ -69,7 +69,7 @@ body {
 /***                             Navbar                             ***/
 /**********************************-***********************************/
 
-.navbar-container {
+.container-navbar {
     grid-area: navbar;
     display: grid;
     grid-template-columns: 5% max-content max-content 1fr 5%;
@@ -226,17 +226,17 @@ body {
 }
 
 .footer-social-icon {
-    font-size: 340%;
+    font-size: 280%;
     margin: 0px 0.65rem;
 }
 
 .footer-newsletter {
     grid-area: news;
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
 }
 
 .footer-newsletter-label {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0.9rem;
@@ -246,33 +246,32 @@ body {
     grid-area: input;
 }
 
-.footer-input-form {
-    text-align: center;
-    align-content: center;
+.footer-input-form input {
+    word-spacing: 0px;
 }
 
 .footer-input-email {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     background-color: #8c7c8d;
     border: 0.1rem solid #f6f5f4;
     width: 23.9rem;
     height: 2.5rem;
-    border-radius: 0.6rem;
+    border-radius: 0.6rem 0px 0px 0.6rem;
 }
 
 .footer-input-email::placeholder {
     color: rgba(246, 245, 244, 0.5);
-    padding: 0.9rem 0.2rem 0px 0.6rem;
+    padding: 0px 0.6rem;
 }
 
 .footer-input-btn {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background-color: #8c7c8d;
     border: 0.1rem solid #f6f5f4;
-    border-radius: 0.6rem;
+    border-radius: 0px 0.6rem 0.6rem 0px;
     width: 6.9rem;
     height: 2.9rem;
-    padding: 0px;
+    padding: 0.1rem 0px 0.2rem 0px;
 }
 
 .footer-input-btn:hover,
@@ -284,11 +283,11 @@ body {
 .footer-membership {
     grid-area: member;
     justify-items: center;
-    margin-top: 2.3rem;
+    margin-top: 1.9rem;
 }
 
 .footer-membership-header {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -300,7 +299,7 @@ body {
 }
 
 .footer-button-btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background: #8c7c8d;
     border: 0.1rem solid #f6f5f4;
     border-radius: 0.6rem;
@@ -330,7 +329,7 @@ body {
 }
 
 .footer-end-items {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     list-style: none;
 }
 
@@ -341,7 +340,7 @@ body {
 }
 
 .footer-copyright-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
 }
 
 
