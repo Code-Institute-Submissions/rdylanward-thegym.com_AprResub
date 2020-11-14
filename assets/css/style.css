@@ -27,7 +27,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        /* "navbar" */
         "header"
         "details"
         "hero"
@@ -36,6 +35,21 @@ body {
         "footer";
     grid-template-rows: repeat(6, min-content);
     background-color: #f5f6f4;
+}
+
+.container-navbar {
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 5% max-content max-content 1fr 5%;
+    grid-template-areas:
+        ". brand title menu .";
+    grid-template-rows: 6.5rem;
+    background: transparent;
+    /* background-color: #98a3c8; */
+    color: #dd7c82;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -69,18 +83,20 @@ body {
 /***                             Navbar                             ***/
 /**********************************-***********************************/
 
-.container-navbar {
-    grid-area: navbar;
-    display: grid;
-    grid-template-columns: 5% max-content max-content 1fr 5%;
-    grid-template-areas:
-        ". brand title menu .";
-    grid-template-rows: 6.5rem;
-    background: transparent;
+.container-navbar a {
+    color: #dd7c82;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
     background-color: #98a3c8;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+    color: #4d4271;
+    transition: background-color 0.15s cubic-bezier(1, 0, 0, 1);
+}
+
+.sticky-navbar a {
+    color: #4d4271;
 }
 
 .navbar-brand {
@@ -100,7 +116,7 @@ body {
 .navbar-title span {
     font-size: 350%;
     font-weight: 600;
-    color: #4d4271;
+    /* color: #4d4271; */
 }
 
 .navbar-menu {

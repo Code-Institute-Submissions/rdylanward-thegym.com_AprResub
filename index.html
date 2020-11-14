@@ -12,7 +12,7 @@
 
     <body>
         <!--  NAVBAR  -->
-        <nav class="container-navbar">
+        <nav class="container-navbar" id="navbar">
             <div class="navbar-brand">
                 <a class="navbar-brand-icon no-decoration color-dark" href="index.html"><i class="fas fa-dumbbell fa-4x"></i></a>
             </div>
@@ -134,5 +134,25 @@
 
         </div>
         <!--  /GRID CONTAINER  -->
+
+        <!--  JSCRIPT & JQUERY  -->
+
+        <!--  The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
+              and repurposed to aid in the function of the sticky menu  -->
+        <script>
+            window.onscroll = function() {stickyNavbar()};
+
+            let navbar = document.getElementById("navbar");
+            let sticky = navbar.offsetHeight;
+
+            function stickyNavbar() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky-navbar")
+              } else {
+                navbar.classList.remove("sticky-navbar");
+              }
+            }
+        </script>
+        <!--  /JSCRIPT & JQUERY
     </body>
 </html>
