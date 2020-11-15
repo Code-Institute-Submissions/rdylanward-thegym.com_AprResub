@@ -38,15 +38,25 @@ body {
 }
 
 .container-navbar {
-    grid-area: navbar;
     display: grid;
     grid-template-columns: 5% max-content max-content 1fr 5%;
     grid-template-areas:
         ". brand title menu .";
     grid-template-rows: 6.5rem;
     background: transparent;
-    /* background-color: #98a3c8; */
     color: #dd7c82;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-navbar-mobile {
+    display: none;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-areas:
+        ". menu .";
+    grid-template-rows: max-content;
+    background: rgba(77, 66, 113, 0.8);
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -78,6 +88,10 @@ body {
     font-weight: 400;
 }
 
+.hide-menu {
+    display: none;
+}
+
 
 /**********************************************************************/
 /***                             Navbar                             ***/
@@ -93,6 +107,7 @@ body {
     background-color: #98a3c8;
     color: #4d4271;
     transition: background-color 0.15s cubic-bezier(1, 0, 0, 1);
+    z-index: 10;
 }
 
 .sticky-navbar a {
@@ -116,7 +131,6 @@ body {
 .navbar-title span {
     font-size: 350%;
     font-weight: 600;
-    /* color: #4d4271; */
 }
 
 .navbar-menu {
@@ -137,7 +151,6 @@ body {
 }
 
 .navbar-menu-item {
-    list-style: none;
     margin-left: 1.7rem;
 }
 
@@ -157,8 +170,49 @@ body {
     margin: 0px 1.2rem 0px 0px;
 }
 
-.hide-menu {
-    display: none;
+
+/**********************************************************************/
+/***                         Mobile Navbar                          ***/
+/**********************************-***********************************/
+
+.container-navbar-mobile a {
+    color: #f5f6f4;
+}
+
+.sticky-navbar-mobile {
+    position: fixed;
+    top: 6.5rem;
+    /*  background-color: rgba(152, 163, 200, 0.9); */
+    background-color: rgba(77, 66, 113, 0.9);
+    color: #4d4271;
+    transition: background-color 0.15s cubic-bezier(1, 0, 0, 1);
+    /* z-index: 10; */
+}
+
+.navbar-mobile {
+    grid-area: menu;
+}
+
+.navbar-mobile-list {
+    list-style: none;
+    display: block;
+    align-items: center;
+    padding: 0px;
+    margin: 1.5rem 0px;
+}
+
+.navbar-mobile-item {
+    margin-bottom: 0.7rem;
+}
+
+.navbar-mobile-link {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.navbar-mobile-link:hover,
+.navbar-mobile-link:active {
+    color: #dd7c82;
 }
 
 

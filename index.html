@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="icon" type="image/png" href="assets/img/favicon-512x512.ico" sizes="512x512">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -43,12 +44,42 @@
                         <a class="hide-menu navbar-menu-link no-decoration color-dark" href="#">Contact</a>
                     </li>
                     <li class="navbar-menu-item">
-                        <a class="navbar-toggler navbar-menu-link no-decoration color-dark" href="index.html"><i class="fas fa-bars"></i></a>
+                        <a class="navbar-toggler navbar-menu-link no-decoration color-dark" href="javascript:void(0);" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!--  /NAVBAR  -->
+
+        <!--  MOBILE NAVBAR  -->
+        <nav class="container-navbar-mobile" id="navbar-mobile">
+            <div class="navbar-mobile">
+                <ul class="navbar-mobile-list">
+                    <li class="navbar-mobile-item active">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">About Us</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Classes</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Gallery</a>
+                    </li>
+                    <!-- <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Blog</a>
+                    </li> -->
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Membership</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--  /MOBILE NAVBAR  -->
 
         <!--  GRID CONTAINER  -->
         <div class="container-main">
@@ -136,23 +167,36 @@
         <!--  /GRID CONTAINER  -->
 
         <!--  JSCRIPT & JQUERY  -->
-
-        <!--  The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
-              and repurposed to aid in the function of the sticky menu  -->
         <script>
             window.onscroll = function() {stickyNavbar()};
 
             let navbar = document.getElementById("navbar");
+            let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
+               and repurposed to aid in the function of the sticky menu */
             function stickyNavbar() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky-navbar")
-              } else {
-                navbar.classList.remove("sticky-navbar");
-              }
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky-navbar");
+                    navbarMobile.classList.add("sticky-navbar-mobile");
+                } else {
+                    navbar.classList.remove("sticky-navbar");
+                    navbarMobile.classList.remove("sticky-navbar-mobile");
+                }
+            }
+
+            /* This function was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) and
+               repurposed to aid in the mobile menu funtion */
+            function mobileMenu() {
+                if (navbarMobile.style.display === "none") {
+                    navbarMobile.style.display = "grid";
+                } else {
+                    navbarMobile.style.display = "none";
+                }
             }
         </script>
-        <!--  /JSCRIPT & JQUERY
+        <!--  /JSCRIPT & JQUERY  -->
+
     </body>
 </html>
