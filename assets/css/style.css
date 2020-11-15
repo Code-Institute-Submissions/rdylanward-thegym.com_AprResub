@@ -23,20 +23,6 @@ body {
     background-color: #f5f6f4;
 }
 
-.container-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "details"
-        "hero"
-        "member"
-        "testimonial"
-        "footer";
-    grid-template-rows: repeat(6, min-content);
-    background-color: #f5f6f4;
-}
-
 .container-navbar {
     display: grid;
     grid-template-columns: 5% max-content max-content 1fr 5%;
@@ -60,6 +46,20 @@ body {
     width: 100%;
     padding: 0px;
     margin: 0px;
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "details"
+        "hero"
+        "member"
+        "testimonial"
+        "footer";
+    grid-template-rows: repeat(6, min-content);
+    background-color: #f5f6f4;
 }
 
 
