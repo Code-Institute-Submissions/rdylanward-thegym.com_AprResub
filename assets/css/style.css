@@ -24,31 +24,39 @@ body {
 }
 
 .container-navbar {
+    position: fixed;
     display: grid;
     grid-template-columns: 5% max-content max-content 1fr 5%;
     grid-template-areas:
         ". brand title menu .";
     grid-template-rows: 6.5rem;
     background: transparent;
-    color: #dd7c82;
+    color: #98a3c8;
     width: 100%;
     padding: 0px;
     margin: 0px;
+    transition: all 0.3s;
+    z-index: 15;
 }
 
 .container-navbar-mobile {
+    position: fixed;
     display: none;
     grid-template-columns: 5% 1fr 5%;
     grid-template-areas:
         ". menu .";
     grid-template-rows: max-content;
-    background: rgba(77, 66, 113, 0.8);
+    background-color: rgba(77, 66, 113, 0.9);
     width: 100%;
+    top: 6.5rem;
     padding: 0px;
     margin: 0px;
+    transition: all 0.3s;
+    z-index: 15;
 }
 
 .container-main {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -60,6 +68,9 @@ body {
         "footer";
     grid-template-rows: repeat(6, min-content);
     background-color: #f5f6f4;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -98,16 +109,14 @@ body {
 /**********************************-***********************************/
 
 .container-navbar a {
-    color: #dd7c82;
+    color: #98a3c8;
 }
 
 .sticky-navbar {
-    position: fixed;
     top: 0;
-    background-color: #98a3c8;
+    background: #98a3c8;
     color: #4d4271;
-    transition: background-color 0.15s cubic-bezier(1, 0, 0, 1);
-    z-index: 10;
+    transition: all 0.3s;
 }
 
 .sticky-navbar a {
@@ -120,6 +129,7 @@ body {
     align-self: center;
     padding: 0px;
     margin: 0px;
+    transition: all 0.3s;
 }
 
 .navbar-title {
@@ -155,7 +165,7 @@ body {
 }
 
 .navbar-menu-link {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -176,16 +186,12 @@ body {
 /**********************************-***********************************/
 
 .container-navbar-mobile a {
-    color: #f5f6f4;
+    color: #98a3c8;
 }
 
 .sticky-navbar-mobile {
-    position: fixed;
-    top: 6.5rem;
-    background-color: rgba(77, 66, 113, 0.9);
     color: #4d4271;
-    transition: background-color 0.15s cubic-bezier(1, 0, 0, 1);
-    z-index: 10;
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
 }
 
 .navbar-mobile {
@@ -205,13 +211,13 @@ body {
 }
 
 .navbar-mobile-link {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 .navbar-mobile-link:hover,
 .navbar-mobile-link:active {
-    color: #dd7c82;
+    color: #f5f6f4;
 }
 
 
@@ -219,14 +225,130 @@ body {
 /***                             Header                             ***/
 /**********************************-***********************************/
 
-header {
+.container-header {
     grid-area: header;
-    background-image: -webkit-linear-gradient(rgba(77, 66, 113, 0.7), rgba(77, 66, 113, 0.7)), url("../img/fitness-center.jpg");
-    background-image: linear-gradient(rgba(77, 66, 113, 0.7), rgba(77, 66, 113, 0.7)), url("../img/fitness-center.jpg");
+    background-image: -webkit-linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
+    background-image: linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 7.5% 85% 7.5%;
+    grid-template-areas:
+        ". . ."
+        ". hero ."
+        ". hero ."
+        ". hero ."
+        ". . .";
+    grid-template-rows: 14% repeat(3, 24%) 14%;
+}
+
+.header-hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "heading"
+        "inspire"
+        "buttons";
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header-hero-heading {
+    grid-area: heading;
+    align-self: end;
+}
+
+.header-hero-heading h1 {
+    font-size: 380%;
+    font-weight: 500;
+    color: #f6f5f4;
+    text-align: center;
+    margin: 0px;
+}
+
+.header-hero-inspiration {
+    grid-area: inspire;
+    justify-self: center;
+    align-self: center;
+}
+
+.header-hero-inspiration figure {
+    margin: 1rem 2rem;
+}
+
+.header-hero-inspiration blockquote {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    color: #f6f5f4;
+    margin: 0px 1.7rem;
+}
+
+.header-hero-inspiration blockquote p {
+    justify-self: center;
+    margin: 0px;
+}
+
+.header-hero-inspiration blockquote p i {
+    font-size: 1rem;
+}
+
+.header-hero-inspiration figcaption {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.9rem 0px;
+}
+
+.header-hero-buttons {
+    grid-area: buttons;
+    justify-self: center;
+    align-self: start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ". btn-1 ."
+        ". btn-2 ."
+        ". btn-3 ."
+        ". btn-4 .";
+    grid-template-rows: repeat(4, max-content);
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+}
+
+.header-hero-btn {
+    font-size: 1.5rem;
+    background: #8c7c8d;
+    border: 0.1rem solid #f6f5f4;
+    border-radius: 0.6rem;
+    width: 14rem;
+    height: 2.9rem;
+    justify-self: center;
+    margin-bottom: 0.9rem;
+}
+
+.header-hero-btn:hover,
+.header-hero-btn:active {
+    background-color: #dd7c82;
+    border-color: #f6f5f4;
 }
 
 
@@ -234,7 +356,7 @@ header {
 /***                             Footer                             ***/
 /**********************************-***********************************/
 
-.footer-container {
+.container-footer {
     width: 100%;
     background: #4d4271;
     display: grid;
@@ -432,18 +554,21 @@ header {
 /***                         Media Queries                          ***/
 /**********************************-***********************************/
 
-@media screen and (min-width: 800px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .hide-menu {
-        display: grid;
-    }
-}
-
 @media screen and (min-width: 577px) {
-    .footer-container {
+    /*  HEADER  */
+    .header-hero-buttons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "btn-1 btn-2 btn-3 btn-4";
+        grid-template-rows: max-content;
+    }
+
+    .header-hero-btn {
+        margin: 0px 0.45rem;
+    }
+
+    /*  FOOTER  */
+    .container-footer {
         width: 100%;
         background: #4d4271;
         display: grid;
@@ -460,5 +585,29 @@ header {
 
     .footer-end {
         justify-self: start;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    /*  NAVBAR  */
+    .navbar-toggler {
+        display: none;
+    }
+
+    .hide-menu {
+        display: grid;
+    }
+
+    /*  HEADER  */
+    .header-hero-heading h1 {
+        font-size: 480%;
+    }
+
+    .header-hero-inspiration blockquote {
+        font-size: 2.3rem;
+    }
+
+    .header-hero-btn {
+        margin: 0px 1.35rem;
     }
 }
