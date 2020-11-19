@@ -31,16 +31,16 @@
                         <a class="hide-menu navbar-menu-link no-decoration color-dark" href="classes.html">Classes</a>
                     </li>
                     <li class="navbar-menu-item">
-                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="#">Gallery</a>
+                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="javascript:void(0);">Gallery</a>
                     </li>
                     <!-- <li class="navbar-menu-item">
-                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="#">Blog</a>
+                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="javascript:void(0);">Blog</a>
                     </li> -->
                     <li class="navbar-menu-item">
-                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="#">Membership</a>
+                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="javascript:void(0);">Membership</a>
                     </li>
                     <li class="navbar-menu-item">
-                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="#">Contact</a>
+                        <a class="hide-menu navbar-menu-link no-decoration color-dark" href="javascript:void(0);">Contact</a>
                     </li>
                     <li class="navbar-menu-item">
                         <a class="navbar-toggler navbar-menu-link no-decoration color-dark" href="javascript:void(0);" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
@@ -64,16 +64,16 @@
                         <a class="navbar-mobile-link no-decoration color-dark" href="classes.html">Classes</a>
                     </li>
                     <li class="navbar-mobile-item">
-                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Gallery</a>
+                        <a class="navbar-mobile-link no-decoration color-dark" href="javascript:void(0);">Gallery</a>
                     </li>
                     <!-- <li class="navbar-mobile-item">
-                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Blog</a>
+                        <a class="navbar-mobile-link no-decoration color-dark" href="javascript:void(0);">Blog</a>
                     </li> -->
                     <li class="navbar-mobile-item">
-                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Membership</a>
+                        <a class="navbar-mobile-link no-decoration color-dark" href="javascript:void(0);">Membership</a>
                     </li>
                     <li class="navbar-mobile-item">
-                        <a class="navbar-mobile-link no-decoration color-dark" href="#">Contact</a>
+                        <a class="navbar-mobile-link no-decoration color-dark" href="javascript:void(0);">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -96,15 +96,65 @@
                             </blockquote>
                         </figure>
                     </div>
+
+                    <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
+                         html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
                     <div class="header-hero-buttons">
-                        <button class="btn btn-1 header-hero-btn color-light">About Us</button>
-                        <button class="btn btn-2 header-hero-btn color-light">Classes</button>
-                        <button class="btn btn-3 header-hero-btn color-light">Gallery</button>
-                        <button class="btn btn-4 header-hero-btn color-light">Membership</button>
+                        <button class="btn btn-1 header-hero-btn color-light" onclick="window.location.href='about.html'">About Us</button>
+                        <button class="btn btn-2 header-hero-btn color-light" onclick="window.location.href='classes.html'">Classes</button>
+                        <button class="btn btn-3 header-hero-btn color-light" onclick="window.location.href='gallery.html'">Gallery</button>
+                        <button class="btn btn-4 header-hero-btn color-light" onclick="window.location.href='javascript:void(0);'">Membership</button>
                     </div>
                 </div>
             </header>
             <!--  /HEADER  -->
+
+            <!--  DETAILS  -->
+            <section class="container-details">
+                <div class="details-items">
+                    <div class="details-welcome-image">
+                        <img class="details-img" src="assets/img/welcome.jpg" alt="Staff member at the front counter.">
+                    </div>
+                    <div class="details-welcome-heading">
+                        <h2 class="details-heading">Welcome to our family!</h2>
+                    </div>
+                    <div class="details-welcome-text">
+                        <p class="details-text">We, here at The Gym, would like to welcome you to our site and invite you to have a look around. We are certain that you will find our family-centric environment just the thing you are looking for in a gym. We pride ourselves in providing a friendly and helpful environment to make you feel at home.</p>
+                    </div>
+                    <div class="details-welcome-button">
+                        <button class="btn details-btn">Find Out More</button>
+                    </div>
+                <!-- </div>
+                <div class="details-classes"> -->
+                    <div class="details-classes-image">
+                        <img class="details-img" src="assets/img/classes.jpg" alt="Women exercising.">
+                    </div>
+                    <div class="details-classes-heading">
+                        <h2 class="details-heading">Join others and get fit!</h2>
+                    </div>
+                    <div class="details-classes-text">
+                        <p class="details-text">At The Gym, we have a wide range of classes to suit all of your fitness needs. All of our staff are fully qualified with many years of experience, spanning across many disciplines. Have a gander at the wide array of classes. We are certain you will find the just the class that you are looking for.</p>
+                    </div>
+                    <div class="details-classes-button">
+                        <button class="btn details-btn">Our Classes</button>
+                    </div>
+                <!-- </div>
+                <div class="details-blog"> -->
+                    <div class="details-blog-image">
+                        <img class="details-img" src="assets/img/news.jpg" alt="Newspapers hanging on a wooden rack and out of a bag hanging from the rack.">
+                    </div>
+                    <div class="details-blog-heading">
+                        <h2 class="details-heading">All the news that's fit to print</h2>
+                    </div>
+                    <div class="details-blog-text">
+                        <p class="details-text">The Fitness Times is our community Blog. A place where our staff and members come together and shares ideas, opinions, knowledge and the latest fitness news. So, put on a brew, sit back and peruse our many articles covering a wide range of fitness topics. If you have a question regarding fitness, this is the place to get the answer.</p>
+                    </div>
+                    <div class="details-blog-button">
+                        <button class="btn details-btn">The Fitness Times</button>
+                    </div>
+                </div>
+            </section>
+            <!--  /DETAILS  -->
 
             <!--  FOOTER  -->
             <footer class="container-footer">
@@ -120,16 +170,16 @@
                             <a class="footer-menu-link no-decoration color-light" href="classes.html">Classes</a>
                         </li>
                         <li class="footer-menu-item">
-                            <a class="footer-menu-link no-decoration color-light" href="#">Gallery</a>
+                            <a class="footer-menu-link no-decoration color-light" href="javascript:void(0);">Gallery</a>
                         </li>
                         <!-- <li class="footer-menu-item">
-                            <a class="footer-menu-link no-decoration color-light" href="#">Blog</a>
+                            <a class="footer-menu-link no-decoration color-light" href="javascript:void(0);">Blog</a>
                         </li> -->
                         <li class="footer-menu-item">
-                            <a class="footer-menu-link no-decoration color-light" href="#">Membership</a>
+                            <a class="footer-menu-link no-decoration color-light" href="javascript:void(0);">Membership</a>
                         </li>
                         <li class="footer-menu-item">
-                            <a class="footer-menu-link no-decoration color-light" href="#">Contact</a>
+                            <a class="footer-menu-link no-decoration color-light" href="javascript:void(0);">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -162,8 +212,11 @@
                     <div class="footer-membership">
                         <p class="footer-membership-header color-light">Join our family now!</p>
                     </div>
+
+                    <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
+                         html by PR.Gaultier (01/10/2020), and and repurposed to aid in the click function of the button. -->
                     <div class="footer-button">
-                        <button class="btn footer-button-btn color-light">Membership</button>
+                        <button class="btn footer-button-btn color-light" onclick="window.location.href='javascript:void(0);'">Membership</button>
                     </div>
                 </div>
                 <div class="footer-end">

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="icon" type="image/png" href="assets/img/favicon-512x512.ico" sizes="512x512">
+	    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="512x512">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>The Gym</title>
@@ -82,9 +82,23 @@
 
         <!--  GRID CONTAINER  -->
         <div class="container-main">
+            <!--  HEADER  -->
+            <header class="container-header">
+                <div class="header-hero">
+                    <div class="header-hero-inspiration">
+                       <figure>
+                            <blockquote>
+                                <p><sup><i class="fas fa-quote-left"></i></sup> Each day is a new opportunity to improve yourself. Take it, and make the most of it. <sub><i class="fas fa-quote-right"></i></sub></p>
+                                <figcaption>- <cite>Gymquotes.co</cite></figcaption>
+                            </blockquote>
+                        </figure>
+                    </div>
+                </div>
+            </header>
+            <!--  /HEADER  -->
 
             <!--  FOOTER  -->
-            <footer class="footer-container">
+            <footer class="container-footer">
                 <div class="footer-start">
                     <ul class="footer-menu">
                         <li class="footer-menu-item">
@@ -140,7 +154,7 @@
                         <p class="footer-membership-header color-light">Join our family now!</p>
                     </div>
                     <div class="footer-button">
-                        <button class="btn footer-button-btn color-light">Membership</button>
+                        <button class="btn footer-button-btn color-light" onclick="window.location.href='javascript:void(0);'">Membership</button>
                     </div>
                 </div>
                 <div class="footer-end">
