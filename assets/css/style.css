@@ -830,7 +830,21 @@ body {
         margin: 1.5rem 0px;
     }
 
+    .details-welcome-image {
+        justify-self: end;
+    }
+
+    .details-classes-image {
+        justify-self: start;
+    }
+
+    .details-blog-image {
+        justify-self: end;
+    }
+
     .details-img {
+        width: 37.2rem;
+        height: 24rem;
         margin: 3.5rem 0px;
     }
 
