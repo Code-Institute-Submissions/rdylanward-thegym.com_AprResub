@@ -16,8 +16,8 @@ html {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     background-color: #f5f6f4;
@@ -33,8 +33,8 @@ body {
     background: transparent;
     color: #98a3c8;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
     transition: all 0.3s;
     z-index: 15;
 }
@@ -49,8 +49,8 @@ body {
     background-color: rgba(77, 66, 113, 0.9);
     width: 100%;
     top: 6.5rem;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
     transition: all 0.3s;
     z-index: 15;
 }
@@ -71,6 +71,64 @@ body {
     width: 100%;
     top: 0;
     z-index: 1;
+}
+
+.container-header {
+    grid-area: header;
+    background-image: -webkit-linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
+    background-image: linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: grid;
+    grid-template-columns: 7.5% 85% 7.5%;
+    grid-template-areas:
+        ". . ."
+        ". hero ."
+        ". hero ."
+        ". hero ."
+        ". . .";
+    grid-template-rows: 14% repeat(3, 24%) 14%;
+}
+
+.container-details {
+    margin: 1rem 0rem 5rem 0rem;
+}
+
+.container-inspiration {
+    grid-area: hero;
+    background-image: -webkit-linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/kicking-workout.jpg");
+    background-image: linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/kicking-workout.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-attachment: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas:
+        ". . ."
+        ". quote ."
+        ". . .";
+    grid-template-rows: 14% 72% 14%;
+}
+
+.container-membership {
+    grid-area: member;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas:
+        ". head ."
+        ". text ."
+        ". price .";
+    grid-template-rows: repeat(3, max-content);
+    color: #4d4271;
+    padding: 0rem;
+    margin: 5rem 0rem;
 }
 
 
@@ -159,8 +217,8 @@ body {
     grid-area: brand;
     justify-self: center;
     align-self: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
     transition: all 0.3s;
 }
 
@@ -190,8 +248,8 @@ body {
     list-style: none;
     display: inline-flex;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .navbar-menu-item {
@@ -215,9 +273,9 @@ body {
 
 .navbar-toggler {
     font-size: 330%;
-    padding: 0px;
-    /* margin: 0px 1.2rem 0px 0px; */
-    margin: 0px;
+    padding: 0rem;
+    /* margin: 0rem 1.2rem 0rem 0rem; */
+    margin: 0rem;
 }
 
 
@@ -242,8 +300,8 @@ body {
     list-style: none;
     display: block;
     align-items: center;
-    padding: 0px;
-    margin: 1.5rem 0px;
+    padding: 0rem;
+    margin: 1.5rem 0rem;
 }
 
 .navbar-mobile-item {
@@ -270,27 +328,6 @@ body {
 /***                             Header                             ***/
 /**********************************-***********************************/
 
-.container-header {
-    grid-area: header;
-    background-image: -webkit-linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
-    background-image: linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-    top: 0px;
-    left: 0px;
-    display: grid;
-    grid-template-columns: 7.5% 85% 7.5%;
-    grid-template-areas:
-        ". . ."
-        ". hero ."
-        ". hero ."
-        ". hero ."
-        ". . .";
-    grid-template-rows: 14% repeat(3, 24%) 14%;
-}
-
 .header-hero {
     grid-area: hero;
     display: grid;
@@ -312,7 +349,7 @@ body {
     font-weight: 500;
     color: #f6f5f4;
     text-align: center;
-    margin: 0px;
+    margin: 0rem;
 }
 
 .header-hero-inspiration {
@@ -330,12 +367,12 @@ body {
     font-weight: 400;
     text-align: center;
     color: #f6f5f4;
-    margin: 0px 1.7rem;
+    margin: 0rem 1.7rem;
 }
 
 .header-hero-inspiration blockquote p {
     justify-self: center;
-    margin: 0px;
+    margin: 0rem;
 }
 
 .header-hero-inspiration blockquote p i {
@@ -346,7 +383,7 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
-    margin: 0.9rem 0px;
+    margin: 0.9rem 0rem;
 }
 
 .header-hero-buttons {
@@ -392,10 +429,6 @@ body {
 /***                            Details                             ***/
 /**********************************-***********************************/
 
-.container-details {
-    margin: 1rem 0px 5rem 0px;
-}
-
 .details-items {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -407,8 +440,8 @@ body {
         ". img-b ."
         ". grp-b .";
     grid-template-rows: repeat(6, max-content);
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .details-welcome-image {
@@ -505,7 +538,7 @@ body {
     width: 32.55rem;
     height: 21rem;
     box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
-    padding: 0px;
+    padding: 0rem;
     margin-top: 5rem;
 }
 
@@ -513,23 +546,255 @@ body {
     font-size: 210%;
     text-align: center;
     color: #4d4271;
-    padding: 0px;
-    margin: 1.5rem 0px;
+    padding: 0rem;
+    margin: 1.5rem 0rem;
 }
 
 .details-text {
     font-size: 1.5rem;
     text-align: justify;
-    padding: 0px 0.7rem;
-    margin: 0px;
+    padding: 0rem 0.7rem;
+    margin: 0rem;
 }
 
 .details-btn {
     width: 16rem;
     height: 2.9rem;
-    padding: 0px;
+    padding: 0rem;
     margin-top: 2rem;
 }
+
+
+/**********************************************************************/
+/***                      Inspirational Quote                       ***/
+/**********************************-***********************************/
+
+.inspiration-hero {
+    grid-area: quote;
+    justify-self: center;
+    align-self: center;
+}
+
+.inspiration-quote figure {
+    margin: 1rem 0rem;
+}
+
+.inspiration-quote blockquote {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    color: #f6f5f4;
+    margin: 0rem 1.6rem;
+}
+
+.inspiration-quote blockquote p {
+    justify-self: center;
+    margin: 0rem;
+}
+
+.inspiration-quote blockquote p i {
+    font-size: 1rem;
+}
+
+.inspiration-quote figcaption {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.9rem 0rem;
+}
+
+
+/**********************************************************************/
+/***                           Membership                           ***/
+/**********************************-***********************************/
+
+.membership-heading {
+    grid-area: head;
+    place-self: center center;
+    margin: 0rem;
+}
+
+.membership-heading h1 {
+    font-size: 300%;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 2.2rem;
+}
+
+.membership-text {
+    grid-area: text;
+    place-self: center center;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.membership-text p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0rem;
+}
+
+.membership-pricing {
+    grid-area: price;
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+    grid-template-areas:
+        ". opt-one ."
+        ". opt-two ."
+        ". opt-three .";
+    grid-template-rows: repeat(3, max-content);
+    align-self: center;
+}
+
+.membership-option-one {
+    grid-area: opt-one;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "hdr-one"
+        "prc-one"
+        "drt-one"
+        "btn-one";
+    grid-template-rows: 6rem 11rem 8rem 6rem;
+    border: 0.2rem solid #4d4271;
+    border-radius: 1.5rem;
+    box-shadow: 0.55rem 0.55rem 0.6rem #98a3c8;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hdr-one {
+    grid-area: hdr-one;
+    justify-self: center;
+    align-self: center;
+}
+
+.prc-one {
+    grid-area: prc-one;
+    background: rgba(140, 124, 141, 0.6);
+    place-self: end center;
+}
+
+.drt-one {
+    grid-area: drt-one;
+    place-self: start center;
+}
+
+.btn-one {
+    grid-area: btn-one;
+    place-self: center center;
+}
+
+.membership-option-two {
+    grid-area: opt-two;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "hdr-two"
+        "prc-two"
+        "drt-two"
+        "btn-two";
+    grid-template-rows: 6rem 5rem 5rem 6rem;
+    border: 0.2rem solid #4d4271;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hdr-two {
+    grid-area: hdr-two;
+    justify-self: center;
+    align-self: center;
+}
+
+.prc-two {
+    grid-area: prc-two;
+    place-self: center center;
+}
+
+.drt-two {
+    grid-area: drt-two;
+    place-self: center center;
+}
+
+.btn-two {
+    grid-area: btn-two;
+    place-self: center center;
+}
+
+.membership-option-three {
+    grid-area: opt-three;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "hdr-three"
+        "prc-three"
+        "drt-three"
+        "btn-three";
+    grid-template-rows: 6rem 5rem 5rem 6rem;
+    border: 0.2rem solid #4d4271;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hdr-three {
+    grid-area: hdr-three;
+    justify-self: center;
+    align-self: center;
+}
+
+.prc-three {
+    grid-area: prc-three;
+    place-self: center center;
+}
+
+.drt-three {
+    grid-area: drt-three;
+    place-self: center center;
+}
+
+.btn-three {
+    grid-area: btn-three;
+    place-self: center center;
+}
+
+.membership-option-header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #f6f5f4;
+    background: #4d4271;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.membership-option-price {
+    font-size: 4.2rem;
+    font-weight: 500;
+    background: rgba(140, 124, 141, 0.6);
+    margin: 0rem;
+}
+
+.membership-option-duration {
+    font-size: 1.7rem;
+    font-weight: 500;
+    background: rgba(140, 124, 141, 0.6);
+    margin: 0rem;
+}
+
+.membership-option-btn {
+    width: 16rem;
+    height: 2.9rem;
+}
+
+
+/**********************************************************************/
+/***                          Testimonials                          ***/
+/**********************************-***********************************/
+
+
 
 
 /**********************************************************************/
@@ -557,8 +822,8 @@ body {
 }
 
 .footer-menu {
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .footer-menu-item {
@@ -599,16 +864,16 @@ body {
 
 .footer-social-list {
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .footer-social-items {
     list-style: none;
     display: inline;
     justify-self: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .footer-social-icon {
@@ -628,7 +893,7 @@ body {
 
 .footer-social-icon {
     font-size: 280%;
-    margin: 0px 0.65rem;
+    margin: 0rem 0.65rem;
 }
 
 .footer-newsletter {
@@ -639,7 +904,7 @@ body {
 .footer-newsletter-label {
     font-size: 1.6rem;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0rem;
     margin-bottom: 0.9rem;
 }
 
@@ -648,7 +913,7 @@ body {
 }
 
 .footer-input-form input {
-    word-spacing: 0px;
+    word-spacing: 0rem;
 }
 
 .footer-input-email {
@@ -657,20 +922,20 @@ body {
     border: 0.2rem solid #f6f5f4;
     width: 22.5rem;
     height: 2.4rem;
-    border-radius: 0.6rem 0px 0px 0.6rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
 }
 
 .footer-input-email::placeholder {
     color: rgba(246, 245, 244, 0.5);
-    padding: 0px 0.6rem;
+    padding: 0rem 0.6rem;
 }
 
 .footer-input-btn {
     border: 0.2rem solid #f6f5f4;
-    border-radius: 0px 0.6rem 0.6rem 0px;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
     width: 8.1rem;
     height: 3rem;
-    padding: 0.27rem 0px 0.29rem 0px;
+    padding: 0.27rem 0rem 0.29rem 0rem;
     transition: background-color 0.25s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -683,8 +948,8 @@ body {
 .footer-membership-header {
     font-size: 1.6rem;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .footer-button {
@@ -695,7 +960,7 @@ body {
 .footer-button-btn {
     width: 14rem;
     height: 2.9rem;
-    padding: 0px;
+    padding: 0rem;
     margin-top: 0.9rem;
     transition: background 0.25s cubic-bezier(1, 0, 0, 1);
 }
@@ -709,8 +974,8 @@ body {
 .footer-end-list {
     text-align: center;
     line-height: 1.85rem;
-    padding: 0px;
-    margin: 0px 0.7rem;
+    padding: 0rem;
+    margin: 0rem 0.7rem;
 }
 
 .footer-end-items {
@@ -734,7 +999,10 @@ body {
 /**********************************-***********************************/
 
 @media screen and (min-width: 577px) {
-    /*  HEADER  */
+    /******************/
+    /****  HEADER  ****/
+    /******************/
+
     .header-hero-buttons {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
@@ -743,10 +1011,12 @@ body {
     }
 
     .header-hero-btn {
-        margin: 0px 0.45rem;
+        margin: 0rem 0.45rem;
     }
 
-    /* DETAILS */
+    /*******************/
+    /****  DETAILS  ****/
+    /*******************/
 
     .details-items {
         display: grid;
@@ -757,31 +1027,34 @@ body {
             ". img-b . grp-b .";
         grid-template-rows: repeat(3, max-content);
         align-items: center;
-        padding: 0px;
-        margin: 0px;
+        padding: 0rem;
+        margin: 0rem;
     }
 
     .details-img {
-        margin: 6rem 0px;
+        margin: 6rem 0rem;
     }
 
     .details-heading {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .details-heading h2 {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .details-text {
-        margin: 2.5rem 0px;
+        margin: 2.5rem 0rem;
     }
 
     .details-btn {
-        margin: 0px;
+        margin: 0rem;
     }
 
-    /*  FOOTER  */
+    /******************/
+    /****  FOOTER  ****/
+    /******************/
+
     .container-footer {
         width: 100%;
         background: #4d4271;
@@ -801,9 +1074,13 @@ body {
         justify-self: start;
     }
 }
+/****  /screen and (min-width: 577px)  ****/
 
 @media screen and (min-width: 800px) {
-    /*  NAVBAR  */
+    /******************/
+    /****  NAVBAR  ****/
+    /******************/
+
     .hide-toggler {
         display: none;
     }
@@ -812,7 +1089,10 @@ body {
         display: grid;
     }
 
-    /*  HEADER  */
+    /******************/
+    /****  HEADER  ****/
+    /******************/
+
     .header-hero-heading h1 {
         font-size: 480%;
     }
@@ -822,12 +1102,15 @@ body {
     }
 
     .header-hero-btn {
-        margin: 0px 1.35rem;
+        margin: 0rem 1.35rem;
     }
 
-    /* DETAILS */
+    /*******************/
+    /****  DETAILS  ****/
+    /*******************/
+
     .container-details {
-        margin: 1.5rem 0px;
+        margin: 3rem 0rem;
     }
 
     .details-welcome-image {
@@ -843,24 +1126,42 @@ body {
     }
 
     .details-img {
-        width: 37.2rem;
-        height: 24rem;
-        margin: 3.5rem 0px;
+        width: 41.85rem;
+        height: 27rem;
+        margin: 3.5rem 3rem;
     }
 
     .details-heading {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .details-heading h2 {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .details-text {
-        margin: 2.5rem 0px;
+        margin: 2.5rem 0rem;
     }
 
     .details-btn {
-        margin: 0px;
+        margin: 0rem;
+    }
+
+    /*******************************/
+    /****  INSPIRATIONAL QUOTE  ****/
+    /*******************************/
+
+    .container-inspiration {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .inspiration-quote blockquote {
+        font-size: 2rem;
+        margin: 0rem 2.5rem;
+    }
+
+    .inspiration-quote figcaption {
+        font-size: 1.6rem;
     }
 }
+/****  /screen and (min-width: 800px)  ****/
