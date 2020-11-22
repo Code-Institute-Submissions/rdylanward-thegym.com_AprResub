@@ -132,6 +132,21 @@ body {
     margin: 5rem 0rem;
 }
 
+.container-testimonial {
+    grid-area: testimonial;
+    background: #8c7c8d;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-areas:
+        "test-one"
+        "test-two"
+        "test-three";
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 2.5rem 0rem;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+
 
 /**********************************************************************/
 /***                      Reusable Components                       ***/
@@ -802,13 +817,13 @@ body {
 }
 
 .membership-option-price {
-    font-size: 4.2rem;
+    font-size: 3.7rem;
     font-weight: 500;
     margin: 0rem;
 }
 
 .membership-option-duration {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 0rem;
 }
@@ -823,7 +838,31 @@ body {
 /***                          Testimonials                          ***/
 /**********************************-***********************************/
 
+.testimonial-one {
+    grid-area: test-one;
+}
+.testimonial-two {
+    grid-area: test-two;
+}
+.testimonial-three {
+    grid-area: test-three;
+}
 
+.container-testimonial figure {
+    margin: 0rem;
+}
+
+.container-testimonial figure blockquote {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0rem 2rem;
+}
+
+.container-testimonial figure blockquote p {
+    margin-top: 0rem;
+    margin-bottom: 1.6rem;
+}
 
 
 /**********************************************************************/
@@ -1222,6 +1261,26 @@ body {
             "opt-one opt-two opt-three opt-four";
         grid-template-rows: max-content;
         grid-gap: 0rem 2.5rem;
+    }
+
+    /***********************/
+    /****  TESTIMONIAL  ****/
+    /***********************/
+
+    .container-testimonial {
+        grid-template-columns: repeat(3, 31.66%);
+        grid-template-areas:
+            "test-one test-two test-three";
+        grid-template-rows: max-content;
+        grid-gap: 0rem 0rem;
+    }
+
+    .container-testimonial figure blockquote {
+        margin: 0rem 2.5rem 0rem 1.25rem;
+    }
+
+    .container-testimonial figure blockquote:last-child {
+        margin: 0rem 1.25rem 0rem 1.25rem;
     }
 }
 /****  /screen and (min-width: 800px)  ****/
