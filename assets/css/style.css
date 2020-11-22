@@ -58,7 +58,7 @@ body {
 .container-main {
     position: absolute;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
         "header"
         "details"
@@ -79,6 +79,7 @@ body {
     background-image: linear-gradient(rgba(77, 66, 113, 0.8), rgba(77, 66, 113, 0.8)), url("../img/fitness-center.jpg");
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 100vh;
     background-attachment: fixed;
     top: 0rem;
@@ -610,7 +611,7 @@ body {
 
 .membership-heading {
     grid-area: head;
-    place-self: center center;
+    justify-self: center;
     margin: 0rem;
 }
 
@@ -623,13 +624,13 @@ body {
 
 .membership-text {
     grid-area: text;
-    place-self: center center;
+    justify-self: center;
     text-align: justify;
     margin-bottom: 3rem;
 }
 
 .membership-text p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0rem;
 }
@@ -637,50 +638,53 @@ body {
 .membership-pricing {
     grid-area: price;
     display: grid;
-    grid-template-columns: 3% 94% 3%;
+    grid-template-columns: 95%;
     grid-template-areas:
-        ". opt-one ."
-        ". opt-two ."
-        ". opt-three .";
-    grid-template-rows: repeat(3, max-content);
-    align-self: center;
+        "opt-one"
+        "opt-two"
+        "opt-three"
+        "opt-four";
+    grid-template-rows: repeat(4, max-content);
+    grid-row-gap: 2.5rem;
+    justify-content: center;
 }
 
 .membership-option-one {
     grid-area: opt-one;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "hdr-one"
+        "img-one"
         "prc-one"
         "drt-one"
         "btn-one";
-    grid-template-rows: 6rem 11rem 8rem 6rem;
-    border: 0.2rem solid #4d4271;
+    grid-template-rows: 16rem 7rem 3rem 7rem;
+    border: 0.3rem solid #98a3c8;
     border-radius: 1.5rem;
-    box-shadow: 0.55rem 0.55rem 0.6rem #98a3c8;
+    box-shadow: 0.55rem 0.55rem 0.7rem #8c7c8d;
     overflow: hidden;
-    margin-bottom: 2rem;
 }
 
-.hdr-one {
-    grid-area: hdr-one;
-    justify-self: center;
-    align-self: center;
+.membership-image-one {
+    grid-area: img-one;
+    overflow: hidden;
 }
 
-.prc-one {
+.membership-option-img {
+    width: 100%;
+}
+
+.membership-price-one {
     grid-area: prc-one;
-    background: rgba(140, 124, 141, 0.6);
     place-self: end center;
 }
 
-.drt-one {
+.membership-duration-one {
     grid-area: drt-one;
     place-self: start center;
 }
 
-.btn-one {
+.membership-button-one {
     grid-area: btn-one;
     place-self: center center;
 }
@@ -688,36 +692,35 @@ body {
 .membership-option-two {
     grid-area: opt-two;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "hdr-two"
+        "img-two"
         "prc-two"
         "drt-two"
         "btn-two";
-    grid-template-rows: 6rem 5rem 5rem 6rem;
-    border: 0.2rem solid #4d4271;
+    grid-template-rows: 16rem 7rem 3rem 7rem;
+    border: 0.3rem solid #98a3c8;
     border-radius: 1.5rem;
+    box-shadow: 0.55rem 0.55rem 0.7rem #8c7c8d;
     overflow: hidden;
-    margin-bottom: 2rem;
 }
 
-.hdr-two {
-    grid-area: hdr-two;
-    justify-self: center;
-    align-self: center;
+.membership-image-two {
+    grid-area: img-two;
+    overflow: hidden;
 }
 
-.prc-two {
+.membership-price-two {
     grid-area: prc-two;
-    place-self: center center;
+    place-self: end center;
 }
 
-.drt-two {
+.membership-duration-two {
     grid-area: drt-two;
-    place-self: center center;
+    place-self: start center;
 }
 
-.btn-two {
+.membership-button-two {
     grid-area: btn-two;
     place-self: center center;
 }
@@ -725,62 +728,88 @@ body {
 .membership-option-three {
     grid-area: opt-three;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "hdr-three"
+        "img-three"
         "prc-three"
         "drt-three"
         "btn-three";
-    grid-template-rows: 6rem 5rem 5rem 6rem;
-    border: 0.2rem solid #4d4271;
+    grid-template-rows: 16rem 7rem 3rem 7rem;
+    border: 0.3rem solid #98a3c8;
     border-radius: 1.5rem;
+    box-shadow: 0.55rem 0.55rem 0.7rem #8c7c8d;
     overflow: hidden;
-    margin-bottom: 2rem;
 }
 
-.hdr-three {
-    grid-area: hdr-three;
-    justify-self: center;
-    align-self: center;
+.membership-image-three {
+    grid-area: img-three;
+    overflow: hidden;
 }
 
-.prc-three {
+.membership-price-three {
     grid-area: prc-three;
-    place-self: center center;
+    place-self: end center;
 }
 
-.drt-three {
+.membership-duration-three {
     grid-area: drt-three;
-    place-self: center center;
+    place-self: start center;
 }
 
-.btn-three {
+.membership-button-three {
     grid-area: btn-three;
     place-self: center center;
 }
 
-.membership-option-header {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #f6f5f4;
-    background: #4d4271;
+.membership-option-four {
+    grid-area: opt-four;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "img-four"
+        "prc-four"
+        "drt-four"
+        "btn-four";
+    grid-template-rows: 16rem 7rem 3rem 7rem;
+    border: 0.3rem solid #98a3c8;
+    border-radius: 1.5rem;
+    box-shadow: 0.55rem 0.55rem 0.7rem #8c7c8d;
+    overflow: hidden;
+}
+
+.membership-image-four {
+    grid-area: img-four;
+    overflow: hidden;
+}
+
+.membership-price-four {
+    grid-area: prc-four;
+    place-self: end center;
+}
+
+.membership-duration-four {
+    grid-area: drt-four;
+    place-self: start center;
+}
+
+.membership-button-four {
+    grid-area: btn-four;
+    place-self: center center;
+}
+
+.membership-option-img {
     width: 100%;
-    height: 100%;
-    padding: 0rem;
-    margin: 0rem;
 }
 
 .membership-option-price {
     font-size: 4.2rem;
     font-weight: 500;
-    background: rgba(140, 124, 141, 0.6);
     margin: 0rem;
 }
 
 .membership-option-duration {
     font-size: 1.7rem;
     font-weight: 500;
-    background: rgba(140, 124, 141, 0.6);
     margin: 0rem;
 }
 
@@ -934,8 +963,8 @@ body {
     border: 0.2rem solid #f6f5f4;
     border-radius: 0rem 0.6rem 0.6rem 0rem;
     width: 8.1rem;
-    height: 3rem;
-    padding: 0.27rem 0rem 0.29rem 0rem;
+    height: 2.9rem;
+    padding: 0.29rem 0rem 0.3rem 0rem;
     transition: background-color 0.25s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -998,7 +1027,10 @@ body {
 /***                         Media Queries                          ***/
 /**********************************-***********************************/
 
-@media screen and (min-width: 577px) {
+
+/****  screen and (min-width: 576px)  ****/
+
+@media screen and (min-width: 576px) {
     /******************/
     /****  HEADER  ****/
     /******************/
@@ -1051,6 +1083,19 @@ body {
         margin: 0rem;
     }
 
+    /**********************/
+    /****  MEMBERSHIP  ****/
+    /**********************/
+
+    .membership-pricing {
+        grid-template-columns: repeat(2, 47.5%);
+        grid-template-areas:
+            "opt-one opt-two"
+            "opt-three opt-four";
+        grid-template-rows: repeat(2, max-content);
+        grid-gap: 2.5rem 2.5rem;
+    }
+
     /******************/
     /****  FOOTER  ****/
     /******************/
@@ -1074,12 +1119,15 @@ body {
         justify-self: start;
     }
 }
-/****  /screen and (min-width: 577px)  ****/
+/****  /screen and (min-width: 576px)  ****/
+
+
+/****  /screen and (min-width: 800px)  ****/
 
 @media screen and (min-width: 800px) {
-    /******************/
-    /****  NAVBAR  ****/
-    /******************/
+    /*****************************/
+    /***  Reusable Components  ***/
+    /*****************************/
 
     .hide-toggler {
         display: none;
@@ -1162,6 +1210,18 @@ body {
 
     .inspiration-quote figcaption {
         font-size: 1.6rem;
+    }
+
+    /**********************/
+    /****  MEMBERSHIP  ****/
+    /**********************/
+
+    .membership-pricing {
+        grid-template-columns: repeat(4, 23.75%);
+        grid-template-areas:
+            "opt-one opt-two opt-three opt-four";
+        grid-template-rows: max-content;
+        grid-gap: 0rem 2.5rem;
     }
 }
 /****  /screen and (min-width: 800px)  ****/
