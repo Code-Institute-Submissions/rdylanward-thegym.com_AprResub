@@ -359,6 +359,7 @@ body {
         justify-self: center;
     -ms-grid-row-align: center;
         align-self: center;
+    font-size: 100%;
     padding: 0rem;
     margin: 0rem;
     -webkit-transition: all 0.3s;
@@ -1507,6 +1508,63 @@ body {
 /**********************************************************************/
 /***                         Media Queries                          ***/
 /**********************************-***********************************/
+
+
+/****  screen and (max-width: 359px)  ****/
+
+@media screen and (max-width: 359px) {
+    /******************/
+    /****  NAVBAR  ****/
+    /******************/
+
+    .navbar-brand {
+        font-size: 95%;
+    }
+
+    .navbar-title span {
+        font-size: 330%;
+        font-weight: 600;
+    }
+
+    .navbar-toggler {
+        font-size: 310%;
+    }
+
+    /******************/
+    /****  HEADER  ****/
+    /******************/
+
+    .header-hero-heading h1 {
+        font-size: 340%;
+    }
+
+    .header-hero-inspiration blockquote {
+        font-size: 1.6rem;
+    }
+
+    /*******************/
+    /****  DETAILS  ****/
+    /*******************/
+
+    .details-img {
+        width: 24.8rem;
+        height: 16rem;
+    }
+
+    /******************/
+    /****  FOOTER  ****/
+    /******************/
+
+    .footer-input-form input {
+        justify-content: center;
+    }
+
+    .footer-input-email {
+        width: 13.6rem;
+        height: 2.4rem;
+    }
+}
+/****  /screen and (max-width: 359px)  ****/
 
 
 /****  screen and (min-width: 576px)  ****/
