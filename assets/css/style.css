@@ -1313,183 +1313,6 @@ body {
 
 
 /**********************************************************************/
-/***                      Header (about.html)                       ***/
-/**********************************-***********************************/
-
-.header-hero-about {
-    grid-area: quote-about;
-    justify-self: center;
-    align-self: center;
-}
-
-.header-about-inspiration figure {
-    margin: 1rem 0rem;
-}
-
-.header-about-inspiration blockquote {
-    text-align: center;
-    color: #f6f5f4;
-    margin: 0rem 1.6rem;
-}
-
-.header-about-inspiration blockquote p {
-    font-size: 2rem;
-    font-weight: 400;
-    justify-self: center;
-    margin: 0rem;
-}
-
-.header-about-inspiration blockquote p i {
-    font-size: 0.9rem;
-}
-
-.header-about-inspiration blockquote figcaption {
-    font-size: 1.7rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0.9rem 0rem;
-}
-
-
-/**********************************************************************/
-/***                       Story (about.html)                       ***/
-/**********************************-***********************************/
-
-.story-heading {
-    grid-area: head-story;
-}
-
-.story-heading h1 {
-    font-size: 300%;
-    font-weight: 500;
-    text-align: center;
-    margin: 0rem;
-}
-
-.story-about {
-    grid-area: about-story;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "img-1"
-        "txt-1"
-        "txt-2"
-        "img-2"
-        "txt-3"
-        "txt-4"
-        "txt-5";
-    grid-template-rows: repeat(7, max-content);
-}
-
-.img-one {
-    grid-area: img-1;
-}
-
-.txt-one {
-    grid-area: txt-1;
-}
-
-.txt-two {
-    grid-area: txt-2;
-}
-
-.img-two {
-    grid-area: img-2;
-}
-
-.txt-three {
-    grid-area: txt-3;
-}
-
-.txt-four {
-    grid-area: txt-4;
-}
-
-.txt-five {
-    grid-area: txt-5;
-}
-
-.story-img {
-    width: 32.55rem;
-    height: 21rem;
-    -webkit-box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
-            box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
-    justify-self: center;
-    margin: 2.5rem 0rem;
-}
-
-.story-text {
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 2.1rem;
-    padding: 0rem 0.6rem;
-}
-
-
-/**********************************************************************/
-/***                       Staff (about.html)                       ***/
-/**********************************-***********************************/
-
-.staff-heading {
-    grid-area: head-staff;
-}
-
-.staff-heading h1 {
-    font-size: 300%;
-    font-weight: 500;
-    text-align: center;
-    margin: 0rem;
-}
-
-.staff-text {
-    grid-area: text-staff;
-}
-
-.staff-bio {
-    grid-area: staff-bio;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "bio-1"
-        "bio-2"
-        "bio-3"
-        "bio-4"
-        "bio-5"
-        "bio-6";
-    grid-template-rows: repeat(6, max-contnet);
-}
-
-.staff-bio-one {
-    grid-area: bio-1;
-}
-
-.staff-bio-two {
-    grid-area: bio-2;
-}
-
-.staff-bio-three {
-    grid-area: bio-3;
-}
-
-.staff-bio-four {
-    grid-area: bio-4;
-}
-
-.staff-bio-five {
-    grid-area: bio-5;
-}
-
-.staff-bio-six {
-    grid-area: bio-6;
-}
-
-.staff-bio-img {
-    width: 20rem;
-    height: 20rem;
-}
-
-
-/**********************************************************************/
 /***                             Footer                             ***/
 /**********************************-***********************************/
 
@@ -1791,15 +1614,6 @@ body {
         height: 16rem;
     }
 
-    /******************************/
-    /****  Story (about.html)  ****/
-    /******************************/
-
-    .story-img {
-        width: 24.8rem;
-        height: 16rem;
-    }
-
     /****************/
     /***  FOOTER  ***/
     /****************/
@@ -1969,18 +1783,6 @@ body {
         -ms-grid-column: 3;
     }
 
-    /*******************************/
-    /****  Header (about.html)  ****/
-    /*******************************/
-
-    .header-about-inspiration blockquote {
-        font-size: 2.5rem;
-    }
-
-    .header-about-inspiration figcaption {
-        font-size: 2.2rem;
-    }
-
     /**************/
     /**  FOOTER ***/
     /**************/
@@ -2027,53 +1829,6 @@ body {
     }
 }
 /****  /screen and (min-width: 576px)  ****/
-
-
-/****  /screen and (min-width: 768px)  ****/
-
-@media screen and (min-width: 768px) {
-    /*******************************/
-    /****  Header (about.html)  ****/
-    /*******************************/
-
-    .header-about-inspiration blockquote {
-        font-size: 2.9rem;
-    }
-
-    .header-about-inspiration figcaption {
-        font-size: 2.6rem;
-    }
-
-    /******************************/
-    /****  Story (about.html)  ****/
-    /******************************/
-
-    .story-heading {
-        margin-bottom: 3rem;
-    }
-
-    .story-about {
-        display: inline;
-        margin: 0rem 5rem;
-    }
-
-    .img-one {
-        float: left;
-        margin: 0.5rem 2rem 0.7rem 0rem;
-    }
-
-    .img-two {
-        float: right;
-        margin: 0.5rem 0rem 0.7rem 2rem;
-    }
-
-    .story-text {
-        padding: 0rem;
-        margin: 0rem;
-        margin-bottom: 1rem;
-    }
-}
-/****  /screen and (min-width: 768px)  ****/
 
 
 /****  /screen and (min-width: 800px)  ****/
@@ -2296,43 +2051,6 @@ body {
         grid-template-rows: max-content;
         grid-gap: 0rem 2.5rem;
     }
-
-    /****************************/
-    /***  Story (about.html)  ***/
-    /****************************/
-
-    .container-story {
-        -ms-grid-columns: 15% 1fr 15%;
-        grid-template-columns: 15% 1fr 15%;
-    }
-
-    .story-about {
-        margin: 0rem;
-    }
-
-    .img-one {
-        float: left;
-        margin: 0.5rem 3rem 0.7rem 0rem;
-    }
-
-    .img-two {
-        float: right;
-        margin: 0.5rem 0rem 0.7rem 3rem;
-    }
-
-    .story-img {
-        width: 37.2rem;
-        height: 24rem;
-    }
-
-    /****************************/
-    /***  Staff (about.html)  ***/
-    /****************************/
-
-    .container-staff {
-        -ms-grid-columns: 15% 1fr 15%;
-        grid-template-columns: 15% 1fr 15%;
-    }
 }
 /****  /screen and (min-width: 1200px)  ****/
 
@@ -2365,24 +2083,6 @@ body {
     .container-inspiration {
         -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-    }
-
-    /****************************/
-    /***  Story (about.html)  ***/
-    /****************************/
-
-    .container-story {
-        -ms-grid-columns: 20% 1fr 20%;
-        grid-template-columns: 20% 1fr 20%;
-    }
-
-    /***************************/
-    /***  Staff (about.html) ***/
-    /***************************/
-
-    .container-staff {
-        -ms-grid-columns: 20% 1fr 20%;
-        grid-template-columns: 20% 1fr 20%;
     }
 }
 /****  /screen and (min-width: 1400px)  ****/
