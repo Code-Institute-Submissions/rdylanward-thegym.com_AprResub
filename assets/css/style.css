@@ -212,16 +212,16 @@ body {
     background: #0c122c;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
         grid-template-areas:
         "start"
         "middle"
         "end"
         "copy";
-    -ms-grid-rows: ()[5. max-content];
-    grid-template-rows: repeat(5. -webkit-max-content);
-    grid-template-rows: repeat(5. max-content);
+    -ms-grid-rows: ()[5, max-content];
+    grid-template-rows: repeat(5, -webkit-max-content);
+    grid-template-rows: repeat(5, max-content);
 }
 
 
@@ -1513,9 +1513,9 @@ body {
 /****  screen and (max-width: 359px)  ****/
 
 @media screen and (max-width: 359px) {
-    /******************/
-    /****  NAVBAR  ****/
-    /******************/
+    /****************/
+    /***  NAVBAR  ***/
+    /****************/
 
     .navbar-brand {
         font-size: 95%;
@@ -1530,9 +1530,9 @@ body {
         font-size: 310%;
     }
 
-    /******************/
-    /****  HEADER  ****/
-    /******************/
+    /****************/
+    /***  HEADER  ***/
+    /****************/
 
     .header-hero-heading h1 {
         font-size: 340%;
@@ -1542,18 +1542,18 @@ body {
         font-size: 1.6rem;
     }
 
-    /*******************/
-    /****  DETAILS  ****/
-    /*******************/
+    /*****************/
+    /***  DETAILS  ***/
+    /*****************/
 
     .details-img {
         width: 24.8rem;
         height: 16rem;
     }
 
-    /******************/
-    /****  FOOTER  ****/
-    /******************/
+    /****************/
+    /***  FOOTER  ***/
+    /****************/
 
     .footer-input-form input {
         justify-content: center;
@@ -1570,9 +1570,32 @@ body {
 /****  screen and (min-width: 576px)  ****/
 
 @media screen and (min-width: 576px) {
-    /******************/
-    /****  HEADER  ****/
-    /******************/
+    /*****************************/
+    /***  REUSABLE COMPONENTS  ***/
+    /*****************************/
+
+    .btn-1 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .btn-2 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .btn-3
+        -ms-grid-column: 3;
+    }
+
+    .btn-4 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 4;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
 
     .header-hero-buttons {
         -ms-grid-columns: (1fr)[4];
@@ -1588,9 +1611,9 @@ body {
         margin: 0rem 0.45rem;
     }
 
-    /*******************/
-    /****  DETAILS  ****/
-    /*******************/
+    /*****************/
+    /***  DETAILS  ***/
+    /*****************/
 
     .details-items {
         display: -ms-grid;
@@ -1631,67 +1654,6 @@ body {
         margin: 0rem;
     }
 
-    /**********************/
-    /****  MEMBERSHIP  ****/
-    /**********************/
-
-    .membership-pricing {
-        -ms-grid-columns: 47.5% 2.5rem 47.5%;
-        grid-template-columns: repeat(2, 47.5%);
-            grid-template-areas:
-            "opt-one opt-two"
-            "opt-three opt-four";
-        -ms-grid-rows: max-content 2.5rem max-content;
-        grid-template-rows: repeat(2, -webkit-max-content);
-        grid-template-rows: repeat(2, max-content);
-        grid-gap: 2.5rem 2.5rem;
-    }
-
-    /******************/
-    /****  FOOTER  ****/
-    /******************/
-
-    .container-footer {
-        -ms-grid-columns: 20% 60% 20%;
-        grid-template-columns: 20% 60% 20%;
-            grid-template-areas:
-            "start middle end"
-            ". copy .";
-        -ms-grid-rows: ()[2. max-content];
-        grid-template-rows: repeat(2. -webkit-max-content);
-        grid-template-rows: repeat(2. max-content);
-    }
-
-    .footer-start {
-        -ms-grid-column-align: end;
-            justify-self: end;
-    }
-
-    .footer-end {
-        -ms-grid-column-align: start;
-            justify-self: start;
-    }
-
-    .btn-1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .btn-2 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 2;
-    }
-
-    .btn-3 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-    }
-
-    .btn-4 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 4;
-    }
-
     .details-welcome-image {
         -ms-grid-row: 1;
         -ms-grid-column: 2;
@@ -1722,6 +1684,22 @@ body {
         -ms-grid-column: 4;
     }
 
+    /******************/
+    /**  MEMBERSHIP ***/
+    /******************/
+
+    .membership-pricing {
+        -ms-grid-columns: 47.5% 2.5rem 47.5%;
+        grid-template-columns: repeat(2, 47.5%);
+            grid-template-areas:
+            "opt-one opt-two"
+            "opt-three opt-four";
+        -ms-grid-rows: max-content 2.5rem max-content;
+        grid-template-rows: repeat(2, -webkit-max-content);
+        grid-template-rows: repeat(2, max-content);
+        grid-gap: 2.5rem 2.5rem;
+    }
+
     .membership-option-one {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -1740,6 +1718,31 @@ body {
     .membership-option-four {
         -ms-grid-row: 3;
         -ms-grid-column: 3;
+    }
+
+    /**************/
+    /**  FOOTER ***/
+    /**************/
+
+    .container-footer {
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+            grid-template-areas:
+            "start middle end"
+            ". copy .";
+        -ms-grid-rows: ()[2. max-content];
+        grid-template-rows: repeat(2. -webkit-max-content);
+        grid-template-rows: repeat(2. max-content);
+    }
+
+    .footer-start {
+        -ms-grid-column-align: end;
+            justify-self: end;
+    }
+
+    .footer-end {
+        -ms-grid-column-align: start;
+            justify-self: start;
     }
 
     .footer-start {
@@ -1781,9 +1784,9 @@ body {
         display: grid;
     }
 
-    /******************/
-    /****  HEADER  ****/
-    /******************/
+    /****************/
+    /***  HEADER  ***/
+    /****************/
 
     .header-hero-heading h1 {
         font-size: 480%;
@@ -1797,9 +1800,9 @@ body {
         margin: 0rem 1.35rem;
     }
 
-    /*******************/
-    /****  DETAILS  ****/
-    /*******************/
+    /*****************/
+    /***  DETAILS  ***/
+    /*****************/
 
     .container-details {
         margin: 3rem 0rem;
@@ -1842,9 +1845,9 @@ body {
         margin: 0rem;
     }
 
-    /*******************************/
-    /****  INSPIRATIONAL QUOTE  ****/
-    /*******************************/
+    /*****************************/
+    /***  INSPIRATIONAL QUOTE  ***/
+    /*****************************/
 
     .container-inspiration {
         -ms-grid-columns: 10% 80% 10%;
@@ -1860,11 +1863,11 @@ body {
         font-size: 1.6rem;
     }
 
-    /**********************/
-    /****  MEMBERSHIP  ****/
-    /**********************/
+    /********************/
+    /***  MEMBERSHIP  ***/
+    /********************/
 
-    .membership-pricing {
+    /* .membership-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
             grid-template-areas:
@@ -1873,30 +1876,7 @@ body {
         grid-template-rows: -webkit-max-content;
         grid-template-rows: max-content;
         grid-gap: 0rem 2.5rem;
-    }
-
-    /***********************/
-    /****  TESTIMONIAL  ****/
-    /***********************/
-
-    .container-testimonial {
-        -ms-grid-columns: 31.66% 0rem 31.66% 0rem 31.66%;
-        grid-template-columns: repeat(3, 31.66%);
-            grid-template-areas:
-            "test-one test-two test-three";
-        -ms-grid-rows: max-content;
-        grid-template-rows: -webkit-max-content;
-        grid-template-rows: max-content;
-        grid-gap: 0rem 0rem;
-    }
-
-    .container-testimonial figure blockquote {
-        margin: 0rem 2.5rem 0rem 1.25rem;
-    }
-
-    .container-testimonial figure blockquote:last-child {
-        margin: 0rem 1.25rem 0rem 1.25rem;
-    }
+    } */
 
     .membership-option-one {
         -ms-grid-row: 1;
@@ -1918,6 +1898,29 @@ body {
         -ms-grid-column: 7;
     }
 
+    /*********************/
+    /***  TESTIMONIAL  ***/
+    /*********************/
+
+    .container-testimonial {
+        -ms-grid-columns: 31.66% 0rem 31.66% 0rem 31.66%;
+        grid-template-columns: repeat(3, 31.66%);
+            grid-template-areas:
+            "test-one test-two test-three";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+        grid-gap: 0rem 0rem;
+    }
+
+    .container-testimonial figure blockquote {
+        margin: 0rem 2.5rem 0rem 1.25rem;
+    }
+
+    .container-testimonial figure blockquote:last-child {
+        margin: 0rem 1.25rem 0rem 1.25rem;
+    }
+
     .testimonial-one {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -1934,3 +1937,89 @@ body {
     }
 }
 /****  /screen and (min-width: 800px)  ****/
+
+
+/****  /screen and (min-width: 1200px)  ****/
+
+@media screen and (min-width: 1200px) {
+    /****************/
+    /***  Header  ***/
+    /****************/
+
+    .container-header {
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    /*****************/
+    /***  Details  ***/
+    /*****************/
+
+    .details-items {
+        -ms-grid-columns: 15% 33% 4% 33% 15%;
+        grid-template-columns: 15% 33% 4% 33% 15%;
+    }
+
+    /*****************************/
+    /***  INSPIRATIONAL QUOTE  ***/
+    /*****************************/
+
+    .container-inspiration {
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    /********************/
+    /***  MEMBERSHIP  ***/
+    /********************/
+
+    .container-membership {
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    .membership-pricing {
+        -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
+        grid-template-columns: repeat(4, 23.75%);
+            grid-template-areas:
+            "opt-one opt-two opt-three opt-four";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+        grid-gap: 0rem 2.5rem;
+    }
+}
+/****  /screen and (min-width: 1200px)  ****/
+
+
+/****  /screen and (min-width: 1400px)  ****/
+
+@media screen and (min-width: 1400px) {
+    /****************/
+    /***  Header  ***/
+    /****************/
+
+    .container-header {
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    /*****************/
+    /***  Details  ***/
+    /*****************/
+
+    .details-items {
+        -ms-grid-columns: 20% 28% 4% 28% 20%;
+        grid-template-columns: 20% 28% 4% 28% 20%;
+    }
+
+    /*****************************/
+    /***  INSPIRATIONAL QUOTE  ***/
+    /*****************************/
+
+    .container-inspiration {
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+/****  /screen and (min-width: 1400px)  ****/
