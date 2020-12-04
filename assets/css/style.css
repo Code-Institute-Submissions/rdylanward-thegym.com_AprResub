@@ -38,7 +38,7 @@ body {
     -ms-grid-columns: 5% max-content max-content auto 5%;
     grid-template-columns: 5% -webkit-max-content -webkit-max-content auto 5%;
     grid-template-columns: 5% max-content max-content auto 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". brand title menu .";
     -ms-grid-rows: 6.5rem;
     grid-template-rows: 6.5rem;
@@ -58,10 +58,11 @@ body {
     display: none;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". menu .";
-    -ms-grid-rows: max-content;
+    -ms-grid-rows: -webkit-max-content;
     grid-template-rows: -webkit-max-content;
+    -ms-grid-rows: max-content;
     grid-template-rows: max-content;
     background-color: rgba(26, 33, 63, 0.9);
     color: #0c122c;
@@ -81,15 +82,16 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "header"
         "details"
         "hero"
         "member"
         "testimonial"
         "footer";
-    -ms-grid-rows: (min-content)[6];
+    -ms-grid-rows: (-webkit-min-content)[6];
     grid-template-rows: repeat(6, -webkit-min-content);
+    -ms-grid-rows: (min-content)[6];
     grid-template-rows: repeat(6, min-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -101,8 +103,8 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/fitness-center.jpg");
     background-image: -o-linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/fitness-center.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/fitness-center.jpg");
     background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/fitness-center.jpg");
     background-size: cover;
     background-position: center;
@@ -113,7 +115,7 @@ body {
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-        grid-template-areas:
+            grid-template-areas:
         ". . ."
         ". hero ."
         ". hero ."
@@ -131,8 +133,8 @@ body {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: hero;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/kicking-workout.jpg");
     background-image: -o-linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/kicking-workout.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/kicking-workout.jpg");
     background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/kicking-workout.jpg");
     background-size: cover;
     background-position: center;
@@ -144,7 +146,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". . ."
         ". quote ."
         ". . .";
@@ -166,12 +168,13 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". head ."
         ". text ."
         ". price .";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
     padding: 0rem;
     margin: 5rem 0rem;
@@ -193,12 +196,13 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-        grid-template-areas:
+            grid-template-areas:
         "test-one"
         "test-two"
         "test-three";
-    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content;
+    -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content;
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content;
     grid-template-rows: repeat(3, max-content);
     grid-gap: 2.5rem 0rem;
     -webkit-box-pack: center;
@@ -214,13 +218,14 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "start"
         "middle"
         "end"
         "copy";
-    -ms-grid-rows: ()[5, max-content];
+    -ms-grid-rows: (-webkit-max-content)[5];
     grid-template-rows: repeat(5, -webkit-max-content);
+    -ms-grid-rows: (max-content)[5];
     grid-template-rows: repeat(5, max-content);
 }
 
@@ -524,7 +529,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "heading"
         "inspire"
         "buttons";
@@ -605,13 +610,14 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
+            grid-template-areas:
         ". btn-1 ."
         ". btn-2 ."
         ". btn-3 ."
         ". btn-4 .";
-    -ms-grid-rows: (max-content)[4];
+    -ms-grid-rows: (-webkit-max-content)[4];
     grid-template-rows: repeat(4, -webkit-max-content);
+    -ms-grid-rows: (max-content)[4];
     grid-template-rows: repeat(4, max-content);
 }
 
@@ -660,15 +666,16 @@ body {
     display: grid;
     -ms-grid-columns: 5% 1fr 5%;
     grid-template-columns: 5% 1fr 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". img-w ."
         ". grp-w ."
         ". img-c ."
         ". grp-c ."
         ". img-b ."
         ". grp-b .";
-    -ms-grid-rows: (max-content)[6];
+    -ms-grid-rows: (-webkit-max-content)[6];
     grid-template-rows: repeat(6, -webkit-max-content);
+    -ms-grid-rows: (max-content)[6];
     grid-template-rows: repeat(6, max-content);
     padding: 0rem;
     margin: 0rem;
@@ -690,12 +697,13 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "hdr-w"
         "txt-w"
         "btn-w";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
 }
 
@@ -737,12 +745,13 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "hdr-c"
         "txt-c"
         "btn-c";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
 }
 
@@ -784,12 +793,13 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-        grid-template-areas:
+            grid-template-areas:
         "hdr-b"
         "txt-b"
         "btn-b";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
 }
 
@@ -935,13 +945,14 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-        grid-template-areas:
+            grid-template-areas:
         "opt-one"
         "opt-two"
         "opt-three"
         "opt-four";
-    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+    -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content;
     grid-template-rows: repeat(4, -webkit-max-content);
+    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
     grid-template-rows: repeat(4, max-content);
     grid-row-gap: 2.5rem;
     -webkit-box-pack: center;
@@ -958,7 +969,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-one"
         "prc-one"
         "drt-one"
@@ -1020,7 +1031,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-two"
         "prc-two"
         "drt-two"
@@ -1078,7 +1089,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-three"
         "prc-three"
         "drt-three"
@@ -1136,7 +1147,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-four"
         "prc-four"
         "drt-four"
@@ -1301,14 +1312,15 @@ body {
     display: grid;
     -ms-grid-columns: 33% 34% 33%;
     grid-template-columns: 33% 34% 33%;
-        grid-template-areas:
+            grid-template-areas:
         "social social social"
         "news news news"
         "input input input"
         "member member member"
         "button button button";
-    -ms-grid-rows: (max-content)[5];
+    -ms-grid-rows: (-webkit-max-content)[5];
     grid-template-rows: repeat(5, -webkit-max-content);
+    -ms-grid-rows: (max-content)[5];
     grid-template-rows: repeat(5, max-content);
 }
 
@@ -1556,7 +1568,9 @@ body {
     /****************/
 
     .footer-input-form input {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .footer-input-email {
@@ -1600,10 +1614,11 @@ body {
     .header-hero-buttons {
         -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
+                grid-template-areas:
             "btn-1 btn-2 btn-3 btn-4";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
     }
 
@@ -1620,12 +1635,13 @@ body {
         display: grid;
         -ms-grid-columns: 5% 43% 4% 43% 5%;
         grid-template-columns: 5% 43% 4% 43% 5%;
-            grid-template-areas:
+                grid-template-areas:
             ". img-w . grp-w ."
             ". grp-c . img-c ."
             ". img-b . grp-b .";
-        -ms-grid-rows: (max-content)[3];
+        -ms-grid-rows: (-webkit-max-content)[3];
         grid-template-rows: repeat(3, -webkit-max-content);
+        -ms-grid-rows: (max-content)[3];
         grid-template-rows: repeat(3, max-content);
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -1691,11 +1707,12 @@ body {
     .membership-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-            grid-template-areas:
+                grid-template-areas:
             "opt-one opt-two"
             "opt-three opt-four";
-        -ms-grid-rows: max-content 2.5rem max-content;
+        -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content;
         grid-template-rows: repeat(2, -webkit-max-content);
+        -ms-grid-rows: max-content 2.5rem max-content;
         grid-template-rows: repeat(2, max-content);
         grid-gap: 2.5rem 2.5rem;
     }
@@ -1727,11 +1744,12 @@ body {
     .container-footer {
         -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-            grid-template-areas:
+                grid-template-areas:
             "start middle end"
             ". copy .";
-        -ms-grid-rows: ()[2. max-content];
+        -ms-grid-rows: ()[2. -webkit-max-content];
         grid-template-rows: repeat(2. -webkit-max-content);
+        -ms-grid-rows: ()[2. max-content];
         grid-template-rows: repeat(2. max-content);
     }
 
@@ -1867,17 +1885,6 @@ body {
     /***  MEMBERSHIP  ***/
     /********************/
 
-    /* .membership-pricing {
-        -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
-        grid-template-columns: repeat(4, 23.75%);
-            grid-template-areas:
-            "opt-one opt-two opt-three opt-four";
-        -ms-grid-rows: max-content;
-        grid-template-rows: -webkit-max-content;
-        grid-template-rows: max-content;
-        grid-gap: 0rem 2.5rem;
-    } */
-
     .membership-option-one {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -1905,10 +1912,11 @@ body {
     .container-testimonial {
         -ms-grid-columns: 31.66% 0rem 31.66% 0rem 31.66%;
         grid-template-columns: repeat(3, 31.66%);
-            grid-template-areas:
+                grid-template-areas:
             "test-one test-two test-three";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-gap: 0rem 0rem;
     }
@@ -1981,10 +1989,11 @@ body {
     .membership-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-            grid-template-areas:
+                grid-template-areas:
             "opt-one opt-two opt-three opt-four";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-gap: 0rem 2.5rem;
     }
