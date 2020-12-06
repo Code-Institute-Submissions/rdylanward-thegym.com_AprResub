@@ -828,8 +828,8 @@ body {
 .details-img {
     width: 32.55rem;
     height: 21rem;
-    -webkit-box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
-            box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
+    -webkit-box-shadow: 0.5rem 0.5rem 0.6rem #15313a;
+            box-shadow: 0.5rem 0.5rem 0.6rem #15313a;
     padding: 0rem;
     margin-top: 5rem;
 }
@@ -1996,6 +1996,15 @@ body {
         -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-gap: 0rem 2.5rem;
+    }
+
+    /*********************/
+    /***  TESTIMONIAL  ***/
+    /*********************/
+
+    .container-testimonial {
+        -ms-grid-columns: 23.33% 0rem 23.33% 0rem 23.33%;
+        grid-template-columns: repeat(3, 23.33%);
     }
 }
 /****  /screen and (min-width: 1200px)  ****/

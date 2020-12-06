@@ -221,8 +221,8 @@
 .story-img {
     width: 32.55rem;
     height: 21rem;
-    -webkit-box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
-            box-shadow: 0.5rem 0.5rem 0.6rem #98a3c8;
+    -webkit-box-shadow: 0.5rem 0.5rem 0.6rem #15313a;
+            box-shadow: 0.5rem 0.5rem 0.6rem #15313a;
     -ms-grid-column-align: center;
         justify-self: center;
     margin: 2.5rem 0rem;
@@ -327,8 +327,8 @@
 .staff-bio-img {
     width: 21rem;
     height: 21rem;
-    -webkit-box-shadow: 0.5rem 0.5rem 0.8rem #5d3f1f;
-            box-shadow: 0.5rem 0.5rem 0.8rem #5d3f1f;
+    -webkit-box-shadow: 0.5rem 0.5rem 0.8rem #15313a;
+            box-shadow: 0.5rem 0.5rem 0.8rem #15313a;
 }
 
 .staff-bio-name {
