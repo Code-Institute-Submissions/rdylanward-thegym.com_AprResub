@@ -124,6 +124,14 @@
 
 .classes-list-summary {
     grid-area: summary-classes;
+    justify-self: center;
+}
+
+.classes-list-summary p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0rem;
 }
 
 .classes-list-items {
@@ -209,7 +217,7 @@
 .classes-item-heading h2 {
     font-size: 210%;
     text-align: center;
-    color: #4d4271;
+    color: #15313a;
     padding: 0rem;
     margin: 1.7rem 0rem 1.5rem 0rem;
 }
@@ -260,17 +268,38 @@
 /****  screen and (min-width: 576px)  ****/
 
 @media screen and (min-width: 576px) {
+
+}
+/****  /screen and (max-width: 576px)  ****/
+
+
+/****  screen and (min-width: 768px)  ****/
+
+@media screen and (min-width: 768px) {
     /*****************/
     /***  Classes  ***/
     /*****************/
 
-    .classes-item-group {
+    .container-classes-list {
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    .group-type-1 {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 30% 70%;
         grid-template-areas:
-            "img-group"
-            "head-group"
-            "text-group";
-        grid-template-rows: repeat(3, max-content);
+            ". img-group head-group ."
+            ". img-group text-group .";
+        grid-template-rows: repeat(2, max-content);
+    }
+
+    .group-type-2 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas:
+            ". head-group img-group ."
+            ". text-group img-group .";
+        grid-template-rows: repeat(2, max-content);
     }
 }
+/****  /screen and (max-width: 768px)  ****/
