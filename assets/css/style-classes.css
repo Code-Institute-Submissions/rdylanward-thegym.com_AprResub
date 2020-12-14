@@ -12,9 +12,9 @@
         "header-classes"
         "classes-list"
         "footer";
-    -ms-grid-rows: (max-content)[4];
-    grid-template-rows: repeat(4, -webkit-max-content);
-    grid-template-rows: repeat(4, max-content);
+    -ms-grid-rows: (max-content)[3];
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
     background-color: #f2f0e5;
     width: 100%;
     top: 0;
@@ -55,8 +55,8 @@
     grid-template-areas:
         ". header-classes ."
         ". summary-classes ."
-        ". classes-items ."
-        ". schedule .";
+        ". schedule ."
+        ". classes-items .";
     grid-template-rows: repeat(4, max-content);
     margin: 5rem 0rem;
 }
@@ -83,11 +83,12 @@
 .header-classes-inspiration blockquote {
     text-align: center;
     color: #f6f5f4;
+    justify-self: center;
     margin: 0rem 1.6rem;
 }
 
 .header-classes-inspiration blockquote p {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 400;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -132,6 +133,18 @@
     font-weight: 400;
     text-align: justify;
     margin: 0rem;
+}
+
+.classes-list-schedule {
+    grid-area: schedule;
+    justify-self: center;
+}
+
+.classes-list-btn {
+    width: 19rem;
+    height: 3.1rem;
+    padding: 0rem;
+    margin: 3rem;
 }
 
 .classes-list-items {
@@ -229,21 +242,6 @@
     margin: 0rem;
 }
 
-.classes-list-schedule {
-    justify-self: center;
-}
-
-.classes-list-btn {
-    width: 19rem;
-    height: 3.1rem;
-    padding: 0rem;
-    margin-top: 3rem;
-}
-
-.classes-list-schedule {
-    grid-area: schedule;
-}
-
 
 /**********************************************************************/
 /***                         Media Queries                          ***/
@@ -252,7 +250,7 @@
 
 /****  screen and (max-width: 359px)  ****/
 
-@media screen and (max-width: 359px) {
+@media only screen and (max-width: 359px) {
     /*****************/
     /***  Classes  ***/
     /*****************/
@@ -267,15 +265,88 @@
 
 /****  screen and (min-width: 576px)  ****/
 
-@media screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
+    /*****************/
+    /***  Classes  ***/
+    /*****************/
 
+    .classes-list-summary p {
+        margin-bottom: 2.3rem;
+    }
+
+    .classes-item-group {
+        display: none;
+    }
+
+    .group-type-1 {
+        display: grid;
+        grid-template-columns: 48% 4% 48%;
+        grid-template-areas:
+            "img-group . head-group"
+            "img-group . text-group";
+        grid-template-rows: repeat(2, max-content);
+        align-items: center;
+        margin: 3.5rem 0rem;
+    }
+
+    .group-type-2 {
+        display: grid;
+        grid-template-columns: 48% 4% 48%;
+        grid-template-areas:
+            "head-group . img-group"
+            "text-group . img-group";
+        grid-template-rows: repeat(2, max-content);
+        align-items: center;
+        margin: 3.5rem 0rem;
+    }
+
+    .classes-item-image img {
+        margin: 0rem;
+    }
+
+    .classes-item-heading {
+        align-self: flex-end;
+    }
+
+    .classes-item-heading h2 {
+        padding: 0rem 0.7rem;
+        margin-top: 0rem;
+    }
+
+    .classes-item-text {
+        align-self: flex-start;
+    }
 }
 /****  /screen and (max-width: 576px)  ****/
 
 
-/****  screen and (min-width: 768px)  ****/
+/****  screen and (min-width: 1024px)  ****/
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+    /*****************/
+    /***  Classes  ***/
+    /*****************/
+
+    .container-classes-list {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .classes-item-image img {
+        width: 38.75rem;
+        height: 25rem;
+    }
+
+    .classes-item-heading h2 {
+        padding: 0rem 0.7rem;
+        margin-top: 0rem;
+    }
+}
+/****  /screen and (max-width: 1024px)  ****/
+
+
+/****  screen and (min-width: 1200px)  ****/
+
+@media only screen and (min-width: 1200px) {
     /*****************/
     /***  Classes  ***/
     /*****************/
@@ -284,22 +355,24 @@
         grid-template-columns: 15% 70% 15%;
     }
 
-    .group-type-1 {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-areas:
-            ". img-group head-group ."
-            ". img-group text-group .";
-        grid-template-rows: repeat(2, max-content);
+    .group-type-1 .classes-item-image {
+        justify-self: end;
+        margin-right: 3.5rem;
     }
 
-    .group-type-2 {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-areas:
-            ". head-group img-group ."
-            ". text-group img-group .";
-        grid-template-rows: repeat(2, max-content);
+    .group-type-2 .classes-item-image {
+        justify-self: start;
+        margin-left: 3.5rem;
+    }
+
+    .classes-item-image img {
+        width: 41.85rem;
+        height: 27rem;
+    }
+
+    .classes-item-heading h2 {
+        padding: 0rem 0.7rem;
+        margin-top: 0rem;
     }
 }
-/****  /screen and (max-width: 768px)  ****/
+/****  /screen and (max-width: 1200px)  ****/
