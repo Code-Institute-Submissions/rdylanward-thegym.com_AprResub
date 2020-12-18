@@ -548,8 +548,8 @@
     /***************/
 
     .container-story {
-        -ms-grid-columns: 15% 70 15%;
-        grid-template-columns: 15% 70 15%;
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
     }
 
     .story-about {
@@ -576,8 +576,8 @@
     /***************/
 
     .container-staff {
-        -ms-grid-columns: 15% 70 15%;
-        grid-template-columns: 15% 70 15%;
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
     }
 
     .staff-summary {
@@ -604,17 +604,18 @@
     /**************/
 
     .container-staff {
-        -ms-grid-columns: 20% 60 20%;
-        grid-template-columns: 20% 60 20%;
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
     }
 
     .staff-bio {
         -ms-grid-columns: (16.66%)[6];
-        grid-template-columns: repeat(6, 16.66%);
+        grid-template-columns: repeat(3, 33.33%);
             grid-template-areas:
-            "bio-1 bio-2 bio-3 bio-4 bio-5 bio-6";
+            "bio-1 bio-2 bio-3
+            "bio-4 bio-5 bio-6";
         -ms-grid-rows: max-contnet;
-        grid-template-rows: max-contnet;
+        grid-template-rows: repeat(2, max-contnet);
     }
 
     .staff-bio-one {

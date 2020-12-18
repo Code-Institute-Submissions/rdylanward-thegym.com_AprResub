@@ -415,7 +415,13 @@
     /**************************/
 
     .membership-cards-summary {
+        grid-template-columns: repeat(2, max-content);
         padding: 0rem 7rem;
+    }
+
+    .summary-icons {
+        margin-top: 0.3rem;
+        margin-right: 1rem;
     }
 
     .membership-cards-pricing {

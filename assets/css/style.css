@@ -1794,19 +1794,6 @@ body {
 /****  /screen and (min-width: 800px)  ****/
 
 @media screen and (min-width: 800px) {
-    /*****************************/
-    /***  Reusable Components  ***/
-    /*****************************/
-
-    .hide-toggler {
-        display: none;
-    }
-
-    .hide-menu {
-        display: -ms-grid;
-        display: grid;
-    }
-
     /****************/
     /***  HEADER  ***/
     /****************/
@@ -1821,51 +1808,6 @@ body {
 
     .header-hero-btn {
         margin: 0rem 1.35rem;
-    }
-
-    /*****************/
-    /***  DETAILS  ***/
-    /*****************/
-
-    .container-details {
-        margin: 3rem 0rem;
-    }
-
-    .details-welcome-image {
-        -ms-grid-column-align: end;
-            justify-self: end;
-    }
-
-    .details-classes-image {
-        -ms-grid-column-align: start;
-            justify-self: start;
-    }
-
-    .details-blog-image {
-        -ms-grid-column-align: end;
-            justify-self: end;
-    }
-
-    .details-img {
-        width: 41.85rem;
-        height: 27rem;
-        margin: 3.5rem 3rem;
-    }
-
-    .details-heading {
-        margin: 0rem;
-    }
-
-    .details-heading h2 {
-        margin: 0rem;
-    }
-
-    .details-text {
-        margin: 2.5rem 0rem;
-    }
-
-    .details-btn {
-        margin: 0rem;
     }
 
     /*****************************/
@@ -1950,6 +1892,70 @@ body {
     }
 }
 /****  /screen and (min-width: 800px)  ****/
+
+
+/****  /screen and (min-width: 1024px)  ****/
+
+@media screen and (min-width: 1024px) {
+    /*****************************/
+    /***  Reusable Components  ***/
+    /*****************************/
+
+    .hide-toggler {
+        display: none;
+    }
+
+    .hide-menu {
+        display: -ms-grid;
+        display: grid;
+    }
+
+    /*****************/
+    /***  DETAILS  ***/
+    /*****************/
+
+    .container-details {
+        margin: 3rem 0rem;
+    }
+
+    .details-welcome-image {
+        -ms-grid-column-align: end;
+            justify-self: end;
+    }
+
+    .details-classes-image {
+        -ms-grid-column-align: start;
+            justify-self: start;
+    }
+
+    .details-blog-image {
+        -ms-grid-column-align: end;
+            justify-self: end;
+    }
+
+    .details-img {
+        width: 41.85rem;
+        height: 27rem;
+        margin: 3.5rem 3rem;
+    }
+
+    .details-heading {
+        margin: 0rem;
+    }
+
+    .details-heading h2 {
+        margin: 0rem;
+    }
+
+    .details-text {
+        margin: 2.5rem 0rem;
+    }
+
+    .details-btn {
+        margin: 0rem;
+    }
+}
+/****  /screen and (min-width: 1024px)  ****/
 
 
 /****  /screen and (min-width: 1200px)  ****/
