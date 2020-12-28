@@ -399,14 +399,6 @@
 /****  /screen and (max-width: 359px)  ****/
 
 
-/****  screen and (min-width: 576px)  ****/
-
-@media only screen and (min-width: 576px) {
-
-}
-/****  /screen and (max-width: 576px)  ****/
-
-
 /****  screen and (min-width: 768px)  ****/
 
 @media only screen and (min-width: 768px) {
@@ -416,12 +408,13 @@
 
     .membership-cards-summary {
         grid-template-columns: repeat(2, max-content);
+        justify-self: center;
         padding: 0rem 7rem;
     }
 
     .summary-icons {
         margin-top: 0.3rem;
-        margin-right: 1rem;
+        margin-right: 1.3rem;
     }
 
     .membership-cards-pricing {
@@ -537,5 +530,26 @@
             ". cards-nine cards-ten .";
         grid-template-rows: max-content;
     }
+
+    .cards-format {
+        -ms-grid-rows: 13rem 7rem 3rem 7rem;
+        grid-template-rows: 13rem 7rem 3rem 7rem;
+    }
 }
 /****  /screen and (max-width: 1200px)  ****/
+
+
+/****  screen and (min-width: 1900px)  ****/
+
+@media only screen and (min-width: 1900px) {
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .cards-format {
+        -ms-grid-rows: 16rem 7rem 3rem 7rem;
+        grid-template-rows: 16rem 7rem 3rem 7rem;
+    }
+}
+/****  /screen and (max-width: 1900px)  ****/

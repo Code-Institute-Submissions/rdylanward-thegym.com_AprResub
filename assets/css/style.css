@@ -263,6 +263,16 @@ body {
     font-weight: 400;
 }
 
+.btn-flat {
+    font-size: 1.5rem;
+    background: #beb580;
+    border: 0.2rem solid #beb580;
+    border-radius: 0.6rem;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
 .btn-main {
     font-size: 1.5rem;
     background: #292f4b;
