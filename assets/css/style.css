@@ -38,7 +38,7 @@ body {
     -ms-grid-columns: 5% max-content max-content auto 5%;
     grid-template-columns: 5% -webkit-max-content -webkit-max-content auto 5%;
     grid-template-columns: 5% max-content max-content auto 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". brand title menu .";
     -ms-grid-rows: 6.5rem;
     grid-template-rows: 6.5rem;
@@ -58,7 +58,7 @@ body {
     display: none;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". menu .";
     -ms-grid-rows: -webkit-max-content;
     grid-template-rows: -webkit-max-content;
@@ -82,7 +82,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "header"
         "details"
         "hero"
@@ -113,9 +113,9 @@ body {
     background-attachment: fixed;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7.5% 85% 7.5%;
+    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 7.5% 85% 7.5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". hero ."
         ". hero ."
@@ -146,7 +146,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". quote ."
         ". . .";
@@ -168,7 +168,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". head ."
         ". text ."
         ". price .";
@@ -196,7 +196,7 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-            grid-template-areas:
+                grid-template-areas:
         "test-one"
         "test-two"
         "test-three";
@@ -218,7 +218,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "start"
         "middle"
         "end"
@@ -260,83 +260,101 @@ body {
 
 .btn {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    width: 18rem;
+    height: 4rem;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-flat {
     font-size: 1.5rem;
     background: #beb580;
-    border: 0.2rem solid #beb580;
-    border-radius: 0.6rem;
+    border: 0.3rem solid #beb580;
+    border-radius: 0.7rem;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
-.btn-main {
+.btn-flat-light {
     font-size: 1.5rem;
-    background: #292f4b;
-    border: 0.2rem solid #beb580;
-    border-radius: 0.6rem;
+    background: #beb580;
+    color: #15313a;
+    border: 0.3rem solid #beb580;
+    border-radius: 0.7rem;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
-.btn-main:hover {
-    background-color: #5c6381;
-    color: #f2f0e5;
-    -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-    /* border-color: #f6f5f4; */
-}
-
-.btn-main:active {
-    background-color: rgba(41, 47, 75, 0.6);
-    -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-}
-
-.btn-main:visited {
+.btn-flat-light:hover {
+    background: transparent;
     color: #beb580;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-flat-light:active {
+    background: #beb580;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-flat-header {
+    font-size: 1.6rem;
+    background: #5f808b;
+    color: #15313a;
+    border: 0.3rem solid #5f808b;
+    border-radius: 0.7rem;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
-.btn-light {
+.btn-flat-header:hover {
+    background: transparent;
+    color: #5f808b;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-flat-header:active {
+    background: #5f808b;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-flat-dark {
     font-size: 1.5rem;
     background: #967858;
-    border: 0.2rem solid #5d3f1f;
-    border-radius: 0.6rem;
+    color: #f2f0e5;
+    border: 0.3rem solid #967858;
+    border-radius: 0.7rem;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
-.btn-light:hover {
-    background-color: #bea080;
-    color: #41270b;
-    -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-    /* border-color: #f6f5f4; */
+.btn-flat-dark:hover {
+    background: transparent;
+    color: #967858;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.btn-light:active {
-    background-color: rgba(41, 47, 75, 0.6);
-    -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-}
-
-.btn-light:visited {
-    color: #beb580;
-    -webkit-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
+.btn-flat-dark:active {
+    background: #967858;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .hide-menu {
@@ -541,14 +559,15 @@ body {
     grid-area: hero;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-            grid-template-areas:
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+        grid-template-areas:
         "heading"
         "inspire"
         "buttons";
-    -ms-grid-rows: (1fr)[3];
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (max-content)[3];
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
 }
 
 .container-header > .header-hero {
@@ -570,7 +589,7 @@ body {
     font-weight: 500;
     color: #f2f0e5;
     text-align: center;
-    margin: 0rem;
+    margin: 1.7rem;
 }
 
 .header-hero-inspiration {
@@ -581,19 +600,21 @@ body {
         justify-self: center;
     -ms-grid-row-align: center;
         align-self: center;
+    margin-bottom: 1.3rem;
 }
 
 .header-hero-inspiration figure {
-    margin: 1rem 2rem;
+    margin: 1rem 0rem;
 }
 
 .header-hero-inspiration blockquote {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     color: #f2f0e5;
-    justify-self: center;
-    margin: 0rem 1.7rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0rem 0rem;
 }
 
 .header-hero-inspiration blockquote p {
@@ -623,17 +644,19 @@ body {
         align-self: start;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-            grid-template-areas:
-        ". btn-1 ."
-        ". btn-2 ."
-        ". btn-3 ."
-        ". btn-4 .";
-    -ms-grid-rows: (-webkit-max-content)[4];
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+                grid-template-areas:
+        "btn-1"
+        "btn-2"
+        "btn-3"
+        "btn-4";
+    -ms-grid-rows: -webkit-max-content 0.5rem -webkit-max-content 0.5rem -webkit-max-content 0.5rem -webkit-max-content;
     grid-template-rows: repeat(4, -webkit-max-content);
-    -ms-grid-rows: (max-content)[4];
+    -ms-grid-rows: max-content 0.5rem max-content 0.5rem max-content 0.5rem max-content;
     grid-template-rows: repeat(4, max-content);
+    grid-row-gap: 0.5rem;
+    place-items: center center;
 }
 
 .btn-1 {
@@ -661,8 +684,8 @@ body {
 }
 
 .header-hero-btn {
-    width: 14rem;
-    height: 2.9rem;
+    /* width: 14rem;
+    height: 2.9rem; */
     -ms-grid-column-align: center;
         justify-self: center;
     margin-bottom: 0.9rem;
@@ -681,7 +704,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 1fr 5%;
     grid-template-columns: 5% 1fr 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". img-w ."
         ". grp-w ."
         ". img-c ."
@@ -712,7 +735,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
         "hdr-w"
         "txt-w"
         "btn-w";
@@ -760,7 +783,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
         "hdr-c"
         "txt-c"
         "btn-c";
@@ -808,7 +831,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
         "hdr-b"
         "txt-b"
         "btn-b";
@@ -865,8 +888,8 @@ body {
 }
 
 .details-btn {
-    width: 16rem;
-    height: 2.9rem;
+    /* width: 16rem;
+    height: 2.9rem; */
     padding: 0rem;
     margin-top: 2rem;
 }
@@ -960,7 +983,7 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-            grid-template-areas:
+                grid-template-areas:
         "opt-one"
         "opt-two"
         "opt-three"
@@ -984,7 +1007,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "img-one"
         "prc-one"
         "drt-one"
@@ -1046,7 +1069,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "img-two"
         "prc-two"
         "drt-two"
@@ -1104,7 +1127,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "img-three"
         "prc-three"
         "drt-three"
@@ -1162,7 +1185,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "img-four"
         "prc-four"
         "drt-four"
@@ -1212,13 +1235,13 @@ body {
 }
 
 .membership-option-img {
-    width: 100%;
+    width: 110%;
 }
 
 .membership-option-price {
     font-size: 3.7rem;
     font-weight: 500;
-    background: #f5f6f4;
+    background: #fdfdfc;
     margin: 0rem;
 }
 
@@ -1226,11 +1249,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0rem;
-}
-
-.membership-option-btn {
-    width: 16rem;
-    height: 2.9rem;
 }
 
 
@@ -1327,7 +1345,7 @@ body {
     display: grid;
     -ms-grid-columns: 33% 34% 33%;
     grid-template-columns: 33% 34% 33%;
-            grid-template-areas:
+                grid-template-areas:
         "social social social"
         "news news news"
         "input input input"
@@ -1407,52 +1425,57 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: input;
+    align-self: center;
 }
 
 .footer-input-form input {
     word-spacing: 0rem;
+    align-items: flex-end;
+    padding: 0rem;
 }
 
 .footer-input-email {
     font-size: 1.4rem;
-    background-color: #292f4b;
-    border: 0.2rem solid #beb580;
-    width: 22.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #beb580;
+    width: 22rem;
     height: 2.4rem;
-    border-radius: 0.6rem 0rem 0rem 0.6rem;
+    /* border-radius: 0.6rem 0rem 0rem 0.6rem; */
+    border-radius: 0.7rem 0rem 0rem 0.7rem;
 }
 
 .footer-input-email::-webkit-input-placeholder {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(190, 181, 128, 0.7);
     padding: 0rem 0.6rem;
 }
 
 .footer-input-email::-moz-placeholder {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(190, 181, 128, 0.7);
     padding: 0rem 0.6rem;
 }
 
 .footer-input-email:-ms-input-placeholder {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(190, 181, 128, 0.7);
     padding: 0rem 0.6rem;
 }
 
 .footer-input-email::-ms-input-placeholder {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(190, 181, 128, 0.7);
     padding: 0rem 0.6rem;
 }
 
 .footer-input-email::placeholder {
-    color: rgba(242, 240, 229, 0.6);
+    color: rgba(190, 181, 128, 0.7);
     padding: 0rem 0.6rem;
 }
 
 .footer-input-btn {
-    border: 0.2rem solid #beb580;
-    border-radius: 0rem 0.6rem 0.6rem 0rem;
+    /* border: 0.3rem solid #beb580;
+    border-radius: 0rem 0.6rem 0.6rem 0rem; */
+    border-radius: 0rem 0.7rem 0.7rem 0rem;
     width: 8.1rem;
-    height: 2.9rem;
-    padding: 0.29rem 0rem 0.3rem 0rem;
+    height: 3rem;
+    /* padding: 0.3rem 0rem 0.3rem 0rem; */
     -webkit-transition: background-color 0.25s;
     -o-transition: background-color 0.25s;
     transition: background-color 0.25s;
@@ -1569,6 +1592,10 @@ body {
         font-size: 1.6rem;
     }
 
+    .header-hero-inspiration figcaption {
+        font-size: 1.5rem;
+    }
+
     /*****************/
     /***  DETAILS  ***/
     /*****************/
@@ -1629,7 +1656,7 @@ body {
     .header-hero-buttons {
         -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-                grid-template-areas:
+                    grid-template-areas:
             "btn-1 btn-2 btn-3 btn-4";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
@@ -1650,7 +1677,7 @@ body {
         display: grid;
         -ms-grid-columns: 5% 43% 4% 43% 5%;
         grid-template-columns: 5% 43% 4% 43% 5%;
-                grid-template-areas:
+                    grid-template-areas:
             ". img-w . grp-w ."
             ". grp-c . img-c ."
             ". img-b . grp-b .";
@@ -1722,7 +1749,7 @@ body {
     .membership-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-                grid-template-areas:
+                    grid-template-areas:
             "opt-one opt-two"
             "opt-three opt-four";
         -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content;
@@ -1759,7 +1786,7 @@ body {
     .container-footer {
         -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-                grid-template-areas:
+                    grid-template-areas:
             "start middle end"
             ". copy .";
         -ms-grid-rows: ()[2. -webkit-max-content];
@@ -1801,23 +1828,74 @@ body {
 /****  /screen and (min-width: 576px)  ****/
 
 
-/****  /screen and (min-width: 800px)  ****/
+/****  /screen and (min-width: 768px)  ****/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-header {
+        -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+            grid-template-areas:
+            ". . ."
+            ". hero ."
+            ". hero ."
+            ". hero ."
+            ". . .";
+        -ms-grid-rows: 20% (20%)[3] 20%;
+        grid-template-rows: 20% repeat(3, 20%) 20%;
+    }
+
     /****************/
     /***  HEADER  ***/
     /****************/
 
+    .header-hero {
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        place-self: center center;
+    }
+
+    .header-hero-heading {
+        margin: 0rem 0rem 4rem 0rem;
+    }
+
     .header-hero-heading h1 {
         font-size: 480%;
+        margin: 0rem;
+    }
+
+    .header-hero-inspiration {
+        margin: 0rem 0rem 4rem 0rem;
     }
 
     .header-hero-inspiration blockquote {
         font-size: 2.3rem;
     }
 
+    .header-hero-buttons {
+        -ms-grid-columns: -webkit-max-content 1.5rem -webkit-max-content 1.5rem -webkit-max-content;
+        -ms-grid-columns: max-content 1.5rem max-content 1.5rem max-content;
+        grid-template-columns: repeat(3, -webkit-max-content);
+        grid-template-columns: repeat(3, max-content);
+            grid-template-areas:
+            "btn-1 btn-2 btn-4";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0rem;
+        place-items: center center;
+    }
+
+    .btn-3 {
+        display: none;
+    }
+
     .header-hero-btn {
-        margin: 0rem 1.35rem;
+        margin: 0rem;
     }
 
     /*****************************/
@@ -1869,7 +1947,7 @@ body {
     .container-testimonial {
         -ms-grid-columns: 31.66% 0rem 31.66% 0rem 31.66%;
         grid-template-columns: repeat(3, 31.66%);
-                grid-template-areas:
+                    grid-template-areas:
             "test-one test-two test-three";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
@@ -1901,7 +1979,7 @@ body {
         -ms-grid-column: 5;
     }
 }
-/****  /screen and (min-width: 800px)  ****/
+/****  /screen and (min-width: 768px)  ****/
 
 
 /****  /screen and (min-width: 1024px)  ****/
@@ -1918,6 +1996,33 @@ body {
     .hide-menu {
         display: -ms-grid;
         display: grid;
+    }
+
+    /****************/
+    /***  HEADER  ***/
+    /****************/
+
+    .header-hero-buttons {
+        -ms-grid-columns: -webkit-max-content 1.5rem -webkit-max-content 1.5rem -webkit-max-content 1.5rem -webkit-max-content;
+        -ms-grid-columns: max-content 1.5rem max-content 1.5rem max-content 1.5rem max-content;
+        grid-template-columns: repeat(4, -webkit-max-content);
+        grid-template-columns: repeat(4, max-content);
+            grid-template-areas:
+            "btn-1 btn-2 btn-3 btn-4";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0rem;
+        place-items: center center;
+    }
+
+    .btn-3 {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*****************/
@@ -2010,7 +2115,7 @@ body {
     .membership-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-                grid-template-areas:
+                    grid-template-areas:
             "opt-one opt-two opt-three opt-four";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;

@@ -12,6 +12,25 @@
     </head>
 
     <body>
+        <!--  MODAL  -->
+        <div class="container-modal-contact">
+            <div class="modal-box">
+                <div class="modal-img">
+                    <img src="assets/img/exercise-bike-pedals.png" alt="Exercise Bike pedals.">
+                </div>
+                <div class="modal-txt">
+                    <p>Thank you for contacting us. We love to hear from you. A member of our staff will get back to as soon as humanly possible.</p>
+                </div>
+                <div class="modal-btn">
+
+                    <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
+                         html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
+                    <button class="btn btn-light font-light" onclick="window.location.href='javascript:void(0);'">Close</button>
+                </div>
+            </div>
+        </div>
+        <!--  /MODAL  -->
+
         <!--  NAVBAR  -->
         <nav class="container-navbar" id="navbar">
             <div class="navbar-brand">
@@ -98,7 +117,7 @@
                             <input class="contact-inputs-email input-defaults input-box" type="email"  id="newsletter-email"placeholder="Enter email...">
                             <textarea class="contact-inputs-comments input-defaults input-comments" id="comments" name="comments" placeholder="Comments..."></textarea>
                             <!-- <input class="contact-inputs-comments inputs-comments" type="text" id="comments" name="comments" placeholder="Comments..."> -->
-                            <br><input class="contact-inputs-btn btn btn-flat font-green" type="button" onclick="javascript:void(0);" value="Submit">
+                            <br><input class="btn btn-flat-light contact-inputs-btn" type="button" onclick="javascript:void(0);" value="Submit">
                         </form>
                     </div>
                 </div>
@@ -155,7 +174,7 @@
                     <div class="footer-input">
                         <form class="footer-input-form">
                             <input class="footer-input-email font-light" id="newsletter-email" type="email" placeholder="Enter email...">
-                            <input class="btn btn-main footer-input-btn font-light" type="submit" value="Sign Up!">
+                            <input class="btn btn-flat-light footer-input-btn" type="submit" value="Sign Up!">
                         </form>
                     </div>
                     <div class="footer-membership">
@@ -165,7 +184,7 @@
                     <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                          html by PR.Gaultier (01/10/2020), and and repurposed to aid in the click function of the button. -->
                     <div class="footer-button">
-                        <button class="btn btn-main footer-button-btn font-light" onclick="window.location.href='javascript:void(0);'">Membership</button>
+                        <button class="btn btn-flat-light footer-button-btn" onclick="window.location.href='javascript:void(0);'">Membership</button>
                     </div>
                 </div>
                 <div class="footer-end">

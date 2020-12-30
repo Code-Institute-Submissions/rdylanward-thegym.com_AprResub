@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
@@ -8,12 +15,13 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "header-membership"
         "membership-plans"
         "footer";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -25,8 +33,8 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header-membership;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/group-training-together.jpg");
     background-image: -o-linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/group-training-together.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/group-training-together.jpg");
     background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/group-training-together.jpg");
     background-size: cover;
     background-position: center;
@@ -37,7 +45,7 @@
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-        grid-template-areas:
+            grid-template-areas:
         ". . ."
         ". quote-membership ."
         ". . .";
@@ -50,14 +58,18 @@
 
 .container-membership-cards {
     grid-area: membership-plans;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-    grid-template-areas:
+        grid-template-areas:
         ". cards-heading ."
         ". cards-summary ."
         ". cards-pricing ."
         ". specials-heading ."
         ". specials-pricing .";
+    -ms-grid-rows: (max-content)[5];
+    grid-template-rows: repeat(5, -webkit-max-content);
     grid-template-rows: repeat(5, max-content);
     margin-top: 5rem;
     margin-bottom: 2.5rem;
@@ -85,7 +97,8 @@
 .header-membership-inspiration blockquote {
     text-align: center;
     color: #f6f5f4;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     margin: 0rem 1.6rem;
 }
 
@@ -115,7 +128,8 @@
 
 .membership-cards-heading {
     grid-area: cards-heading;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 
 .membership-cards-heading h1 {
@@ -127,17 +141,22 @@
 
 .membership-cards-summary {
     grid-area: cards-summary;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 7% 93%;
     grid-template-columns: 7% 93%;
-    grid-template-areas:
+        grid-template-areas:
         "summary-header summary-header"
         "summary-icon-1 summary-line-1"
         "summary-icon-2 summary-line-2"
         "summary-icon-3 summary-line-3"
         "summary-icon-4 summary-line-4"
         "summary-icon-5 summary-line-5";
+    -ms-grid-rows: (max-content)[6];
+    grid-template-rows: repeat(6, -webkit-max-content);
     grid-template-rows: repeat(6, max-content);
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     padding: 0rem 3rem;
     margin-bottom: 2.5rem;
 }
@@ -204,17 +223,21 @@
 
 .summary-icons {
     font-size: 1.4rem;
-    justify-self: self-start;
-    align-self: baseline;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     padding: 0rem;
     margin-top: 0.2rem;
 }
 
 .membership-cards-pricing {
     grid-area: cards-pricing;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-    grid-template-areas:
+        grid-template-areas:
         "cards-one"
         "cards-two"
         "cards-three"
@@ -223,6 +246,8 @@
         "cards-six"
         "cards-seven"
         "cards-eight";
+    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+    grid-template-rows: repeat(8, -webkit-max-content);
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 2.5rem;
     place-content: center center;
@@ -269,7 +294,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+        grid-template-areas:
         "img-cards"
         "prc-cards"
         "drt-cards"
@@ -281,6 +306,8 @@
     -webkit-box-shadow: 0.55rem 0.55rem 0.7rem #414867;
             box-shadow: 0.55rem 0.55rem 0.7rem #414867;
     overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
     margin-bottom: 2.5rem;
 }
@@ -313,6 +340,8 @@
 
 .cards-option-btn {
     grid-area: btn-cards;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center center;
 }
 
@@ -323,7 +352,7 @@
 .cards-option-price p {
     font-size: 3.7rem;
     font-weight: 500;
-    background: #f5f6f4;
+    background: #fdfdfc;
     margin: 0rem;
 }
 
@@ -333,14 +362,10 @@
     margin: 0rem;
 }
 
-.cards-option-btn button {
-    width: 16rem;
-    height: 2.9rem;
-}
-
 .membership-specials-heading {
     grid-area: specials-heading;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 
 .membership-specials-heading h1 {
@@ -352,11 +377,15 @@
 
 .membership-specials-pricing {
     grid-area: specials-pricing;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-    grid-template-areas:
+        grid-template-areas:
         "cards-nine"
         "cards-ten";
+    -ms-grid-rows: max-content 2.5rem max-content;
+    grid-template-rows: repeat(2, -webkit-max-content);
     grid-template-rows: repeat(2, max-content);
     grid-row-gap: 2.5rem;
     place-content: center center;
@@ -407,8 +436,12 @@
     /**************************/
 
     .membership-cards-summary {
+        -ms-grid-columns: (-webkit-max-content)[2];
+        -ms-grid-columns: (max-content)[2];
+        grid-template-columns: repeat(2, -webkit-max-content);
         grid-template-columns: repeat(2, max-content);
-        justify-self: center;
+        -ms-grid-column-align: center;
+            justify-self: center;
         padding: 0rem 7rem;
     }
 
@@ -418,12 +451,15 @@
     }
 
     .membership-cards-pricing {
+        -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-        grid-template-areas:
+            grid-template-areas:
             "cards-one cards-two"
             "cards-three cards-four"
             "cards-five cards-six"
             "cards-seven cards-eight";
+        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+        grid-template-rows: repeat(4, -webkit-max-content);
         grid-template-rows: repeat(4, max-content);
         grid-gap: 2.5rem 2.5rem;
     }
@@ -434,9 +470,12 @@
     }
 
     .membership-specials-pricing {
+        -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-        grid-template-areas:
+            grid-template-areas:
             "cards-nine cards-ten";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
         grid-template-rows: max-content;
         grid-gap: 2.5rem 2.5rem;
     }
@@ -453,10 +492,12 @@
     /*********************/
 
     .container-header-membership {
+        -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
     }
 
     .container-membership-cards {
+        -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
     }
 
@@ -477,12 +518,15 @@
     }
 
     .membership-cards-pricing {
+        -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-        grid-template-areas:
+            grid-template-areas:
             "cards-one cards-two"
             "cards-three cards-four"
             "cards-five cards-six"
             "cards-seven cards-eight";
+        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+        grid-template-rows: repeat(4, -webkit-max-content);
         grid-template-rows: repeat(4, max-content);
     }
 }
@@ -497,10 +541,12 @@
     /*********************/
 
     .container-header-membership {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
     }
 
     .container-membership-cards {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
     }
 
@@ -517,17 +563,23 @@
     }
 
     .membership-cards-pricing {
+        -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-        grid-template-areas:
+            grid-template-areas:
             "cards-one cards-two cards-three cards-four"
             "cards-five cards-six cards-seven cards-eight";
+        -ms-grid-rows: max-content 2.5rem max-content;
+        grid-template-rows: repeat(2, -webkit-max-content);
         grid-template-rows: repeat(2, max-content);
     }
 
     .membership-specials-pricing {
+        -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-        grid-template-areas:
+            grid-template-areas:
             ". cards-nine cards-ten .";
+        -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
         grid-template-rows: max-content;
     }
 
