@@ -2,3 +2,129 @@
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
 
+.container-gallery {
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+            grid-template-areas:
+        "header-gallery"
+        "images-gallery"
+        "footer";
+    -ms-grid-rows: (-webkit-max-content)[3];
+    grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
+    grid-template-rows: repeat(3, max-content);
+    background-color: #f2f0e5;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.container-gallery-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header-gallery;
+    background-image: -o-linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/mountain-climbers.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.8)), to(rgba(12, 18, 44, 0.8))), url("../img/mountain-climbers.jpg");
+    background-image: linear-gradient(rgba(12, 18, 44, 0.8), rgba(12, 18, 44, 0.8)), url("../img/mountain-climbers.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 7.5% 85% 7.5%;
+    grid-template-columns: 7.5% 85% 7.5%;
+            grid-template-areas:
+        ". . ."
+        ". quote-gallery ."
+        ". . .";
+    -ms-grid-rows: (33%)[3];
+    grid-template-rows: repeat(3, 33%);
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+}
+
+.container-gallery-images {
+    grid-area: images-gallery;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+        grid-template-areas:
+        ". gallery-heading ."
+        ". gallery-images .";
+    grid-template-rows: repeat(2, max-content);
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+
+/**********************************************************************/
+/***                             Header                             ***/
+/**********************************-***********************************/
+
+.header-gallery-hero {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: quote-gallery;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.header-gallery-inspiration figure {
+    margin: 1rem 0rem;
+}
+
+.header-gallery-inspiration blockquote {
+    text-align: center;
+    color: #f6f5f4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0rem 1.6rem;
+}
+
+.header-gallery-inspiration blockquote p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0rem;
+}
+
+.header-gallery-inspiration blockquote p i {
+    font-size: 0.9rem;
+}
+
+.header-gallery-inspiration blockquote figcaption {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.9rem 0rem;
+}
+
+
+/**********************************************************************/
+/***                             Images                             ***/
+/**********************************-***********************************/
+
+.gallery-heading {
+    grid-area: gallery-heading;
+    justify-self: center;
+}
+
+.gallery-heading h1 {
+    font-size: 300%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 3.5rem;
+}
+
+.gallery-images {
+    grid-area: gallery-images;
+}
