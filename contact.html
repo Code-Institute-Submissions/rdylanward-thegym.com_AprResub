@@ -13,19 +13,19 @@
 
     <body>
         <!--  MODAL  -->
-        <div class="container-modal-contact">
-            <div class="modal-box">
+        <div class="container-modal-contact" id="modal-container">
+            <div class="modal-box" id="modal-box">
                 <div class="modal-img">
-                    <img src="assets/img/exercise-bike-pedals.png" alt="Exercise Bike pedals.">
+                    <img src="assets/img/phone-numbers.jpg" alt="Payphone buttons and numbers.">
                 </div>
-                <div class="modal-txt">
+                <div class="modal-txt font-green">
                     <p>Thank you for contacting us. We love to hear from you. A member of our staff will get back to as soon as humanly possible.</p>
                 </div>
                 <div class="modal-btn">
 
-                    <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
-                         html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                    <button class="btn btn-light font-light" onclick="window.location.href='javascript:void(0);'">Close</button>
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-btn">Close</button>
                 </div>
             </div>
         </div>
@@ -110,14 +110,14 @@
                         <p class="contact-summary">Whether it be a query about our services, want to know more about the gym, directions to the building or a question about an exercise, give us a shout. We love to hear from you. Just fill out the form below with all of the relevant details and we will get back to as soon as possible.</p>
                     </div>
                     <div class="contact-form">
-                        <form class="contact-inputs">
+                        <form class="contact-inputs" method="get">
                             <input class="contact-inputs-first input-defaults input-box" type="text" id="first-name" name="first-name" placeholder="First Name...">
                             <input class="contact-inputs-last input-defaults input-box" type="text" id="last-name" name="last-name" placeholder="Last Name...">
                             <input class="contact-inputs-phone input-defaults input-box" type="text" id="phone" name="phone" placeholder="Phone Number...">
                             <input class="contact-inputs-email input-defaults input-box" type="email"  id="newsletter-email"placeholder="Enter email...">
                             <textarea class="contact-inputs-comments input-defaults input-comments" id="comments" name="comments" placeholder="Comments..."></textarea>
                             <!-- <input class="contact-inputs-comments inputs-comments" type="text" id="comments" name="comments" placeholder="Comments..."> -->
-                            <br><input class="btn btn-flat-light contact-inputs-btn" type="button" onclick="javascript:void(0);" value="Submit">
+                            <br><input class="btn btn-flat-light contact-inputs-btn" type="button" id="modal-submit" value="Submit">
                         </form>
                     </div>
                 </div>
@@ -216,6 +216,11 @@
             let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            let modalSubmit = document.getElementById("modal-submit");
+            let modalContainer = document.getElementById("modal-container");
+            let modalBox = document.getElementById("modal-box");
+            let modalBtn = document.getElementById("modal-btn");
+
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
                and repurposed to aid in the function of the sticky menu */
             function stickyNavbar() {
@@ -235,6 +240,27 @@
                     navbarMobile.style.display = "grid";
                 } else {
                     navbarMobile.style.display = "none";
+                }
+            }
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal */
+            modalSubmit.onclick = function() {
+                modalContainer.style.display = "grid";
+                modalBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalBtn.onclick = function() {
+                modalContainer.style.display = "none";
+                modalBox.style.display = "none";
+            }
+
+            /* When the user clicks anywhere outside of the modal, close it */
+            window.onclick = function(event) {
+                if (event.target == modalContainer) {
+                    modalContainer.style.display = "none";
+                    modalBox.style.display = "none";
                 }
             }
         </script>
