@@ -409,8 +409,8 @@ body {
         "img-modal"
         "txt-modal"
         "btn-modal";
-    -ms-grid-rows: 46.5% 34% 19.5%;
-    grid-template-rows: 46.5% 34% 19.5%;
+    -ms-grid-rows: 39.5% 41% 19.5%;
+    grid-template-rows: 39.5% 41% 19.5%;
     border: 0.3rem solid #15313a;
     border-radius: 1.5rem;
     -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
@@ -1440,14 +1440,14 @@ body {
     margin-top: 3rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 33% 34% 33%;
-    grid-template-columns: 33% 34% 33%;
-                    grid-template-areas:
-        "social social social"
-        "news news news"
-        "input input input"
-        "member member member"
-        "button button button";
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "social"
+        "news"
+        "input"
+        "member"
+        "button";
     -ms-grid-rows: (-webkit-max-content)[5];
     grid-template-rows: repeat(5, -webkit-max-content);
     -ms-grid-rows: (max-content)[5];
@@ -1540,7 +1540,6 @@ body {
     border: 0.3rem solid #beb580;
     width: 22rem;
     height: 2.4rem;
-    /* border-radius: 0.6rem 0rem 0rem 0.6rem; */
     border-radius: 0.7rem 0rem 0rem 0.7rem;
 }
 
@@ -1570,12 +1569,9 @@ body {
 }
 
 .footer-input-btn {
-    /* border: 0.3rem solid #beb580;
-    border-radius: 0rem 0.6rem 0.6rem 0rem; */
     border-radius: 0rem 0.7rem 0.7rem 0rem;
     width: 8.1rem;
     height: 3rem;
-    /* padding: 0.3rem 0rem 0.3rem 0rem; */
     -webkit-transition: background-color 0.25s;
     -o-transition: background-color 0.25s;
     transition: background-color 0.25s;
