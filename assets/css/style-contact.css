@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
@@ -11,11 +18,13 @@
     top: 0rem;
     left: 0rem;
     display: none;
+    -ms-grid-columns: 7.3% 85% 7.7%;
     grid-template-columns: 7.3% 85% 7.7%;
-        grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". contact-modal ."
         ". . .";
+    -ms-grid-rows: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
     place-content: center center;
     z-index: 10;
@@ -23,11 +32,16 @@
 
 .container-contact {
     position: absolute;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+                grid-template-areas:
         "header-contact"
         "footer";
+    -ms-grid-rows: (-webkit-max-content)[2];
+    grid-template-rows: repeat(2, -webkit-max-content);
+    -ms-grid-rows: (max-content)[2];
     grid-template-rows: repeat(2, max-content);
     background-color: #f2f0e5;
     width: 100%;
@@ -36,19 +50,26 @@
 }
 
 .container-header-contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: header-contact;
+    background-image: -o-linear-gradient(rgba(12, 18, 44, 0.9), rgba(12, 18, 44, 0.9)), url("../img/the-gym-map.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 18, 44, 0.9)), to(rgba(12, 18, 44, 0.9))), url("../img/the-gym-map.png");
     background-image: linear-gradient(rgba(12, 18, 44, 0.9), rgba(12, 18, 44, 0.9)), url("../img/the-gym-map.png");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 10% 80% 10%;
     grid-template-columns: 10% 80% 10%;
-        grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". contact-content ."
         ". . .";
+    -ms-grid-rows: 13% 72% 15%;
     grid-template-rows: 13% 72% 15%;
     place-content: center center;
 }
@@ -60,25 +81,34 @@
 
 .modal-box,
 #modal-box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: contact-modal;
     background: rgba(242, 240, 229, 0.9);
     display: none;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+            grid-template-areas:
         "img-modal"
         "txt-modal"
         "btn-modal";
+    -ms-grid-rows: 46.5% 34% 19.5%;
     grid-template-rows: 46.5% 34% 19.5%;
     border: 0.3rem solid #15313a;
     border-radius: 1.5rem;
-    box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+            box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
     overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
     margin-bottom: 2.5rem;
     z-index: 15;
 }
 
 .modal-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: img-modal;
     border-bottom: 0.3rem solid #15313a;
     overflow: hidden;
@@ -92,6 +122,8 @@
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: txt-modal;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center center;
 }
 
@@ -104,6 +136,8 @@
 
 .modal-btn {
     grid-area: btn-modal;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
     place-self: start center;
 }
 
@@ -114,21 +148,31 @@
 
 .header-contact-content {
     grid-area: contact-content;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+            grid-template-areas:
         "contact-header"
         "contact-form";
+    -ms-grid-rows: -webkit-max-content;
+    grid-template-rows: -webkit-max-content;
+    -ms-grid-rows: max-content;
     grid-template-rows: max-content;
 }
 
 .contact-header {
     grid-area: contact-header;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+            grid-template-areas:
         "contact-heading"
         "contact-summary";
+    -ms-grid-rows: (-webkit-max-content)[2];
+    grid-template-rows: repeat(2, -webkit-max-content);
+    -ms-grid-rows: (max-content)[2];
     grid-template-rows: repeat(2, max-content);
     color: #bEb580;
     justify-items: center;
@@ -153,31 +197,85 @@
 
 .contact-form {
     grid-area: contact-form;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+            grid-template-areas:
         "contact-input";
+    -ms-grid-rows: -webkit-max-content;
+    grid-template-rows: -webkit-max-content;
+    -ms-grid-rows: max-content;
     grid-template-rows: max-content;
 }
 
 .contact-inputs {
     grid-area: contact-input;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    grid-template-areas:
+            grid-template-areas:
         "inputs-first"
         "inputs-last"
         "inputs-phone"
         "inputs-email"
         "inputs-comments"
         "inputs-button";
+    -ms-grid-rows: -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content;
+    grid-template-rows: repeat(6, -webkit-max-content);
+    -ms-grid-rows: max-content 1rem max-content 1rem max-content 1rem max-content 1rem max-content 1rem max-content;
     grid-template-rows: repeat(6, max-content);
     grid-row-gap: 1rem;
+}
+
+.contact-inputs input::-webkit-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+}
+
+.contact-inputs input::-moz-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+}
+
+.contact-inputs input:-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+}
+
+.contact-inputs input::-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
 }
 
 .contact-inputs input::placeholder {
     font-weight: 400;
     color: rgba(190, 181, 128, 0.7);
+}
+
+.contact-inputs textarea::-webkit-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+    word-wrap: normal;
+}
+
+.contact-inputs textarea::-moz-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+    word-wrap: normal;
+}
+
+.contact-inputs textarea:-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+    word-wrap: normal;
+}
+
+.contact-inputs textarea::-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(190, 181, 128, 0.7);
+    word-wrap: normal;
 }
 
 .contact-inputs textarea::placeholder {
@@ -208,7 +306,8 @@
 
 .contact-inputs-btn {
     grid-area: inputs-button;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 
 .input-defaults {
@@ -314,6 +413,7 @@
 
     .modal-box,
     #modal-box {
+        -ms-grid-rows: 37.5% 45% 22.5%;
         grid-template-rows: 37.5% 45% 22.5%;
     }
 
@@ -322,11 +422,13 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 5% 90% 5%;
         grid-template-columns: 5% 90% 5%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 12% 73% 15%;
         grid-template-rows: 12% 73% 15%;
         place-content: center center;
     }
@@ -341,8 +443,9 @@
     }
 
     .contact-form {
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        grid-template-areas:
+                grid-template-areas:
             "contact-input";
     }
 
@@ -366,8 +469,64 @@
 
     .container-modal-contact,
     #modal-container {
+        -ms-grid-columns: 25% 50% 25%;
         grid-template-columns: 25% 50% 25%;
+        -ms-grid-rows: 20% 60% 20%;
         grid-template-rows: 20% 60% 20%;
+    }
+
+    .container-modal-contact > *:nth-child(1),
+    #modal-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(2),
+    #modal-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(3),
+    #modal-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(4),
+    #modal-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(5),
+    #modal-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(6),
+    #modal-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(7),
+    #modal-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(8),
+    #modal-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(9),
+    #modal-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
     }
 
     .modal-txt p {
@@ -380,11 +539,13 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 15% 70% 15%;
         grid-template-rows: 15% 70% 15%;
         place-content: center center;
     }
@@ -429,11 +590,13 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 20% 60% 20%;
         grid-template-rows: 20% 60% 20%;
         place-content: center center;
     }
@@ -479,8 +642,64 @@
 
     .container-modal-contact,
     #modal-container {
+        -ms-grid-columns: 37% 26% 37%;
         grid-template-columns: 37% 26% 37%;
+        -ms-grid-rows: 30% 40% 30%;
         grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-contact > *:nth-child(1),
+    #modal-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(2),
+    #modal-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(3),
+    #modal-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(4),
+    #modal-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(5),
+    #modal-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(6),
+    #modal-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(7),
+    #modal-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(8),
+    #modal-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(9),
+    #modal-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
     }
 
     /****************/
@@ -488,29 +707,37 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 15% 70% 15%;
         grid-template-columns: 15% 70% 15%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 25% 50% 25%;
         grid-template-rows: 25% 50% 25%;
         place-content: center center;
     }
 
     .contact-header {
+        -ms-grid-columns: 98.5%;
         grid-template-columns: 98.5%;
     }
 
     .contact-inputs {
         grid-area: contact-input;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 49% 1rem 49%;
         grid-template-columns: 49% 49%;
-        grid-template-areas:
+                grid-template-areas:
             "inputs-first inputs-last"
             "inputs-phone ."
             "inputs-email inputs-email"
             "inputs-comments inputs-comments"
             "inputs-button inputs-button";
+        -ms-grid-rows: -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content 1rem -webkit-max-content;
+        grid-template-rows: repeat(6, -webkit-max-content);
+        -ms-grid-rows: max-content 1rem max-content 1rem max-content 1rem max-content 1rem max-content 1rem max-content;
         grid-template-rows: repeat(6, max-content);
         grid-gap: 1rem;
     }
@@ -555,6 +782,7 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-rows: 15% 70% 15%;
         grid-template-rows: 15% 70% 15%;
     }
 
@@ -578,8 +806,64 @@
 
     .container-modal-contact,
     #modal-container {
+        -ms-grid-columns: 40% 20% 40%;
         grid-template-columns: 40% 20% 40%;
+        -ms-grid-rows: 30% 40% 30%;
         grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-contact > *:nth-child(1),
+    #modal-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(2),
+    #modal-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(3),
+    #modal-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(4),
+    #modal-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(5),
+    #modal-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(6),
+    #modal-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(7),
+    #modal-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(8),
+    #modal-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(9),
+    #modal-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
     }
 
     /****************/
@@ -587,11 +871,13 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 15% 70% 15%;
         grid-template-rows: 15% 70% 15%;
         place-content: center center;
     }
@@ -628,8 +914,64 @@
 
     .container-modal-contact,
     #modal-container {
+        -ms-grid-columns: 43% 16% 43%;
         grid-template-columns: 43% 16% 43%;
+        -ms-grid-rows: 30% 40% 30%;
         grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-contact > *:nth-child(1),
+    #modal-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(2),
+    #modal-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(3),
+    #modal-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(4),
+    #modal-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(5),
+    #modal-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(6),
+    #modal-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-contact > *:nth-child(7),
+    #modal-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-contact > *:nth-child(8),
+    #modal-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-contact > *:nth-child(9),
+    #modal-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
     }
 
     /****************/
@@ -637,11 +979,13 @@
     /****************/
 
     .container-header-contact {
+        -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-            grid-template-areas:
+                    grid-template-areas:
             ". . ."
             ". contact-content ."
             ". . .";
+        -ms-grid-rows: 27% 46% 27%;
         grid-template-rows: 27% 46% 27%;
         place-content: center center;
     }

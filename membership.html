@@ -12,6 +12,69 @@
     </head>
 
     <body>
+        <!--  MEMBER MODAL  -->
+        <div class="container-modal-member" id="modal-member-container">
+            <div class="modal-member-box" id="modal-member-box">
+                <div class="modal-member-img">
+                    <img src="assets/img/core-strength-workout.jpg" alt="Woman side planking.">
+                </div>
+                <div class="modal-member-hdr font-green">
+                    <p>Just fill out the form below and one of our staff will get back to you to complete your membership.</p>
+                </div>
+                <div class="modal-member-frm font-green">
+                    <input class="modal-member-inputs-first modal-member-boxes" type="text" id="first-name" name="first-name" placeholder="First Name...">
+                    <input class="modal-member-inputs-last modal-member-boxes" type="text" id="last-name" name="last-name" placeholder="Last Name...">
+                    <input class="modal-member-inputs-phone modal-member-boxes" type="text" id="phone" name="phone" placeholder="Phone Number...">
+                    <input class="modal-member-inputs-email modal-member-boxes" type="email"  id="newsletter-email"placeholder="Enter email...">
+                </div>
+                <div class="modal-member-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-member-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <!--  /MEMBER MODAL  -->
+
+        <!--  REQUEST MODAL  -->
+        <div class="container-modal-request" id="modal-request-container">
+            <div class="modal-request-box" id="modal-request-box">
+                <div class="modal-request-img">
+                    <img src="assets/img/core-strength-workout.jpg" alt="Woman side planking.">
+                </div>
+                <div class="modal-request-txt font-green">
+                    <p>Your membership request has been submitted.</p>
+                </div>
+                <div class="modal-request-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-request-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /REQUEST MODAL  -->
+
+        <!--  EMAIL MODAL  -->
+        <div class="container-modal-email" id="modal-email-container">
+            <div class="modal-email-box" id="modal-email-box">
+                <div class="modal-email-img">
+                    <img src="assets/img/newsprint.jpg" alt="Stack of newspapers on a table.">
+                </div>
+                <div class="modal-email-txt font-green">
+                    <p>Thank you for signing up to our newsletter. We have packed it full of information about The Gym, fitness and other things. Make a brew, sit back and enjoy the read.</p>
+                </div>
+                <div class="modal-email-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-email-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /EMAIL MODAL  -->
+
         <!--  NAVBAR  -->
         <nav class="container-navbar" id="navbar">
             <div class="navbar-brand">
@@ -131,7 +194,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-two cards-format">
@@ -148,7 +211,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-three cards-format">
@@ -165,7 +228,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-four cards-format">
@@ -182,7 +245,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-five cards-format">
@@ -199,7 +262,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-six cards-format">
@@ -216,7 +279,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-seven cards-format">
@@ -233,7 +296,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-eight cards-format">
@@ -250,7 +313,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                 </div>
@@ -272,7 +335,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                     <div class="cards-option-ten cards-format">
@@ -289,7 +352,7 @@
 
                             <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                                  html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button. -->
-                            <button class="btn btn-flat-dark" onclick="window.location.href='javascript:void(0);'">Begin Now!</button>
+                            <button class="btn btn-flat-dark" id="modal-member-submit" onclick="submitMemberDetails()">Begin Now!</button>
                         </div>
                     </div>
                 </div>
@@ -346,7 +409,7 @@
                     <div class="footer-input">
                         <form class="footer-input-form">
                             <input class="footer-input-email font-light" id="newsletter-email" type="email" placeholder="Enter email...">
-                            <input class="btn btn-flat-light footer-input-btn" type="submit" value="Sign Up!">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
                         </form>
                     </div>
                     <div class="footer-membership">
@@ -388,6 +451,21 @@
             let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            let modalMemberSubmit = document.getElementById("modal-member-submit");
+            let modalMemberContainer = document.getElementById("modal-member-container");
+            let modalMemberBox = document.getElementById("modal-member-box");
+            let modalMemberBtn = document.getElementById("modal-member-btn");
+
+            /* let modalRequestSubmit = document.getElementById("modal-request-submit"); */
+            let modalRequestContainer = document.getElementById("modal-request-container");
+            let modalRequestBox = document.getElementById("modal-request-box");
+            let modalRequestBtn = document.getElementById("modal-request-btn");
+
+            let modalEmailSubmit = document.getElementById("modal-email-submit");
+            let modalEmailContainer = document.getElementById("modal-email-container");
+            let modalEmailBox = document.getElementById("modal-email-box");
+            let modalEmailBtn = document.getElementById("modal-email-btn");
+
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
                and repurposed to aid in the function of the sticky menu */
             function stickyNavbar() {
@@ -408,6 +486,45 @@
                 } else {
                     navbarMobile.style.display = "none";
                 }
+            }
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal */
+
+            function submitMemberDetails() {
+                modalMemberContainer.style.display = "grid";
+                modalMemberBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Sign Up' in the modal */
+            modalMemberBtn.onclick = function() {
+                modalMemberContainer.style.display = "none";
+                modalMemberBox.style.display = "none";
+
+                modalRequestContainer.style.display = "grid";
+                modalRequestBox.style.display = "grid";
+            }
+
+            /* modalRequestSubmit.onclick = function() {
+                modalRequestContainer.style.display = "grid";
+                modalRequestBox.style.display = "grid";
+            } */
+
+            /* When the user clicks on 'Close' in the modal */
+            modalRequestBtn.onclick = function() {
+                modalRequestContainer.style.display = "none";
+                modalRequestBox.style.display = "none";
+            }
+
+            modalEmailSubmit.onclick = function() {
+                modalEmailContainer.style.display = "grid";
+                modalEmailBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalEmailBtn.onclick = function() {
+                modalEmailContainer.style.display = "none";
+                modalEmailBox.style.display = "none";
             }
         </script>
         <!--  /JSCRIPT & JQUERY  -->

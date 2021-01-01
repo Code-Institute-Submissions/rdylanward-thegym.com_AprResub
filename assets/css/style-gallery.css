@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /**********************************************************************/
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
@@ -8,7 +15,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "header-gallery"
         "images-gallery"
         "footer";
@@ -38,7 +45,7 @@
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". quote-gallery ."
         ". . .";
@@ -51,12 +58,17 @@
 
 .container-gallery-images {
     grid-area: images-gallery;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+    -ms-grid-columns: 4.4% 90% 5.6%;
+    grid-template-columns: 4.4% 90% 5.6%;
+            grid-template-areas:
         ". gallery-heading ."
         ". gallery-images .";
+    -ms-grid-rows: (max-content)[2];
+    grid-template-rows: repeat(2, -webkit-max-content);
     grid-template-rows: repeat(2, max-content);
+    place-items: center center;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
 }
@@ -114,7 +126,8 @@
 
 .gallery-heading {
     grid-area: gallery-heading;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 
 .gallery-heading h1 {
@@ -127,4 +140,316 @@
 
 .gallery-images {
     grid-area: gallery-images;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+        grid-template-areas:
+        "gallery-img-1"
+        "gallery-img-2"
+        "gallery-img-3"
+        "gallery-img-4"
+        "gallery-img-5"
+        "gallery-img-6"
+        "gallery-img-7"
+        "gallery-img-8"
+        "gallery-img-9"
+        "gallery-img-10";
+    -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content;
+    grid-template-rows: repeat(10, -webkit-max-content);
+    grid-template-rows: repeat(10, max-content);
+    grid-row-gap: 2rem;
+    margin-bottom: 3rem;
 }
+
+.gallery-img-1 {
+    grid-area: gallery-img-1;
+}
+
+.gallery-img-2 {
+    grid-area: gallery-img-2;
+}
+
+.gallery-img-3 {
+    grid-area: gallery-img-3;
+}
+
+.gallery-img-4 {
+    grid-area: gallery-img-4;
+}
+
+.gallery-img-5 {
+    grid-area: gallery-img-5;
+}
+
+.gallery-img-6 {
+    grid-area: gallery-img-6;
+}
+
+.gallery-img-7 {
+    grid-area: gallery-img-7;
+}
+
+.gallery-img-8 {
+    grid-area: gallery-img-8;
+}
+
+.gallery-img-9 {
+    grid-area: gallery-img-9;
+}
+
+.gallery-img-10 {
+    grid-area: gallery-img-10;
+}
+
+.gallery-image {
+    border: 0.3rem solid #15313a;
+    border-radius: 0.7rem;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #414867;
+            box-shadow: 0.45rem 0.45rem 0.9rem #414867;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/**********************************************************************/
+/***                         Media Queries                          ***/
+/**********************************-***********************************/
+
+/****  screen and (min-width: 768px)  ****/
+
+@media only screen and (min-width: 768px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-gallery-images {
+        -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .gallery-images {
+        grid-area: gallery-images;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "gallery-img-1 gallery-img-4"
+            "gallery-img-2 gallery-img-5"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-6 gallery-img-9"
+            "gallery-img-7 gallery-img-10";
+        -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content;
+        grid-template-rows: repeat(6, -webkit-max-content);
+        grid-template-rows: repeat(6, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+    }
+
+    .landscape {
+        width: 29rem;
+        height: 21rem;
+    }
+
+    .portrait {
+        width: 29rem;
+    }
+}
+/****  /screen and (min-width: 768px)  ****/
+
+
+/****  screen and (min-width: 1024px)  ****/
+
+@media only screen and (min-width: 1024px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-gallery-images {
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .gallery-images {
+        grid-area: gallery-images;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "gallery-img-1 gallery-img-4"
+            "gallery-img-2 gallery-img-5"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-6 gallery-img-9"
+            "gallery-img-7 gallery-img-10";
+        -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content;
+        grid-template-rows: repeat(6, -webkit-max-content);
+        grid-template-rows: repeat(6, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+    }
+
+    .landscape {
+        width: 34rem;
+        height: 25.75rem;
+    }
+
+    .portrait {
+        width: 34rem;
+    }
+}
+/****  /screen and (min-width: 1024px)  ****/
+
+
+/****  screen and (min-width: 1280px)  ****/
+
+@media only screen and (min-width: 1280px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-gallery-images {
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .gallery-images {
+        grid-area: gallery-images;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "gallery-img-1 gallery-img-4"
+            "gallery-img-2 gallery-img-5"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-3 gallery-img-8"
+            "gallery-img-6 gallery-img-9"
+            "gallery-img-7 gallery-img-10";
+        -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content 2rem max-content;
+        grid-template-rows: repeat(6, -webkit-max-content);
+        grid-template-rows: repeat(6, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+    }
+
+    .landscape {
+        width: 36.5rem;
+        height: 27.375rem;
+    }
+
+    .portrait {
+        width: 36.5rem;
+    }
+}
+/****  /screen and (min-width: 1280px)  ****/
+
+
+/****  screen and (min-width: 1440px)  ****/
+
+@media only screen and (min-width: 1440px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-gallery-images {
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .gallery-images {
+        grid-area: gallery-images;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 33.33% 1.2rem 33.33% 1.2rem 33.33%;
+        grid-template-columns: repeat(3, 33.33%);
+            grid-template-areas:
+            "gallery-img-1 gallery-img-4 gallery-img-3"
+            "gallery-img-2 gallery-img-5 gallery-img-3"
+            "gallery-img-8 gallery-img-6 gallery-img-9"
+            "gallery-img-8 gallery-img-7 gallery-img-10";
+        -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content;
+        grid-template-rows: repeat(4, -webkit-max-content);
+        grid-template-rows: repeat(4, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 1.2rem;
+    }
+
+    .landscape {
+        width: 30rem;
+        height: 22.5rem;
+    }
+
+    .portrait {
+        width: 30rem;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+}
+/****  /screen and (min-width: 1440px)  ****/
+
+
+/****  screen and (min-width: 2560px)  ****/
+
+@media only screen and (min-width: 2560px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-gallery-images {
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    /**************************/
+    /***  Membership Cards  ***/
+    /**************************/
+
+    .gallery-images {
+        grid-area: gallery-images;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 33.33% 1.2rem 33.33% 1.2rem 33.33%;
+        grid-template-columns: repeat(3, 33.33%);
+            grid-template-areas:
+            "gallery-img-1 gallery-img-4 gallery-img-3"
+            "gallery-img-2 gallery-img-5 gallery-img-3"
+            "gallery-img-8 gallery-img-6 gallery-img-9"
+            "gallery-img-8 gallery-img-7 gallery-img-10";
+        -ms-grid-rows: max-content 2rem max-content 2rem max-content 2rem max-content;
+        grid-template-rows: repeat(4, -webkit-max-content);
+        grid-template-rows: repeat(4, max-content);
+        grid-row-gap: 2rem;
+        grid-column-gap: 1.2rem;
+    }
+
+    .landscape {
+        width: 51.2rem;
+        height: 38.4rem;
+    }
+
+    .portrait {
+        width: 51.2rem;
+    }
+}
+/****  /screen and (min-width: 2560px)  ****/

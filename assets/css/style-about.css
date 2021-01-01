@@ -15,7 +15,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "header-about"
         "story-about"
         "staff-about"
@@ -46,7 +46,7 @@
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". quote-about ."
         ". . .";
@@ -65,7 +65,7 @@
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". head-story ."
         ". about-story .";
     -ms-grid-rows: (-webkit-max-content)[2];
@@ -84,7 +84,7 @@
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-            grid-template-areas:
+                grid-template-areas:
         ". head-staff ."
         ". text-staff ."
         ". staff-bio .";
@@ -165,7 +165,7 @@
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
         "img-1"
         "txt-1"
         "txt-2"
@@ -279,7 +279,7 @@
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-            grid-template-areas:
+                grid-template-areas:
         "bio-1"
         "bio-2"
         "bio-3"
@@ -447,7 +447,7 @@
     .staff-bio {
         -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
-                grid-template-areas:
+                    grid-template-areas:
             "bio-1 bio-2"
             "bio-3 bio-4"
             "bio-5 bio-6";
@@ -503,7 +503,7 @@
     .staff-bio {
         -ms-grid-columns: (33%)[3];
         grid-template-columns: repeat(3, 33%);
-                grid-template-areas:
+                    grid-template-areas:
             "bio-1 bio-2 bio-3"
             "bio-4 bio-5 bio-6";
         -ms-grid-rows: (max-contnet)[2];
@@ -614,7 +614,7 @@
     .staff-bio {
         -ms-grid-columns: (16.66%)[6];
         grid-template-columns: repeat(3, 33.33%);
-                grid-template-areas:
+                    grid-template-areas:
             "bio-1 bio-2 bio-3"
             "bio-4 bio-5 bio-6";
         -ms-grid-rows: (max-contnet)[2];

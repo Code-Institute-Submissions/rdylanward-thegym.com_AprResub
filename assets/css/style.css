@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 /**********************************************************************/
 /***                         Imported fonts                         ***/
 /**********************************-***********************************/
@@ -30,6 +31,30 @@ body {
     background-color: #f2f0e5;
 }
 
+.container-modal-email,
+#modal-email-container {
+    background: rgba(12, 18, 44, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    -ms-grid-columns: 7.3% 85% 7.7%;
+    grid-template-columns: 7.3% 85% 7.7%;
+                grid-template-areas:
+        ". . ."
+        ". email-modal ."
+        ". . .";
+    -ms-grid-rows: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+    place-content: center center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
 .container-navbar {
     position: fixed;
     display: -ms-grid;
@@ -38,7 +63,7 @@ body {
     -ms-grid-columns: 5% max-content max-content auto 5%;
     grid-template-columns: 5% -webkit-max-content -webkit-max-content auto 5%;
     grid-template-columns: 5% max-content max-content auto 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". brand title menu .";
     -ms-grid-rows: 6.5rem;
     grid-template-rows: 6.5rem;
@@ -58,7 +83,7 @@ body {
     display: none;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". menu .";
     -ms-grid-rows: -webkit-max-content;
     grid-template-rows: -webkit-max-content;
@@ -82,7 +107,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "header"
         "details"
         "hero"
@@ -115,7 +140,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 7.5% 85% 7.5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". . ."
         ". hero ."
         ". hero ."
@@ -146,7 +171,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". . ."
         ". quote ."
         ". . .";
@@ -168,7 +193,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". head ."
         ". text ."
         ". price .";
@@ -196,7 +221,7 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-                grid-template-areas:
+                    grid-template-areas:
         "test-one"
         "test-two"
         "test-three";
@@ -218,7 +243,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "start"
         "middle"
         "end"
@@ -364,6 +389,76 @@ body {
 .hide-toggler {
     display: -ms-grid;
     display: grid;
+}
+
+
+/**********************************************************************/
+/***                          Modal Email                           ***/
+/**********************************-***********************************/
+
+.modal-email-box,
+#modal-email-box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: email-modal;
+    background: rgba(242, 240, 229, 0.9);
+    display: none;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+            grid-template-areas:
+        "img-modal"
+        "txt-modal"
+        "btn-modal";
+    -ms-grid-rows: 46.5% 34% 19.5%;
+    grid-template-rows: 46.5% 34% 19.5%;
+    border: 0.3rem solid #15313a;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+            box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+    overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 2.5rem;
+    z-index: 15;
+}
+
+.modal-email-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img-modal;
+    border-bottom: 0.3rem solid #15313a;
+    overflow: hidden;
+}
+
+.modal-email-img img {
+    width: 100%;
+}
+
+.modal-email-txt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt-modal;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center center;
+}
+
+.modal-email-txt p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0rem 1.3rem;
+}
+
+.modal-email-btn {
+    grid-area: btn-modal;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
+    place-self: start center;
 }
 
 
@@ -561,12 +656,13 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "heading"
         "inspire"
         "buttons";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
 }
 
@@ -646,7 +742,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "btn-1"
         "btn-2"
         "btn-3"
@@ -704,7 +800,7 @@ body {
     display: grid;
     -ms-grid-columns: 5% 1fr 5%;
     grid-template-columns: 5% 1fr 5%;
-                grid-template-areas:
+                    grid-template-areas:
         ". img-w ."
         ". grp-w ."
         ". img-c ."
@@ -735,7 +831,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-                grid-template-areas:
+                    grid-template-areas:
         "hdr-w"
         "txt-w"
         "btn-w";
@@ -783,7 +879,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-                grid-template-areas:
+                    grid-template-areas:
         "hdr-c"
         "txt-c"
         "btn-c";
@@ -831,7 +927,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-                grid-template-areas:
+                    grid-template-areas:
         "hdr-b"
         "txt-b"
         "btn-b";
@@ -983,7 +1079,7 @@ body {
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-                grid-template-areas:
+                    grid-template-areas:
         "opt-one"
         "opt-two"
         "opt-three"
@@ -1007,7 +1103,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "img-one"
         "prc-one"
         "drt-one"
@@ -1069,7 +1165,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "img-two"
         "prc-two"
         "drt-two"
@@ -1127,7 +1223,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "img-three"
         "prc-three"
         "drt-three"
@@ -1185,7 +1281,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-                grid-template-areas:
+                    grid-template-areas:
         "img-four"
         "prc-four"
         "drt-four"
@@ -1316,6 +1412,7 @@ body {
 .footer-menu-item {
     list-style: none;
     font-size: 1.7rem;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 0.6rem;
 }
@@ -1345,7 +1442,7 @@ body {
     display: grid;
     -ms-grid-columns: 33% 34% 33%;
     grid-template-columns: 33% 34% 33%;
-                grid-template-areas:
+                    grid-template-areas:
         "social social social"
         "news news news"
         "input input input"
@@ -1425,12 +1522,15 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: input;
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .footer-input-form input {
     word-spacing: 0rem;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 0rem;
 }
 
@@ -1539,6 +1639,7 @@ body {
 
 .footer-end-items {
     font-size: 1.3rem;
+    font-weight: 400;
     list-style: none;
 }
 
@@ -1563,6 +1664,16 @@ body {
 /****  screen and (max-width: 359px)  ****/
 
 @media screen and (max-width: 359px) {
+    /***********************/
+    /****  Email Modal  ****/
+    /***********************/
+
+    .modal-email-box,
+    #modal-email-box {
+        -ms-grid-rows: 37.5% 45% 22.5%;
+        grid-template-rows: 37.5% 45% 22.5%;
+    }
+
     /****************/
     /***  NAVBAR  ***/
     /****************/
@@ -1656,7 +1767,7 @@ body {
     .header-hero-buttons {
         -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-                    grid-template-areas:
+                        grid-template-areas:
             "btn-1 btn-2 btn-3 btn-4";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
@@ -1677,7 +1788,7 @@ body {
         display: grid;
         -ms-grid-columns: 5% 43% 4% 43% 5%;
         grid-template-columns: 5% 43% 4% 43% 5%;
-                    grid-template-areas:
+                        grid-template-areas:
             ". img-w . grp-w ."
             ". grp-c . img-c ."
             ". img-b . grp-b .";
@@ -1749,7 +1860,7 @@ body {
     .membership-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-                    grid-template-areas:
+                        grid-template-areas:
             "opt-one opt-two"
             "opt-three opt-four";
         -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content;
@@ -1786,7 +1897,7 @@ body {
     .container-footer {
         -ms-grid-columns: 20% 60% 20%;
         grid-template-columns: 20% 60% 20%;
-                    grid-template-areas:
+                        grid-template-areas:
             "start middle end"
             ". copy .";
         -ms-grid-rows: ()[2. -webkit-max-content];
@@ -1835,10 +1946,72 @@ body {
     /***  Basic Setup  ***/
     /*********************/
 
+    .container-modal-email,
+    #modal-email-container {
+        -ms-grid-columns: 25% 50% 25%;
+        grid-template-columns: 25% 50% 25%;
+        -ms-grid-rows: 20% 60% 20%;
+        grid-template-rows: 20% 60% 20%;
+    }
+
+    .container-modal-email > *:nth-child(1),
+    #modal-email-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(2),
+    #modal-email-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(3),
+    #modal-email-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(4),
+    #modal-email-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(5),
+    #modal-email-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(6),
+    #modal-email-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(7),
+    #modal-email-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(8),
+    #modal-email-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(9),
+    #modal-email-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
     .container-header {
         -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
-            grid-template-areas:
+                grid-template-areas:
             ". . ."
             ". hero ."
             ". hero ."
@@ -1846,6 +2019,15 @@ body {
             ". . .";
         -ms-grid-rows: 20% (20%)[3] 20%;
         grid-template-rows: 20% repeat(3, 20%) 20%;
+    }
+
+    /***********************/
+    /****  Email Modal  ****/
+    /***********************/
+
+    .modal-email-txt p {
+        font-size: 1.5rem;
+        margin: 0rem 1.5rem;
     }
 
     /****************/
@@ -1880,10 +2062,11 @@ body {
         -ms-grid-columns: max-content 1.5rem max-content 1.5rem max-content;
         grid-template-columns: repeat(3, -webkit-max-content);
         grid-template-columns: repeat(3, max-content);
-            grid-template-areas:
+                grid-template-areas:
             "btn-1 btn-2 btn-4";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-column-gap: 1.5rem;
         grid-row-gap: 0rem;
@@ -1947,7 +2130,7 @@ body {
     .container-testimonial {
         -ms-grid-columns: 31.66% 0rem 31.66% 0rem 31.66%;
         grid-template-columns: repeat(3, 31.66%);
-                    grid-template-areas:
+                        grid-template-areas:
             "test-one test-two test-three";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
@@ -1985,6 +2168,72 @@ body {
 /****  /screen and (min-width: 1024px)  ****/
 
 @media screen and (min-width: 1024px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-modal-email,
+    #modal-email-container {
+        -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-email > *:nth-child(1),
+    #modal-email-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(2),
+    #modal-email-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(3),
+    #modal-email-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(4),
+    #modal-email-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(5),
+    #modal-email-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(6),
+    #modal-email-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(7),
+    #modal-email-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(8),
+    #modal-email-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(9),
+    #modal-email-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
     /*****************************/
     /***  Reusable Components  ***/
     /*****************************/
@@ -2007,10 +2256,11 @@ body {
         -ms-grid-columns: max-content 1.5rem max-content 1.5rem max-content 1.5rem max-content;
         grid-template-columns: repeat(4, -webkit-max-content);
         grid-template-columns: repeat(4, max-content);
-            grid-template-areas:
+                grid-template-areas:
             "btn-1 btn-2 btn-3 btn-4";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-column-gap: 1.5rem;
         grid-row-gap: 0rem;
@@ -2115,7 +2365,7 @@ body {
     .membership-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-                    grid-template-areas:
+                        grid-template-areas:
             "opt-one opt-two opt-three opt-four";
         -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
@@ -2139,6 +2389,72 @@ body {
 /****  /screen and (min-width: 1400px)  ****/
 
 @media screen and (min-width: 1400px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-modal-email,
+    #modal-email-container {
+        -ms-grid-columns: 37% 24% 37%;
+        grid-template-columns: 37% 24% 37%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-email > *:nth-child(1),
+    #modal-email-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(2),
+    #modal-email-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(3),
+    #modal-email-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(4),
+    #modal-email-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(5),
+    #modal-email-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(6),
+    #modal-email-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(7),
+    #modal-email-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(8),
+    #modal-email-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(9),
+    #modal-email-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
     /****************/
     /***  Header  ***/
     /****************/
@@ -2167,3 +2483,147 @@ body {
     }
 }
 /****  /screen and (min-width: 1400px)  ****/
+
+
+/****  screen and (min-width: 1920px)  ****/
+
+@media only screen and (min-width: 1920px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-modal-email,
+    #modal-email-container {
+        -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-email > *:nth-child(1),
+    #modal-email-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(2),
+    #modal-email-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(3),
+    #modal-email-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(4),
+    #modal-email-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(5),
+    #modal-email-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(6),
+    #modal-email-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(7),
+    #modal-email-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(8),
+    #modal-email-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(9),
+    #modal-email-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+}
+/****  /screen and (min-width: 1920px)  ****/
+
+
+/****  screen and (min-width: 2560px)  ****/
+
+@media only screen and (min-width: 2560px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-modal-email,
+    #modal-email-container {
+        -ms-grid-columns: 43% 16% 43%;
+        grid-template-columns: 43% 16% 43%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-email > *:nth-child(1),
+    #modal-email-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(2),
+    #modal-email-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(3),
+    #modal-email-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(4),
+    #modal-email-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(5),
+    #modal-email-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(6),
+    #modal-email-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-email > *:nth-child(7),
+    #modal-email-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-email > *:nth-child(8),
+    #modal-email-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-email > *:nth-child(9),
+    #modal-email-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+}
+/****  /screen and (min-width: 2560px)  ****/

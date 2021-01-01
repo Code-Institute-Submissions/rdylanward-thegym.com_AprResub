@@ -15,7 +15,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "header-classes"
         "classes-list"
         "footer";
@@ -45,7 +45,7 @@
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". quote-classes ."
         ". . .";
@@ -62,13 +62,14 @@
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". header-classes ."
         ". summary-classes ."
         ". schedule ."
         ". classes-items .";
-    -ms-grid-rows: (max-content)[4];
+    -ms-grid-rows: (-webkit-max-content)[4];
     grid-template-rows: repeat(4, -webkit-max-content);
+    -ms-grid-rows: (max-content)[4];
     grid-template-rows: repeat(4, max-content);
     margin: 5rem 0rem;
 }
@@ -168,7 +169,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "classes-item-1"
         "classes-item-2"
         "classes-item-3"
@@ -177,8 +178,9 @@
         "classes-item-6"
         "classes-item-7"
         "classes-item-8";
-    -ms-grid-rows: (max-content)[8];
+    -ms-grid-rows: (-webkit-max-content)[8];
     grid-template-rows: repeat(8, -webkit-max-content);
+    -ms-grid-rows: (max-content)[8];
     grid-template-rows: repeat(8, max-content);
 }
 
@@ -219,12 +221,13 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-group"
         "head-group"
         "text-group";
-    -ms-grid-rows: (max-content)[3];
+    -ms-grid-rows: (-webkit-max-content)[3];
     grid-template-rows: repeat(3, -webkit-max-content);
+    -ms-grid-rows: (max-content)[3];
     grid-template-rows: repeat(3, max-content);
 }
 
@@ -307,11 +310,12 @@
         display: grid;
         -ms-grid-columns: 48% 4% 48%;
         grid-template-columns: 48% 4% 48%;
-            grid-template-areas:
+                grid-template-areas:
             "img-group . head-group"
             "img-group . text-group";
-        -ms-grid-rows: (max-content)[2];
+        -ms-grid-rows: (-webkit-max-content)[2];
         grid-template-rows: repeat(2, -webkit-max-content);
+        -ms-grid-rows: (max-content)[2];
         grid-template-rows: repeat(2, max-content);
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -324,11 +328,12 @@
         display: grid;
         -ms-grid-columns: 48% 4% 48%;
         grid-template-columns: 48% 4% 48%;
-            grid-template-areas:
+                grid-template-areas:
             "head-group . img-group"
             "text-group . img-group";
-        -ms-grid-rows: (max-content)[2];
+        -ms-grid-rows: (-webkit-max-content)[2];
         grid-template-rows: repeat(2, -webkit-max-content);
+        -ms-grid-rows: (max-content)[2];
         grid-template-rows: repeat(2, max-content);
         -webkit-box-align: center;
             -ms-flex-align: center;

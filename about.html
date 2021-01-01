@@ -12,6 +12,25 @@
     </head>
 
     <body>
+        <!--  EMAIL MODAL  -->
+        <div class="container-modal-email" id="modal-email-container">
+            <div class="modal-email-box" id="modal-email-box">
+                <div class="modal-email-img">
+                    <img src="assets/img/newsprint.jpg" alt="Stack of newspapers on a table.">
+                </div>
+                <div class="modal-email-txt font-green">
+                    <p>Thank you for signing up to our newsletter. We have packed it full of information about The Gym, fitness and other things. Make a brew, sit back and enjoy the read.</p>
+                </div>
+                <div class="modal-email-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-email-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /EMAIL MODAL  -->
+
         <!--  NAVBAR  -->
         <nav class="container-navbar" id="navbar">
             <div class="navbar-brand">
@@ -109,7 +128,7 @@
                     <p class="txt-two story-text">As with most people, Frank started with the internet. He spent days trying to discover the best way to start. As with most people, Frank found mostly empty promises, unbacked science and marketing to the same old workouts. At this point, he decided that he was not going to waste any more time online and go back to the basics. Frank had joined one of the local gyms and started with a basic workout. While there, Frank took advantage of the free consultation on offer with his membership. That is where he met Kate. Kate took a look at his plan, adjusted it and set-up a diet that Frank could easily follow. Armed with his new regime, Frank made great strides in losing weight and getting fit again. It wasn’t long before he was adjusting his plan himself. Using the knowledge he acquired from his early searches, Frank was able to fine-tune the plan to enable him to reach his goals faster.</p>
                     <img class="img-two story-img" src="assets/img/man-on-treadmill.jpg" alt="Man running on treadmill.">
                     <p class="txt-three story-text">Frank had been bitten by the bug. Frank loved fitness so much he attained a degree and starting consulting himself. While attaining this degree, Frank called on Kate for knowledge. During this time they got very close. Upon obtaining his degree, Frank and Kete worked closely with each other, often stepping in for each other when the other was unable to make an appointment. Frank’s beginning in this journey gave him a better understanding of what his clients are going through and how the challenges will affect them. This understanding is what makes him so successful at helping his clients over their hurdles and attaining their goals.</p>
-                    <p class="txt-four story-text">It wasn’t long before Frank had an idea. Frank wanted to open a gym where his clients could work out their routines that He and Kate provide with the aid of a helpful and friendly staff. Frank and Kate found the perfect spot for the gym, an empty shed out the back of a local shop. A few years on and now married to each other, The Gym is thriving. They have expanded their services and into the surrounding buildings to add and/or upgrade the existing equipment. The expansion has allowed for The Gym to hire more staff, ensuring that you get the same service and attention that Frank and Kate both provided before they started the gym and since then.</p>
+                    <p class="txt-four story-text">It wasn’t long before Frank had an idea. Frank wanted to open a gym where his clients could work out their routines that He and Kate provide with the aid of helpful and friendly staff. Frank and Kate found the perfect spot for the gym, an empty shed out the back of a local shop. A few years on and now married to each other, The Gym is thriving. They have expanded their services and into the surrounding buildings to add and/or upgrade the existing equipment. The expansion has allowed for The Gym to hire more staff, ensuring that you get the same service and attention that Frank and Kate both provided before they started the gym and since then.</p>
                     <p class="text-five story-text">At the Gym, we do not believe that a gym should be perfect or trendy. We believe that it should be able to facilitate your needs and provide you with the support you require to meet and maintain your goals. We rise to meet those standards every day so you can keep yours or raise them. So, come on in and give us a try. We offer a free one week trial to all potential first-time members. As soon as you spend some time with us, we are confident that you will want to stay.</p>
                 </div>
             </section>
@@ -121,7 +140,7 @@
                     <h1 class="staff-heading-text">Meet The Staff!</h1>
                 </div>
                 <div class="staff-text">
-                    <p class="staff-summary">At The Gym, we take pride in the combined skill, experience, qualifications, drive and absolute love for fitness of our staff. All our staff posess our shared love for passing on our knowledge and the satisfaction of helping people meet thier goals, no matter how great the challenge.</p>
+                    <p class="staff-summary">At The Gym, we take pride in the combined skill, experience, qualifications, drive and absolute love for fitness of our staff. All our staff possess our shared love for passing on our knowledge and the satisfaction of helping people meet their goals, no matter how great the challenge.</p>
                 </div>
                 <div class="staff-bio">
                     <div class="staff-bio-one">
@@ -208,7 +227,7 @@
                     <div class="footer-input">
                         <form class="footer-input-form">
                             <input class="footer-input-email font-light" id="newsletter-email" type="email" placeholder="Enter email...">
-                            <input class="btn btn-flat-light footer-input-btn" type="submit" value="Sign Up!">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
                         </form>
                     </div>
                     <div class="footer-membership">
@@ -218,7 +237,7 @@
                     <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                          html by PR.Gaultier (01/10/2020), and and repurposed to aid in the click function of the button. -->
                     <div class="footer-button">
-                        <button class="btn btn-flat-light footer-button-btn" onclick="window.location.href='javascript:void(0);'">Membership</button>
+                        <button class="btn btn-flat-light footer-button-btn" onclick="window.location.href='membership.html'">Membership</button>
                     </div>
                 </div>
                 <div class="footer-end">
@@ -250,6 +269,11 @@
             let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            let modalEmailSubmit = document.getElementById("modal-email-submit");
+            let modalEmailContainer = document.getElementById("modal-email-container");
+            let modalEmailBox = document.getElementById("modal-email-box");
+            let modalEmailBtn = document.getElementById("modal-email-btn");
+
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
                and repurposed to aid in the function of the sticky menu */
             function stickyNavbar() {
@@ -270,6 +294,19 @@
                 } else {
                     navbarMobile.style.display = "none";
                 }
+            }
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal */
+            modalEmailSubmit.onclick = function() {
+                modalEmailContainer.style.display = "grid";
+                modalEmailBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalEmailBtn.onclick = function() {
+                modalEmailContainer.style.display = "none";
+                modalEmailBox.style.display = "none";
             }
         </script>
         <!--  /JSCRIPT & JQUERY  -->

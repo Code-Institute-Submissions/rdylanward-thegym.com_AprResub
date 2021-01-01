@@ -12,6 +12,25 @@
     </head>
 
     <body>
+        <!--  EMAIL MODAL  -->
+        <div class="container-modal-email" id="modal-email-container">
+            <div class="modal-email-box" id="modal-email-box">
+                <div class="modal-email-img">
+                    <img src="assets/img/newsprint.jpg" alt="Stack of newspapers on a table.">
+                </div>
+                <div class="modal-email-txt font-green">
+                    <p>Thank you for signing up to our newsletter. We have packed it full of information about The Gym, fitness and other things. Make a brew, sit back and enjoy the read.</p>
+                </div>
+                <div class="modal-email-btn">
+
+                    <!-- The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+                       and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal -->
+                    <button class="btn btn-flat-dark" id="modal-email-btn">OK</button>
+                </div>
+            </div>
+        </div>
+        <!--  /EMAIL MODAL  -->
+
         <!--  NAVBAR  -->
         <nav class="container-navbar" id="navbar">
             <div class="navbar-brand">
@@ -272,7 +291,7 @@
                     <div class="footer-input">
                         <form class="footer-input-form">
                             <input class="footer-input-email font-light" id="newsletter-email" type="email" placeholder="Enter email...">
-                            <input class="btn btn-flat-light footer-input-btn" type="submit" value="Sign Up!">
+                            <input class="btn btn-flat-light footer-input-btn" id="modal-email-submit" type="Button" value="Sign Up!">
                         </form>
                     </div>
                     <div class="footer-membership">
@@ -282,7 +301,7 @@
                     <!-- The HTML for the click function of the button was acquired from Grepper (https://www.codegrepper.com/code-examples/html/html+button+with+link),
                          html by PR.Gaultier (01/10/2020), and and repurposed to aid in the click function of the button. -->
                     <div class="footer-button">
-                        <button class="btn btn-flat-light footer-button-btn" onclick="window.location.href='javascript:void(0);'">Membership</button>
+                        <button class="btn btn-flat-light footer-button-btn" onclick="window.location.href='membership.html'">Membership</button>
                     </div>
                 </div>
                 <div class="footer-end">
@@ -314,6 +333,11 @@
             let navbarMobile = document.getElementById("navbar-mobile");
             let sticky = navbar.offsetHeight;
 
+            let modalEmailSubmit = document.getElementById("modal-email-submit");
+            let modalEmailContainer = document.getElementById("modal-email-container");
+            let modalEmailBox = document.getElementById("modal-email-box");
+            let modalEmailBtn = document.getElementById("modal-email-btn");
+
             /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)
                and repurposed to aid in the function of the sticky menu */
             function stickyNavbar() {
@@ -334,6 +358,19 @@
                 } else {
                     navbarMobile.style.display = "none";
                 }
+            }
+
+            /* The following Javascript was originally written by W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+               and repurposed to aid in the function of the sticky menu */// When the user clicks on the button, open the modal */
+            modalEmailSubmit.onclick = function() {
+                modalEmailContainer.style.display = "grid";
+                modalEmailBox.style.display = "grid";
+            }
+
+            /* When the user clicks on 'Close' in the modal */
+            modalEmailBtn.onclick = function() {
+                modalEmailContainer.style.display = "none";
+                modalEmailBox.style.display = "none";
             }
         </script>
         <!--  /JSCRIPT & JQUERY  -->

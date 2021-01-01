@@ -9,13 +9,61 @@
 /***                          Basic Setup                           ***/
 /**********************************-***********************************/
 
+.container-modal-member,
+#modal-member-container {
+    background: rgba(12, 18, 44, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    -ms-grid-columns: 7.3% 85% 7.7%;
+    grid-template-columns: 7.3% 85% 7.7%;
+                grid-template-areas:
+        ". . ."
+        ". member-modal ."
+        ". . .";
+    -ms-grid-rows: 19% 70% 11%;
+    grid-template-rows: 19% 70% 11%;
+    place-content: center center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.container-modal-request,
+#modal-request-container {
+    background: rgba(12, 18, 44, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    -ms-grid-columns: 7.3% 85% 7.7%;
+    grid-template-columns: 7.3% 85% 7.7%;
+                grid-template-areas:
+        ". . ."
+        ". request-modal ."
+        ". . .";
+    -ms-grid-rows: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+    place-content: center center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
 .container-full-membership {
     position: absolute;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-            grid-template-areas:
+                grid-template-areas:
         "header-membership"
         "membership-plans"
         "footer";
@@ -45,7 +93,7 @@
     display: grid;
     -ms-grid-columns: 7.5% 85% 7.5%;
     grid-template-columns: 7.5% 85% 7.5%;
-            grid-template-areas:
+                grid-template-areas:
         ". . ."
         ". quote-membership ."
         ". . .";
@@ -62,17 +110,228 @@
     display: grid;
     -ms-grid-columns: 5% 90% 5%;
     grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
+            grid-template-areas:
         ". cards-heading ."
         ". cards-summary ."
         ". cards-pricing ."
         ". specials-heading ."
         ". specials-pricing .";
-    -ms-grid-rows: (max-content)[5];
+    -ms-grid-rows: (-webkit-max-content)[5];
     grid-template-rows: repeat(5, -webkit-max-content);
+    -ms-grid-rows: (max-content)[5];
     grid-template-rows: repeat(5, max-content);
     margin-top: 5rem;
     margin-bottom: 2.5rem;
+}
+
+
+/**********************************************************************/
+/***                          Modal Member                          ***/
+/**********************************-***********************************/
+
+.modal-member-box,
+#modal-member-box {
+    grid-area: member-modal;
+    background: rgba(242, 240, 229, 0.9);
+    display: none;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+        grid-template-areas:
+        "img-modal"
+        "txt-modal"
+        "frm-modal"
+        "btn-modal";
+    -ms-grid-rows: 37.5% 15% 34% 13.5%;
+    grid-template-rows: 37.5% 15% 34% 13.5%;
+    border: 0.3rem solid #15313a;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+            box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+    overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 2.5rem;
+    z-index: 15;
+}
+
+.modal-member-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img-modal;
+    border-bottom: 0.3rem solid #15313a;
+    overflow: hidden;
+}
+
+.modal-member-img img {
+    width: 100%;
+}
+
+.modal-member-hdr {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt-modal;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center center;
+}
+
+.modal-member-hdr p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0rem 1.9rem;
+}
+
+.modal-member-frm {
+    grid-area: frm-modal;
+    width: 94%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+        grid-template-areas:
+        "member-first"
+        "member-last"
+        "member-phone"
+        "member-email";
+    -ms-grid-rows: max-content 0.5rem max-content 0.5rem max-content 0.5rem max-content;
+    grid-template-rows: repeat(4, -webkit-max-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-row-gap: 0.5rem;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center center;
+}
+
+.modal-member-inputs-first {
+    grid-area: member-first;
+}
+
+.modal-member-inputs-last {
+    grid-area: member-last;
+}
+
+.modal-member-inputs-phone {
+    grid-area: member-phone;
+}
+
+.modal-member-inputs-email {
+    grid-area: member-email;
+}
+
+.modal-member-boxes {
+    background: transparent;
+    border: 0.3rem solid #15313a;
+    border-radius: 0.7rem;
+    height: 2.4rem;
+    padding: 0rem 0.8rem;
+}
+
+.modal-member-boxes::-webkit-input-placeholder {
+    font-weight: 400;
+    color: rgba(21, 49, 58, 0.7);
+}
+
+.modal-member-boxes::-moz-placeholder {
+    font-weight: 400;
+    color: rgba(21, 49, 58, 0.7);
+}
+
+.modal-member-boxes:-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(21, 49, 58, 0.7);
+}
+
+.modal-member-boxes::-ms-input-placeholder {
+    font-weight: 400;
+    color: rgba(21, 49, 58, 0.7);
+}
+
+.modal-member-boxes::placeholder {
+    font-weight: 400;
+    color: rgba(21, 49, 58, 0.7);
+}
+
+.modal-member-btn {
+    grid-area: btn-modal;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
+    place-self: center center;
+    margin-bottom: 0.5rem;
+}
+
+
+/**********************************************************************/
+/***                          Modal Request                         ***/
+/**********************************-***********************************/
+
+.modal-request-box,
+#modal-request-box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: request-modal;
+    background: rgba(242, 240, 229, 0.9);
+    display: none;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+            grid-template-areas:
+        "img-modal"
+        "txt-modal"
+        "btn-modal";
+    -ms-grid-rows: 46.5% 34% 19.5%;
+    grid-template-rows: 46.5% 34% 19.5%;
+    border: 0.3rem solid #15313a;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+            box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+    overflow: hidden;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 2.5rem;
+    z-index: 15;
+}
+
+.modal-request-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img-modal;
+    border-bottom: 0.3rem solid #15313a;
+    overflow: hidden;
+}
+
+.modal-request-img img {
+    width: 100%;
+}
+
+.modal-request-txt {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt-modal;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center center;
+}
+
+.modal-request-txt p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0rem 1.3rem;
+}
+
+.modal-request-btn {
+    grid-area: btn-modal;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: center;
+    place-self: start center;
 }
 
 
@@ -145,15 +404,16 @@
     display: grid;
     -ms-grid-columns: 7% 93%;
     grid-template-columns: 7% 93%;
-        grid-template-areas:
+            grid-template-areas:
         "summary-header summary-header"
         "summary-icon-1 summary-line-1"
         "summary-icon-2 summary-line-2"
         "summary-icon-3 summary-line-3"
         "summary-icon-4 summary-line-4"
         "summary-icon-5 summary-line-5";
-    -ms-grid-rows: (max-content)[6];
+    -ms-grid-rows: (-webkit-max-content)[6];
     grid-template-rows: repeat(6, -webkit-max-content);
+    -ms-grid-rows: (max-content)[6];
     grid-template-rows: repeat(6, max-content);
     -ms-grid-column-align: center;
         justify-self: center;
@@ -237,7 +497,7 @@
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-        grid-template-areas:
+            grid-template-areas:
         "cards-one"
         "cards-two"
         "cards-three"
@@ -246,8 +506,9 @@
         "cards-six"
         "cards-seven"
         "cards-eight";
-    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+    -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content;
     grid-template-rows: repeat(8, -webkit-max-content);
+    -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 2.5rem;
     place-content: center center;
@@ -294,7 +555,7 @@
     display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-        grid-template-areas:
+            grid-template-areas:
         "img-cards"
         "prc-cards"
         "drt-cards"
@@ -381,11 +642,12 @@
     display: grid;
     -ms-grid-columns: 95%;
     grid-template-columns: 95%;
-        grid-template-areas:
+            grid-template-areas:
         "cards-nine"
         "cards-ten";
-    -ms-grid-rows: max-content 2.5rem max-content;
+    -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content;
     grid-template-rows: repeat(2, -webkit-max-content);
+    -ms-grid-rows: max-content 2.5rem max-content;
     grid-template-rows: repeat(2, max-content);
     grid-row-gap: 2.5rem;
     place-content: center center;
@@ -408,6 +670,30 @@
 /****  screen and (max-width: 359px)  ****/
 
 @media only screen and (max-width: 359px) {
+    /**********************/
+    /***  Member Modal  ***/
+    /**********************/
+
+    .modal-member-box,
+    #modal-member-box {
+        -ms-grid-rows: 31.5% 19% 35% 14.5%;
+        grid-template-rows: 31.5% 19% 35% 14.5%;
+    }
+
+    .modal-member-hdr p {
+        font-size: 1.3rem;
+        margin: 0rem 2.1rem;
+    }
+    /*************************/
+    /****  Request Modal  ****/
+    /*************************/
+
+    .modal-request-box,
+    #modal-request-box {
+        -ms-grid-rows: 37.5% 45% 22.5%;
+        grid-template-rows: 37.5% 45% 22.5%;
+    }
+
     /**************************/
     /***  Membership Cards  ***/
     /**************************/
@@ -431,6 +717,97 @@
 /****  screen and (min-width: 768px)  ****/
 
 @media only screen and (min-width: 768px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-modal-member,
+    #modal-member-container {
+        -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .container-modal-request,
+    #modal-request-container {
+        -ms-grid-columns: 25% 50% 25%;
+        grid-template-columns: 25% 50% 25%;
+        -ms-grid-rows: 20% 60% 20%;
+        grid-template-rows: 20% 60% 20%;
+    }
+
+    .container-modal-request > *:nth-child(1),
+    #modal-request-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(2),
+    #modal-request-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(3),
+    #modal-request-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(4),
+    #modal-request-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(5),
+    #modal-request-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(6),
+    #modal-request-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(7),
+    #modal-request-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(8),
+    #modal-request-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(9),
+    #modal-request-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    /**********************/
+    /***  Member Modal  ***/
+    /**********************/
+
+    .modal-member-box,
+    #modal-member-box {
+        -ms-grid-rows: 35.5% 16% 33% 15.5%;
+        grid-template-rows: 35.5% 16% 33% 15.5%;
+    }
+
+    /*************************/
+    /****  Request Modal  ****/
+    /*************************/
+
+    .modal-request-txt p {
+        font-size: 1.5rem;
+        margin: 0rem 1.5rem;
+    }
+
     /**************************/
     /***  Membership Cards  ***/
     /**************************/
@@ -453,13 +830,14 @@
     .membership-cards-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-            grid-template-areas:
+                grid-template-areas:
             "cards-one cards-two"
             "cards-three cards-four"
             "cards-five cards-six"
             "cards-seven cards-eight";
-        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+        -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content;
         grid-template-rows: repeat(4, -webkit-max-content);
+        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
         grid-template-rows: repeat(4, max-content);
         grid-gap: 2.5rem 2.5rem;
     }
@@ -472,10 +850,11 @@
     .membership-specials-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-            grid-template-areas:
+                grid-template-areas:
             "cards-nine cards-ten";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
         grid-gap: 2.5rem 2.5rem;
     }
@@ -490,6 +869,74 @@
     /*********************/
     /***  Basic Setup  ***/
     /*********************/
+
+    .container-modal-member,
+    #modal-member-container {
+        -ms-grid-columns: 33% 34% 33%;
+        grid-template-columns: 33% 34% 33%;
+    }
+
+    .container-modal-request,
+    #modal-request-container {
+        -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-request > *:nth-child(1),
+    #modal-request-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(2),
+    #modal-request-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(3),
+    #modal-request-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(4),
+    #modal-request-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(5),
+    #modal-request-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(6),
+    #modal-request-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(7),
+    #modal-request-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(8),
+    #modal-request-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(9),
+    #modal-request-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
 
     .container-header-membership {
         -ms-grid-columns: 10% 80% 10%;
@@ -520,13 +967,14 @@
     .membership-cards-pricing {
         -ms-grid-columns: 47.5% 2.5rem 47.5%;
         grid-template-columns: repeat(2, 47.5%);
-            grid-template-areas:
+                grid-template-areas:
             "cards-one cards-two"
             "cards-three cards-four"
             "cards-five cards-six"
             "cards-seven cards-eight";
-        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
+        -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content 2.5rem -webkit-max-content;
         grid-template-rows: repeat(4, -webkit-max-content);
+        -ms-grid-rows: max-content 2.5rem max-content 2.5rem max-content 2.5rem max-content;
         grid-template-rows: repeat(4, max-content);
     }
 }
@@ -539,6 +987,12 @@
     /*********************/
     /***  Basic Setup  ***/
     /*********************/
+
+    .container-modal-member,
+    #modal-member-container {
+        -ms-grid-columns: 37% 26% 37%;
+        grid-template-columns: 37% 26% 37%;
+    }
 
     .container-header-membership {
         -ms-grid-columns: 15% 70% 15%;
@@ -565,21 +1019,23 @@
     .membership-cards-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-            grid-template-areas:
+                grid-template-areas:
             "cards-one cards-two cards-three cards-four"
             "cards-five cards-six cards-seven cards-eight";
-        -ms-grid-rows: max-content 2.5rem max-content;
+        -ms-grid-rows: -webkit-max-content 2.5rem -webkit-max-content;
         grid-template-rows: repeat(2, -webkit-max-content);
+        -ms-grid-rows: max-content 2.5rem max-content;
         grid-template-rows: repeat(2, max-content);
     }
 
     .membership-specials-pricing {
         -ms-grid-columns: 23.75% 2.5rem 23.75% 2.5rem 23.75% 2.5rem 23.75%;
         grid-template-columns: repeat(4, 23.75%);
-            grid-template-areas:
+                grid-template-areas:
             ". cards-nine cards-ten .";
-        -ms-grid-rows: max-content;
+        -ms-grid-rows: -webkit-max-content;
         grid-template-rows: -webkit-max-content;
+        -ms-grid-rows: max-content;
         grid-template-rows: max-content;
     }
 
@@ -591,9 +1047,162 @@
 /****  /screen and (max-width: 1200px)  ****/
 
 
-/****  screen and (min-width: 1900px)  ****/
+/****  screen and (min-width: 1400px)  ****/
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1400px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-modal-request,
+    #modal-request-container {
+        -ms-grid-columns: 37% 24% 37%;
+        grid-template-columns: 37% 24% 37%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-request > *:nth-child(1),
+    #modal-request-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(2),
+    #modal-request-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(3),
+    #modal-request-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(4),
+    #modal-request-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(5),
+    #modal-request-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(6),
+    #modal-request-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(7),
+    #modal-request-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(8),
+    #modal-request-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(9),
+    #modal-request-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+}
+/****  /screen and (max-width: 1400px)  ****/
+
+
+/****  screen and (min-width: 1920px)  ****/
+
+@media only screen and (min-width: 1920px) {
+    /*********************/
+    /***  Basic Setup  ***/
+    /*********************/
+
+    .container-modal-member,
+    #modal-member-container {
+        -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+    }
+
+    .container-modal-request,
+    #modal-request-container {
+        -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-request > *:nth-child(1),
+    #modal-request-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(2),
+    #modal-request-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(3),
+    #modal-request-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(4),
+    #modal-request-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(5),
+    #modal-request-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(6),
+    #modal-request-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(7),
+    #modal-request-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(8),
+    #modal-request-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(9),
+    #modal-request-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    /**********************/
+    /***  Member Modal  ***/
+    /**********************/
+
+    .modal-member-box,
+    #modal-member-box {
+        -ms-grid-rows: 39.5% 16% 29% 15.5%;
+        grid-template-rows: 39.5% 16% 29% 15.5%;
+    }
 
     /**************************/
     /***  Membership Cards  ***/
@@ -604,4 +1213,76 @@
         grid-template-rows: 16rem 7rem 3rem 7rem;
     }
 }
-/****  /screen and (max-width: 1900px)  ****/
+/****  /screen and (max-width: 1920px)  ****/
+
+
+/****  screen and (min-width: 2560px)  ****/
+
+@media only screen and (min-width: 2560px) {
+    /***********************/
+    /****  Basic Setup  ****/
+    /***********************/
+
+    .container-modal-request,
+    #modal-request-container {
+        -ms-grid-columns: 43% 16% 43%;
+        grid-template-columns: 43% 16% 43%;
+        -ms-grid-rows: 30% 40% 30%;
+        grid-template-rows: 30% 40% 30%;
+    }
+
+    .container-modal-request > *:nth-child(1),
+    #modal-request-container > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(2),
+    #modal-request-container > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(3),
+    #modal-request-container > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(4),
+    #modal-request-container > *:nth-child(4) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(5),
+    #modal-request-container > *:nth-child(5) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(6),
+    #modal-request-container > *:nth-child(6) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+
+    .container-modal-request > *:nth-child(7),
+    #modal-request-container > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .container-modal-request > *:nth-child(8),
+    #modal-request-container > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .container-modal-request > *:nth-child(9),
+    #modal-request-container > *:nth-child(9) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+}
+/****  /screen and (min-width: 2560px)  ****/
