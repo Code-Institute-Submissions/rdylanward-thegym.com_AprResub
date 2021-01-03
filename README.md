@@ -78,19 +78,33 @@ The scope of the project was to design a website for a fictional gym using HTML5
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+    - Font Awesome was used for the brand. the bullet points on the membership page and for the quotes used throughout.
 1. [jQuery:](https://jquery.com/)
     - jQuery was essential for enabling the interactive elements like the sticky menu and hiding/unhiding the modals.
-1. [Beackets:](http://brackets.io/)
+1. [Brackets:](http://brackets.io/)
     - Brackets was chosen over GitPod for the coding of the site. Brackets has a great set of features for programming multiple languages and connects directly to GitHub.
 1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    - Git was used in conjunction with Brackets for version control to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    - GitHub utilised as a repository for the code.
+1. [GIMP:](https://www.gimp.org/)
+    - Gimp (Graphic Image Manipulation Program) qas used for resizing cropping and editing images for the website.
+1. [Autoprefixer:](http://autoprefixer.github.io/)
+    - Autoprefixer was used to ensure the code has all relevant vendor prefixes.
+1. [Tiny PNG:](https://tinypng.com/)
+    - Tiny PNG was used to reduce the file size of the images to aid in faster loading times.
+1. [Pexels:](https://www.pexels.com/)
+    - Pexels was used to obtain royalty free images for the site.
+1. [Burst:](https://burst.shopify.com/)
+    - Burst was used to obtain royalty free images for the site.
+1. [Flat UI Colors 2:](https://burst.shopify.com/)
+    - Flat UI was used to choose the base color for the palette.
+1. [Paletton:](https://paletton.com/)
+    - Paletton was used to create the colour palette for the site.
+1. [0to255.com:](https://www.0to255.com/)
+    - 0to255 was used to determine certain shades of the colours while maintaining the palette.
+1. [Devoth‘s HEX 2 RGBA Color Calculator:](http://hex2rgba.devoth.com/)
+    - Devoth‘s HEX 2 RGBA Color Calculator was used to aid in converting hex colurs to rgb and rgba.
 
 ## Testing
 
