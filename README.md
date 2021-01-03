@@ -45,9 +45,11 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 ## Features
 
--   Responsive on all device sizes
+-   ### Responsive on all device sizes
 
--   Interactive elements
+-   ### Interactive elements include:
+    -   #### A sticky menu that hides until you start to scroll the page
+    -   #### Modals that provide confirmation of the actions taken (i.e. Submitting the completed contact form, signing up for the newsletter and signing up for a membership)
 
 ## Technologies Used
 
