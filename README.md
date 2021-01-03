@@ -33,7 +33,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
     -   #### Typography
         -   Montserrat and Lato fonts where initially chosen as the main font to be used throughout the whole website. Montserrat was eventually chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load.
     -   #### Imagery
-        -   Each page, bar the contact page, contains a full-screen header containing a static background image and hero containing a motivational/inspirational quote designed to inspire and motivate a prospective member to joining the gym.
+        -   Each page, bar the contact page, contains a full-screen header containing a static background image and hero containing a motivational/inspirational quote designed to inspire and motivate a prospective member to joining the gym. All of the images are fictional representations of The Gym showing it's staff and members enjoying themselves.
 
 *   ### Wireframes
 
