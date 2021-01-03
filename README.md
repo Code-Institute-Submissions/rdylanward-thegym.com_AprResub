@@ -31,21 +31,34 @@ The scope of the project was to design a website for a fictional gym using HTML5
     -   #### Colour Scheme
         -   Purple and off-white are used as the reoccuring main colours throughout the website with gold, brown and green as accent colours.
     -   #### Typography
-        -   Montserrat and Lato fonts where initially chosen as the main font to be used throughout the whole website. Montserrat was eventually chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load.
+        -   Montserrat and Lato fonts where initially chosen as the main font to be used alternately throughout the whole website. Montserrat was eventually chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load. A second font was chosen for a future feature (The Gym Blog), 'IM Fell English'. 'IM Fell English' was chosen for it's old style newsprint quality.
     -   #### Imagery
-        -   Each page, bar the contact page, contains a full-screen header containing a static background image and hero containing a motivational/inspirational quote designed to inspire and motivate a prospective member to joining the gym. All of the images are fictional representations of The Gym showing it's staff and members enjoying themselves.
+        -   Each page, bar the contact page, contains a full-screen header containing a static background image and hero containing a motivational/inspirational quote designed to inspire and motivate a prospective member to join the gym. All of the images are fictional representations of The Gym showing it's staff and members enjoying themselves.
 
 *   ### Wireframes
 
     -   Home Page Wireframe - [View](https://github.com/)
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   About Us Page Wireframe - [View](https://github.com/)
 
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Classes Page Wireframe - [View](https://github.com/)
+
+    -   Gallery Page Wireframe - [View](https://github.com/)
+
+    -   Membership Page Wireframe - [View](https://github.com/)
+
+    -   Contact Page Wireframe - [View](https://github.com/)
+
+    -   Mobile Wireframe - [View](https://github.com/)
 
 ## Features
 
 -   ### Responsive on all device sizes
+    -   #### Major and common devices were chosen for the responsive design, ranging from:
+        -   Samsung
+        -   Apple
+        -   Google
+        -   Standard Laptop and Desktop screen sizes
 
 -   ### Interactive elements include:
     -   #### A sticky menu that hides until you start to scroll the page
@@ -60,16 +73,16 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+1. [CSS Grid:](https://www.w3schools.com/css/css_grid.asp)
+    - CSS Grid was chosen over Bootstrap for its ability to provide more precise control over responsive design.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+    - jQuery was essential for enabling the interactive elements like the sticky menu and hiding/unhiding the modals.
+1. [Beackets:](http://brackets.io/)
+    - Brackets was chosen over GitPod for the coding of the site. Brackets has a great set of features for programming multiple languages and connects directly to GitHub.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
