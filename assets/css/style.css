@@ -692,6 +692,7 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: inspire;
+    color: #f2f0e5;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-grid-row-align: center;
@@ -707,7 +708,6 @@ body {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
-    color: #f2f0e5;
     -ms-grid-column-align: center;
         justify-self: center;
     margin: 0rem 0rem;
@@ -999,6 +999,7 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: quote;
+    color: #f2f0e5;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-grid-row-align: center;
@@ -1013,7 +1014,6 @@ body {
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
-    color: #f2f0e5;
     margin: 0rem 1.6rem;
 }
 
@@ -1386,6 +1386,12 @@ body {
 
 .container-testimonial figure blockquote p i {
     font-size: 1rem;
+}
+
+.container-testimonial figcaption {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0rem 1.5rem;
 }
 
 

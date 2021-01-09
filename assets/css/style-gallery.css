@@ -89,12 +89,12 @@
 }
 
 .header-gallery-inspiration figure {
+    color: #f6f5f4;
     margin: 1rem 0rem;
 }
 
 .header-gallery-inspiration blockquote {
     text-align: center;
-    color: #f6f5f4;
     -ms-grid-column-align: center;
         justify-self: center;
     margin: 0rem 1.6rem;
@@ -112,10 +112,11 @@
     font-size: 0.9rem;
 }
 
-.header-gallery-inspiration blockquote figcaption {
+.header-gallery-inspiration figcaption {
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
+    color: #f6f5f4;
     margin: 0.9rem 0rem;
 }
 

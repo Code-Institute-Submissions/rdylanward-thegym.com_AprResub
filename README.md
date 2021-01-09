@@ -29,7 +29,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 -   ### Design
     -   #### Colour Scheme
-        -   Purple and off-white are used as the reoccuring main colours throughout the website with gold, brown and green as accent colours.
+        -   Purple and off-white are used as the reoccuring main colours throughout the website with gold, brown and green as accent colours
     -   #### Typography
         -   Montserrat and Lato fonts where initially chosen as the main font to be used alternately throughout the whole website. Montserrat was eventually chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load. A second font was chosen for a future feature (The Gym Blog), 'IM Fell English'. 'IM Fell English' was chosen for it's old style newsprint quality.
     -   #### Imagery
@@ -76,7 +76,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
 1. [CSS Grid:](https://www.w3schools.com/css/css_grid.asp)
     - CSS Grid was chosen over Bootstrap for its ability to provide more precise control over responsive design.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Montserrat' and 'IM Fell English' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used for the brand. the bullet points on the membership page and for the quotes used throughout.
 1. [jQuery:](https://jquery.com/)
@@ -97,7 +97,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
     - Pexels was used to obtain royalty free images for the site.
 1. [Burst:](https://burst.shopify.com/)
     - Burst was used to obtain royalty free images for the site.
-1. [Flat UI Colors 2:](https://burst.shopify.com/)
+1. [Flat UI Colors 2:](https://flatuicolors.com/)
     - Flat UI was used to choose the base color for the palette.
 1. [Paletton:](https://paletton.com/)
     - Paletton was used to create the colour palette for the site.

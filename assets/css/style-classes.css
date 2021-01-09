@@ -90,6 +90,7 @@
 }
 
 .header-classes-inspiration figure {
+    color: #f6f5f4;
     margin: 1rem 0rem;
 }
 
@@ -113,7 +114,7 @@
     font-size: 0.9rem;
 }
 
-.header-classes-inspiration blockquote figcaption {
+.header-classes-inspiration figcaption {
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;

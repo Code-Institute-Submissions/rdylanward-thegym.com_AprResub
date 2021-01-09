@@ -111,12 +111,12 @@
 }
 
 .header-about-inspiration figure {
+    color: #f6f5f4;
     margin: 1rem 0rem;
 }
 
 .header-about-inspiration blockquote {
     text-align: center;
-    color: #f6f5f4;
     margin: 0rem 1.6rem;
 }
 
@@ -132,7 +132,7 @@
     font-size: 0.9rem;
 }
 
-.header-about-inspiration blockquote figcaption {
+.header-about-inspiration figcaption {
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
@@ -403,7 +403,8 @@
     }
 
     .header-about-inspiration figcaption {
-        font-size: 2.6rem;
+        /* font-size: 2.6rem; */
+        font-size: 2rem;
     }
 
     /*****************/
