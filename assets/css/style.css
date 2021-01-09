@@ -412,8 +412,8 @@ body {
     grid-template-rows: 39.5% 41% 19.5%;
     border: 0.3rem solid #15313a;
     border-radius: 1.5rem;
-    -webkit-box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
-            box-shadow: 0.45rem 0.45rem 0.9rem #beb580;
+    -webkit-box-shadow: 0.45rem 0.45rem 0.6rem #beb580;
+            box-shadow: 0.45rem 0.45rem 0.6rem #beb580;
     overflow: hidden;
     -ms-grid-row-align: center;
     -ms-grid-column-align: center;
