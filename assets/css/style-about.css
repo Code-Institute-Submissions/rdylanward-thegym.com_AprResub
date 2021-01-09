@@ -466,8 +466,8 @@
     /***************/
 
     .container-staff {
-        -ms-grid-columns: 15% 70 15%;
-        grid-template-columns: 15% 70 15%;
+        -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
     }
 
     .staff-bio {
@@ -568,8 +568,8 @@
     /***************/
 
     .container-story {
-        -ms-grid-columns: 20% 60 20%;
-        grid-template-columns: 20% 60 20%;
+        -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
     }
 
     /**************/
@@ -582,7 +582,7 @@
     }
 
     .staff-bio {
-        -ms-grid-columns: (16.66%)[6];
+        -ms-grid-columns: (33.33%)[3];
         grid-template-columns: repeat(3, 33.33%);
                     grid-template-areas:
             "bio-1 bio-2 bio-3"
