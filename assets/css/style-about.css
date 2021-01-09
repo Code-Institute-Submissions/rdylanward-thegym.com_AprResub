@@ -286,8 +286,8 @@
         "bio-4"
         "bio-5"
         "bio-6";
-    -ms-grid-rows: (max-contnet)[6];
-    grid-template-rows: repeat(6, max-contnet);
+    -ms-grid-rows: (max-content)[6];
+    grid-template-rows: repeat(6, max-content);
     justify-items: center;
 }
 
@@ -421,8 +421,8 @@
             "bio-1 bio-2"
             "bio-3 bio-4"
             "bio-5 bio-6";
-        -ms-grid-rows: (max-contnet)[3];
-        grid-template-rows: repeat(3, max-contnet);
+        -ms-grid-rows: (max-content)[3];
+        grid-template-rows: repeat(3, max-content);
     }
 
     .staff-bio-one {
@@ -476,8 +476,8 @@
                     grid-template-areas:
             "bio-1 bio-2 bio-3"
             "bio-4 bio-5 bio-6";
-        -ms-grid-rows: (max-contnet)[2];
-        grid-template-rows: repeat(2, max-contnet);
+        -ms-grid-rows: (max-content)[2];
+        grid-template-rows: repeat(2, max-content);
     }
 
     .staff-bio-one {
@@ -587,8 +587,8 @@
                     grid-template-areas:
             "bio-1 bio-2 bio-3"
             "bio-4 bio-5 bio-6";
-        -ms-grid-rows: (max-contnet)[2];
-        grid-template-rows: repeat(2, max-contnet);
+        -ms-grid-rows: (max-content)[2];
+        grid-template-rows: repeat(2, max-content);
     }
 
     .staff-bio-one {
