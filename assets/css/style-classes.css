@@ -284,8 +284,8 @@
     /*****************/
 
     .classes-item-image img {
-        width: 24.8rem;
-        height: 16rem;
+        width: 31rem;
+        height: 20rem;
     }
 }
 /****  /screen and (max-width: 359px)  ****/
@@ -361,9 +361,6 @@
             align-self: flex-start;
     }
 }
-/****  /screen and (max-width: 576px)  ****/
-
-
 /****  screen and (min-width: 1024px)  ****/
 
 @media only screen and (min-width: 1024px) {
