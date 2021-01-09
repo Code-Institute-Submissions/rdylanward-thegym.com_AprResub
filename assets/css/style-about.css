@@ -121,7 +121,7 @@
 }
 
 .header-about-inspiration blockquote p {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -133,7 +133,7 @@
 }
 
 .header-about-inspiration figcaption {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
     margin: 0.9rem 0rem;
@@ -373,40 +373,9 @@
 /****  /screen and (max-width: 359px)  ****/
 
 
-/****  screen and (min-width: 576px)  ****/
-@media screen and (min-width: 576px) {
-
-    /******************/
-    /****  Header  ****/
-    /******************/
-
-    .header-about-inspiration blockquote {
-        font-size: 2.5rem;
-    }
-
-    .header-about-inspiration figcaption {
-        font-size: 2.2rem;
-    }
-}
-/****  /screen and (min-width: 576px)  ****/
-
-
 /****  /screen and (min-width: 768px)  ****/
 
 @media screen and (min-width: 768px) {
-    /******************/
-    /****  Header  ****/
-    /******************/
-
-    .header-about-inspiration blockquote {
-        font-size: 2.9rem;
-    }
-
-    .header-about-inspiration figcaption {
-        /* font-size: 2.6rem; */
-        font-size: 2rem;
-    }
-
     /*****************/
     /****  Story  ****/
     /*****************/
