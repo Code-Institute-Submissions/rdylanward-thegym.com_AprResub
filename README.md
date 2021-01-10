@@ -62,19 +62,19 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe A - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/HomePageWireframe_A.pdf)
 
-    -   About Us Page Wireframe - [View](https://github.com/)
+    -   Home Page Wireframe B - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/HomePageWireframe_B.pdf)
 
-    -   Classes Page Wireframe - [View](https://github.com/)
+    -   About Us Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/AboutUsWireframe.pdf)
 
-    -   Gallery Page Wireframe - [View](https://github.com/)
+    -   Classes Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/ClassesWireframe.pdf)
 
-    -   Membership Page Wireframe - [View](https://github.com/)
+    -   Gallery Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/GalleryWireframe.pdf)
 
-    -   Contact Page Wireframe - [View](https://github.com/)
+    -   Membership Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/MembershipWireframe.pdf)
 
-    -   Mobile Wireframe - [View](https://github.com/)
+    -   Contact Page Wireframe - [View](https://github.com/rdylanward/thegym.com/blob/master/assets/docs/wireframes/ContactWireframe.pdf)
 
 ## Features
 
