@@ -6,25 +6,30 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 -   ### Responsive Screenshots
 
-    -   #### iPhone 6-7-8
+    -   #### iPhone 6-7-8 (375 x 677)
 
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8.jpg"></h2>
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8-gallery.jpg"></h2>
 
-    -   #### iPhone X
+    -   #### iPhone X (375 x 812)
 
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X.jpg"></h2>
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X-gallery.jpg"></h2>
 
-    -   #### iPad
+    -   #### iPad (768 x 1024)
 
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPad.jpg"></h2>
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPad-gallery.jpg"></h2>
 
-    -   #### MacBook Air
+    -   #### MacBook Air (1440 x 990)
 
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/MacBook-Air.jpg"></h2>
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/MacBook-Air-gallery.jpg"></h2>
+
+    -   #### 24" Monitor (1920 x 1080)
+
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/24-inch-Monitor.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/24-inch-Monitor-gallery.jpg"></h2>
 
 ## User Experience (UX)
 
