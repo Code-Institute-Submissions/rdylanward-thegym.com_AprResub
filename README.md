@@ -8,16 +8,23 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
     -   #### iPhone 6-7-8
 
-    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8.jpg"></h2><h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8-gallery.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-6-7-8-gallery.jpg"></h2>
 
     -   #### iPhone X
 
-    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X.jpg"></h2><h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X-gallery.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPhone-X-gallery.jpg"></h2>
 
     -   #### iPad
 
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPad.jpg"></h2>
     <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/iPad-gallery.jpg"></h2>
+
+    -   #### MacBook Air
+
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/MacBook-Air.jpg"></h2>
+    <h2 align="center"><img src="https://github.com/rdylanward/thegym.com/blob/master/assets/docs/screenshots/MacBook-Air-gallery.jpg"></h2>
 
 ## User Experience (UX)
 
