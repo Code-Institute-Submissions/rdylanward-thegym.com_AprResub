@@ -1,10 +1,12 @@
 <h1 align="center">MS1 Project - The Gym</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://rdylanward.github.io/thegym.com/index.html)
 
 The scope of the project was to design a website for a fictional gym using HTML5 and CSS3 technologies. To be included in the site would be interactive features and images of members enjoying the use of member services.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="https://rdylanward.github.io/thegym.com/assets/docs/screenshot/home-page.jpg"></h2>
+
+<h2 align="center"><img src="https://rdylanward.github.io/thegym.com/assets/docs/screenshot/gallery-page.jpg"></h2>
 
 ## User Experience (UX)
 

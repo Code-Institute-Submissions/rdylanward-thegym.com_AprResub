@@ -433,7 +433,7 @@
     grid-area: summary-icon-1;
 }
 
-,summary-line-1 {
+.summary-line-1 {
     grid-area: summary-line-1;
 }
 
@@ -441,7 +441,7 @@
     grid-area: summary-icon-2;
 }
 
-,summary-line-2 {
+.summary-line-2 {
     grid-area: summary-line-2;
 }
 
@@ -449,7 +449,7 @@
     grid-area: summary-icon-3;
 }
 
-,summary-line-3 {
+.summary-line-3 {
     grid-area: summary-line-3;
 }
 
@@ -457,7 +457,7 @@
     grid-area: summary-icon-4;
 }
 
-,summary-line-4 {
+.summary-line-4 {
     grid-area: summary-line-4;
 }
 
@@ -465,7 +465,7 @@
     grid-area: summary-icon-5;
 }
 
-,summary-line-5 {
+.summary-line-5 {
     grid-area: summary-line-5;
 }
 
