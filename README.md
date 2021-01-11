@@ -219,6 +219,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   On Firefox, the Modals do not display properly.
 -   On Safari Browsers, the 'Sign Up!' button in the Footer section displays as an oval button with a silver background.
 -   In landscape view on older and smaller mobile phones, the Home page header does not display properly.
+-   The validation page for gallery.html is showing an error for the figcaption but the code is working. The code is identical to the same code on other pages (which is not raising errors), but the error is still being raised.
 
 ### Future Development
 
