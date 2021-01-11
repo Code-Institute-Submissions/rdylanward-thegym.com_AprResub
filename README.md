@@ -279,8 +279,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   All images were provided, royalty free, by [Pexels](https://www.pexels.com/) and [Burst](https://burst.shopify.com/)
-
 -   The Javascript for the modals was originally written by [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) and repurposed to aid in the function of the modal.
 
 -   The HTML for the click function of membership card buttons was acquired from [Grepper](https://www.codegrepper.com/code-examples/html/html+button+with+link), html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button.
