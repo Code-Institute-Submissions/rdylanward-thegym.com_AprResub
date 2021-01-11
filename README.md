@@ -196,7 +196,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     2. As a Frequent User, I want to sign up to the email Newsletter to follow the progress of The Gym.
 
         1. As the visitor scrolls down to the Footer section at the bottom of the page, the visitor finds an input to enter their email and a button to click to submit.
-        2. Once the SignUp! button has clicked, a modal appears confirming that the email has been submitted.
+        2. Once the Sign Up! button has clicked, a modal appears confirming that the email has been submitted.
 
     3. As a Frequent User, I want to contact the staff regarding any queries or issues.
         1. On the menu at the top of each page, the visitor finds the link to the contacts page.
@@ -216,6 +216,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   On Firefox, the Modals do not display properly.
 -   On Safari Browsers, the 'Sign Up!' button in the Footer section displays as an oval button with a silver background.
+-   In landscape view on older and smaller mobile phones, the Home page header does not display properly.
+
+### Future Development
+
+-   Located in the Details section of the Home page, the third detail talks of a Blog page to keep up with the community. As part of future development, a Blog page, styled like a newspaper, is to be be developed and linked to a database so that recent and archived articles can be accessed regarding The Gym, fitness and the latest news and events.
+-   The colour scheme for the site will be updated to vibrant and dynamic colours better suiting a gym.
+-   Fix the modals for Firefox browsers.
+-   Fix the landscape view on older and smaller mobile phones.
 
 ## Deployment
 
