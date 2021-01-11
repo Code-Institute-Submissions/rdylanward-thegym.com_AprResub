@@ -113,7 +113,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
 1. [GitHub:](https://github.com/)
     - GitHub utilised as a repository for the code.
 1. [GIMP:](https://www.gimp.org/)
-    - Gimp (Graphic Image Manipulation Program) qas used for resizing cropping and editing images for the website.
+    - Gimp (Graphic Image Manipulation Program) was used for resizing cropping and editing images for the website.
 1. [Autoprefixer:](http://autoprefixer.github.io/)
     - Autoprefixer was used to ensure the code has all relevant vendor prefixes.
 1. [Tiny PNG:](https://tinypng.com/)
@@ -291,11 +291,17 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   All content was written and edited by Dylan Ward.
+-   All content was written and edited by Dylan Ward using the [Brackets](http://brackets.io/) editor.
+
+-   Colour pallettes were chosen with the aid of [Paletton](https://paletton.com/), [Flat UI Colors 2](https://flatuicolors.com/) and [0to255.com](https://www.0to255.com/).
 
 ### Media
 
--   All images were provided, royalty free, by [Pexels](https://www.pexels.com/) and [Burst](https://burst.shopify.com/)
+-   All images were provided, royalty free, by [Pexels](https://www.pexels.com/) and [Burst](https://burst.shopify.com/).
+
+-   The screenshots for the virtual device views of the website at the beginning of this document were captured with the aid of [Responsively](https://responsively.app/).
+
+-   Image manipulation was completed with the aid of [GIMP](https://www.gimp.org/) and [Tiny PNG](https://tinypng.com/).
 
 ### Acknowledgements
 
