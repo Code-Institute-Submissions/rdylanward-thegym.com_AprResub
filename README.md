@@ -138,7 +138,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/rdylanward/thegym.com/tree/master/assets/docs/validation/html5)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/rdylanward/thegym.com/tree/master/assets/docs/validation/css3) (NB: The CSS validations are raising errors to code created by the most recent version of AutoPrefixer, used to amend vendor specific code to CSS for compatibility.)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/rdylanward/thegym.com/tree/master/assets/docs/validation/css3) (NB: See 'Known Bugs' for explanation of errors.)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -220,6 +220,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   On Safari Browsers, the 'Sign Up!' button in the Footer section displays as an oval button with a silver background.
 -   In landscape view on older and smaller mobile phones, the Home page header does not display properly.
 -   The validation page for gallery.html is showing an error for the figcaption but the code is working. The code is identical to the same code on other pages (which is not raising errors), but the error is still being raised.
+-   The CSS validations are raising errors to code created by the most recent version of AutoPrefixer, used to amend vendor specific code to CSS for compatibility. I do not believe these to be actual errors.
 
 ### Future Development
 
