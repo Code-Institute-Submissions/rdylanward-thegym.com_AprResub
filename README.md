@@ -38,7 +38,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to find out about The Gym and its staff.
-        2. As a First Time Visitor, I want to find out what services The Gym provides.
+        2. As a First Time Visitor, I want to find out what services and/or classes The Gym provides.
         3. As a First Time Visitor, I want to find out what memberships are on offer and their associated costs if I so desire to join.
         4. As a First Time Visitor, I want to find out how to contact The Gym if I have any queries or concerns so that they may be answered.
 
@@ -48,7 +48,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
         1. As a Returning Visitor, I want to sign up for a membership.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to keep aprised of any changes to the services.
+        1. As a Frequent User, I want to keep aprised of any changes to the services and/or classes.
         2. As a Frequent User, I want to sign up to the email Newsletter to follow the progress of The Gym.
         3. As a Frequent User, I want to contact the staff regarding any queries or issues.
 
@@ -142,70 +142,80 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+    1. As a First Time Visitor, I want to find out about The Gym and its staff.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+        1. When the Home Page is displayed, the visitor is greeted with a hero greeting providing an inspirational quote and buttons that link you to the key pages of the website.
+        2. Scrolling down the Home Page the visitor is provided with a representation of all of the key information, broken down into individual sections with short descriptions and links to their respective pages. 
+        3. From the Home Page the visitor finds links to the About Us page. Following to the About Us page gives background on the owner and the ethos of the gym, as well as an introduction to the staff. 
+        3. Further down the Home page, the visitor finds a testimonial section where they can read first hand what members think of The Gym.
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+    2. As a First Time Visitor, I want to find out what services and/or classes The Gym provides.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
+        1. In the hero section of the header on the Home Page and in the menu bar along the top of each page are multiple links to the Classes section.
+        2. Scrolling down to the next section of the Home Page, the Details section, the visitor finds a short description of the Classes section with a button that takes you to the page. 
+        3. Once on the Classes page, the visitor finds a hero with an inspirational quote, motivating the visitor to venture further. 
+        4. Scrolling down, the visitor finds an alternating list of all of the courses including a short description of each one. 
+        5. At the top of the list is the 'Download Schedule' button. Clicking the button brings up a .pdf copy of the schedule for the month.
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+    3. As a First Time Visitor, I want to find out what memberships are on offer and their associated costs if I so desire to join.
+        1. The Header section of the Home page contains two links to the Membership page.
+        2. Scrolling down the Home page, the visitor finds the membership section with the four most common offerings with buttons that take the visitor to the Membership page.
+        3. Arriving at the Membership page, the visitor is greeted with another motivational quote to keep them engaged.
+        4. Scrolling down the Membership page, the visitor is provided with a list of all of the membership options on offer, along with an additional section providing the latest special offers.
+        5. Clicking on the button found under each option card, a modal with a form for the visitor to fill out and initiate the membership process.
+        6. Clicking the Submit button on the modal brings up another modal letting the visitor know the form was submitted successfully.
+
+    4. As a First Time Visitor, I want to find out how to contact The Gym if I have any queries or concerns so that they may be answered.
+        1. On the menu at the top of each page, the visitor finds the link to the contacts page.
+        2. Clicking the link takes the visitor to the Contact page.
+        3. At the Contact page, the visitor is greeted with a form to enter the details and submit any queries direct to The Gym.
+        4. After completing the form, clicking the Submit button brings up a modal letting the visitor know that the form has been submitted.
+        5. In the Footer section at the bottom of each page, the visitor finds the address and phone details for The Gym.
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
+    1. As a Returning Visitor, I want to identify social links and join the community.
 
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
+        1. When the visitor scrolls to the Footer section at the bottom of each page, they find four links to the social community for The Gym.
+        2. Clicking the links, the visitor is taken to either Facebook, Twitter, Instagram or YouTube.
 
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+    2. As a Returning Visitor, I want to sign up for a membership.
 
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
+        1. Links to the Membership page are easily found on the Main page
+        2. Arriving at the Membership page, the visitor is greeted with another motivational quote to keep them engaged.
+        3. Scrolling down the Membership page, the visitor is provided with a list of all of the membership options on offer, along with an additional section providing the latest special offers.
+        4. Clicking on the button found under each option card, a modal with a form for the visitor to fill out and initiate the membership process.
+        5. Clicking the Submit button on the modal brings up another modal letting the visitor know the form was submitted successfully.
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
+    1. As a Frequent User, I want to keep aprised of any changes to the services and/or classes.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
+        1. The link to the Classes page is easily found in the menu at the top of every page. Once there, the visitor can view any updates that may have taken place.
 
-    2. As a Frequent User, I want to check to see if there are any new blog posts.
+    2. As a Frequent User, I want to sign up to the email Newsletter to follow the progress of The Gym.
 
-        1. The user would already be comfortable with the website layout and can easily click the blog link
+        1. As the visitor scrolls down to the Footer section at the bottom of the page, the visitor finds an input to enter their email and a button to click to submit.
+        2. Once the SignUp! button has clicked, a modal appears confirming that the email has been submitted.
 
-    3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-        1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+    3. As a Frequent User, I want to contact the staff regarding any queries or issues.
+        1. On the menu at the top of each page, the visitor finds the link to the contacts page.
+        2. Clicking the link takes the visitor to the Contact page.
+        3. At the Contact page, the visitor is greeted with a form to enter the details and submit any queries direct to The Gym.
+        4. After completing the form, clicking the Submit button brings up a modal letting the visitor know that the form has been submitted.
+        5. In the Footer section at the bottom of each page, the visitor finds the address and phone details for The Gym.
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   The Website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone6, iPad & Samsung Note 10+.
+-   All menu links were tested across all pages to ensure that they all go to the correct page.
+-   All of the buttons were tested, across all pages, to ensure that they go to the links specified or carried out the desired action.
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   On Firefox, the Modals do not display properly.
+-   On Safari Browsers, the 'Sign Up!' button in the Footer section displays as an oval button with a silver background.
 
 ## Deployment
 
