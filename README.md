@@ -54,7 +54,7 @@ The scope of the project was to design a website for a fictional gym using HTML5
 
 -   ### Design
     -   #### Colour Scheme
-        -   Purple and off-white are used as the reoccuring main colours throughout the website with gold, brown and green as accent colours
+        -   Purple and off-white are used as the reoccuring main colours throughout the website with gold, brown and green as accent colours giving a luxurious feel to the site.
     -   #### Typography
         -   Montserrat and Lato fonts where initially chosen as the main font to be used alternately throughout the whole website. Montserrat was eventually chosen as the main font as it complimented the design. Sans Serif was chosen as the back-up in the event the main font does not load. A second font was chosen for a future feature (The Gym Blog), 'IM Fell English'. 'IM Fell English' was chosen for it's old style newsprint quality.
     -   #### Imagery
@@ -130,6 +130,8 @@ The scope of the project was to design a website for a fictional gym using HTML5
     - 0to255 was used to determine certain shades of the colours while maintaining the palette.
 1. [Devoth‘s HEX 2 RGBA Color Calculator:](http://hex2rgba.devoth.com/)
     - Devoth‘s HEX 2 RGBA Color Calculator was used to aid in converting hex colurs to rgb and rgba.
+1. [Responsively:](https://responsively.app/)
+    - Responsively provides an array of virtual devices to test a website's responsive design.
 
 ## Testing
 
@@ -231,25 +233,25 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/rdylanward/thegym.com)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+    - Alternatively Click [Here](https://guides.github.com/features/pages/) for a tutorial on the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://rdylanward.github.io/thegym.com/index.html) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/rdylanward/thegym.com)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/rdylanward/thegym.com)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -277,24 +279,28 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   All images were provided, royalty free, by [Pexels](https://www.pexels.com/) and [Burst](https://burst.shopify.com/)
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   The Javascript for the modals was originally written by [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) and repurposed to aid in the function of the modal.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   The HTML for the click function of membership card buttons was acquired from [Grepper](https://www.codegrepper.com/code-examples/html/html+button+with+link), html by PR.Gaultier (01/10/2020), and repurposed to aid in the click function of the button.
+
+-   The Javascript for the Sticky Menu was originally written by [W3Schools](https://www.w3schools.com/howto/howto_js_navbar_sticky.asp) and repurposed to aid in the function of the sticky menu.
+
+-   The Javascript for the Mobile Menu was originally written by [W3Schools](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) and repurposed to aid in the function of the mobile menu.
+
+-   GitHub instructions provided in the Development section of this ReadMe was provided by [GitHub](https://github.com/) and [Code Institute](https://codeinstitute.net/) with links updated to this project.
 
 ### Content
 
--   All content was written by the developer.
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   All content was written and edited by Dylan Ward.
 
 ### Media
 
--   All Images were created by the developer.
+-   All images were provided, royalty free, by [Pexels](https://www.pexels.com/) and [Burst](https://burst.shopify.com/)
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   My Mentor, Gerard McBride, for continuous support and timeless advice keeping me on the right track.
 
--   Tutor support at Code Institute for their support.
+-   The Tutor support at Code Institute for their support in times of need and aiding in answering all queries.
