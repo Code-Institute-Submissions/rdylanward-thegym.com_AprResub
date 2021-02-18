@@ -158,10 +158,13 @@
         justify-self: center;
 }
 
+.classes-list-button {
+    margin: 6rem;
+}
+
 .classes-list-btn {
-    width: 19rem;
-    padding: 0rem;
-    margin: 3rem;
+    text-decoration: none;
+    padding: 0.8rem 3rem;
 }
 
 .classes-list-items {
